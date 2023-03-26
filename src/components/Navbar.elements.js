@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Dropdown } from "react-bootstrap";
 export const Container = styled.div`
   width: 100%;
   height: 70px;
@@ -55,3 +55,7 @@ export const MenuItemLink = styled.a`
   border-radius: 7px;
   display: inline-block;
 `;
+
+export function DropdownMenu() {
+  return console.log("Dropdown");
+}
