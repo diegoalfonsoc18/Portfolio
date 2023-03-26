@@ -6,12 +6,13 @@ import {
   MenuItem,
   MenuItemLink,
   Wrapper,
-  DropdownMenu,
+  DropdownAbout,
+  DropdownContact,
 } from "./Navbar.elements";
 import { GrApple } from "react-icons/gr";
 
 const Navbar = () => (
-  <Container onClick={DropdownMenu}>
+  <Container>
     <Wrapper>
       <LogoContainer>
         <GrApple />
@@ -19,16 +20,13 @@ const Navbar = () => (
       </LogoContainer>
       <Menu>
         <MenuItem>
-          <MenuItemLink>Home</MenuItemLink>
-        </MenuItem>
-        <MenuItem>
-          <MenuItemLink>About me</MenuItemLink>
+          <MenuItemLink onMouseEnter={DropdownAbout}>About Me</MenuItemLink>
         </MenuItem>
         <MenuItem>
           <MenuItemLink>Portfolio</MenuItemLink>
         </MenuItem>
         <MenuItem>
-          <MenuItemLink>Contact</MenuItemLink>
+          <MenuItemLink onMouseEnter={DropdownContact}>Contact</MenuItemLink>
         </MenuItem>
       </Menu>
     </Wrapper>

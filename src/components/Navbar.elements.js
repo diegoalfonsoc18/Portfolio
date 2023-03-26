@@ -1,5 +1,6 @@
+import React from "react";
 import styled from "styled-components";
-import { Dropdown } from "react-bootstrap";
+
 export const Container = styled.div`
   width: 100%;
   height: 70px;
@@ -47,6 +48,7 @@ export const MenuItem = styled.li`
   height: 100%;
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;
 
 export const MenuItemLink = styled.a`
@@ -56,6 +58,25 @@ export const MenuItemLink = styled.a`
   display: inline-block;
 `;
 
-export function DropdownMenu() {
-  return console.log("Dropdown");
+export function DropdownAbout() {
+  return console.log("Hola amor❤️");
+}
+
+const ContainerContact = styled.div`
+  background-color: green;
+  border: 1px solid black;
+`;
+
+const TitleContact = styled.div`
+display: flex;
+height: 20px
+max-width: 1300px
+border: 3px solid black;
+`;
+export function DropdownContact() {
+  return (
+    <ContainerContact>
+      <TitleContact>Diego</TitleContact>
+    </ContainerContact>
+  );
 }
