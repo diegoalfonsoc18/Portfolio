@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -53,30 +52,16 @@ export const MenuItem = styled.li`
 
 export const MenuItemLink = styled.a`
   text-decoration: none;
-
+  position: relative;
   border-radius: 7px;
   display: inline-block;
 `;
 
-export function DropdownAbout() {
-  return console.log("Hola amor❤️");
-}
-
-const ContainerContact = styled.div`
-  background-color: green;
-  border: 1px solid black;
+export const DropdownContact = styled.div`
+  display: relative;
 `;
-
-const TitleContact = styled.div`
-display: flex;
-height: 20px
-max-width: 1300px
-border: 3px solid black;
+export const DropdownContactUl = styled.ul`
+  list-style-type: none;
+  display: block;
 `;
-export function DropdownContact() {
-  return (
-    <ContainerContact>
-      <TitleContact>Diego</TitleContact>
-    </ContainerContact>
-  );
-}
+export const DropdownContactli = styled.li``;
