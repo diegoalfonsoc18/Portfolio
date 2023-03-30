@@ -9,6 +9,7 @@ import {
   DropdownContact,
   DropdownContactUl,
   DropdownContactli,
+  ContainerMenu,
 } from "./Navbar.elements";
 import { FaDocker } from "react-icons/fa";
 import { GrLinkedin, GrGithub, GrTwitter, GrInstagram } from "react-icons/gr";
@@ -22,45 +23,60 @@ const Navbar = () => {
           <FaDocker />
           <p>Diego Alfonso</p>
         </LogoContainer>
-        <Menu>
-          <MenuItem>
-            <MenuItemLink>About Me</MenuItemLink>
-          </MenuItem>
-          <MenuItem>
-            <MenuItemLink>Portfolios</MenuItemLink>
-          </MenuItem>
-          <MenuItem>
-            <MenuItemLink onClick={() => setOpenContact(!openContact)}>
-              Contact
-            </MenuItemLink>
+        <ContainerMenu>
+          <Menu>
+            <MenuItem>
+              <MenuItemLink>About Me</MenuItemLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuItemLink>Portfolios</MenuItemLink>
+            </MenuItem>
+
+            <MenuItem>
+              <MenuItemLink onClick={() => setOpenContact(!openContact)}>
+                Contact
+              </MenuItemLink>
+            </MenuItem>
             {openContact && (
               <DropdownContact>
                 <DropdownContactUl>
                   <DropdownContactli>
-                    <MenuItemLink>
+                    <MenuItemLink
+                      href="https://github.com/diegoalfonsoc18"
+                      target="_blank"
+                    >
                       <GrGithub />
                     </MenuItemLink>
                   </DropdownContactli>
                   <DropdownContactli>
-                    <MenuItemLink>
+                    <MenuItemLink
+                      href="https://www.linkedin.com/in/diego-alfonso-castillo/"
+                      target="_blank"
+                    >
                       <GrLinkedin />
                     </MenuItemLink>
                   </DropdownContactli>
                   <DropdownContactli>
-                    <MenuItemLink>
+                    <MenuItemLink
+                      href="https://twitter.com/diegoalfonso54"
+                      target="_blank"
+                    >
                       <GrTwitter />
                     </MenuItemLink>
                   </DropdownContactli>
                   <DropdownContactli>
-                    <MenuItemLink>
+                    <MenuItemLink
+                      href="https://www.instagram.com/dlalfonso54/"
+                      target="_blank"
+                    >
                       <GrInstagram />
                     </MenuItemLink>
                   </DropdownContactli>
                 </DropdownContactUl>
               </DropdownContact>
             )}
-          </MenuItem>
-        </Menu>
+          </Menu>
+        </ContainerMenu>
       </Wrapper>
     </Container>
   );
