@@ -31,50 +31,56 @@ const Navbar = () => {
             <MenuItem>
               <MenuItemLink>Portfolios</MenuItemLink>
             </MenuItem>
-
             <MenuItem>
-              <MenuItemLink onClick={() => setOpenContact(!openContact)}>
+              <MenuItemLink
+                onClick={() => setOpenContact(!openContact)}
+                className="li-contact"
+              >
                 Contact
               </MenuItemLink>
+              {openContact && (
+                <DropdownContact>
+                  <DropdownContactUl>
+                    <DropdownContactli>
+                      <MenuItemLink
+                        href="https://github.com/diegoalfonsoc18"
+                        target="_blank"
+                        className="icon-link"
+                      >
+                        <GrGithub />
+                      </MenuItemLink>
+                    </DropdownContactli>
+                    <DropdownContactli>
+                      <MenuItemLink
+                        href="https://www.linkedin.com/in/diego-alfonso-castillo/"
+                        target="_blank"
+                        className="icon-link"
+                      >
+                        <GrLinkedin />
+                      </MenuItemLink>
+                    </DropdownContactli>
+                    <DropdownContactli>
+                      <MenuItemLink
+                        href="https://twitter.com/diegoalfonso54"
+                        target="_blank"
+                        className="icon-link"
+                      >
+                        <GrTwitter />
+                      </MenuItemLink>
+                    </DropdownContactli>
+                    <DropdownContactli>
+                      <MenuItemLink
+                        href="https://www.instagram.com/dlalfonso54/"
+                        target="_blank"
+                        className="icon-link"
+                      >
+                        <GrInstagram />
+                      </MenuItemLink>
+                    </DropdownContactli>
+                  </DropdownContactUl>
+                </DropdownContact>
+              )}
             </MenuItem>
-            {openContact && (
-              <DropdownContact>
-                <DropdownContactUl>
-                  <DropdownContactli>
-                    <MenuItemLink
-                      href="https://github.com/diegoalfonsoc18"
-                      target="_blank"
-                    >
-                      <GrGithub />
-                    </MenuItemLink>
-                  </DropdownContactli>
-                  <DropdownContactli>
-                    <MenuItemLink
-                      href="https://www.linkedin.com/in/diego-alfonso-castillo/"
-                      target="_blank"
-                    >
-                      <GrLinkedin />
-                    </MenuItemLink>
-                  </DropdownContactli>
-                  <DropdownContactli>
-                    <MenuItemLink
-                      href="https://twitter.com/diegoalfonso54"
-                      target="_blank"
-                    >
-                      <GrTwitter />
-                    </MenuItemLink>
-                  </DropdownContactli>
-                  <DropdownContactli>
-                    <MenuItemLink
-                      href="https://www.instagram.com/dlalfonso54/"
-                      target="_blank"
-                    >
-                      <GrInstagram />
-                    </MenuItemLink>
-                  </DropdownContactli>
-                </DropdownContactUl>
-              </DropdownContact>
-            )}
           </Menu>
         </ContainerMenu>
       </Wrapper>

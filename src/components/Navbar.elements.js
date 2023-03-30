@@ -32,7 +32,6 @@ export const LogoContainer = styled.div`
   width: 150px;
 `;
 export const ContainerMenu = styled.div`
-  display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 1.2rem;
@@ -44,7 +43,6 @@ export const Menu = styled.ul`
   height: 100%;
   width: 100%;
   margin: 0;
-
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -67,14 +65,38 @@ export const MenuItemLink = styled.a`
   position: relative;
   border-radius: 7px;
   display: inline-block;
+
+  &.li-contact {
+    position: absolute;
+  }
+
+  &.icon-link {
+    color: #cc0;
+    font-size: 20px;
+  }
 `;
 
 export const DropdownContact = styled.div`
   display: flex;
-  flex-direction: row;
+  margin-top: 50px;
+  justify-content: center;
 `;
 export const DropdownContactUl = styled.ul`
   list-style-type: none;
-  flex-wrap: wrap;
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+
+  position: relative;
 `;
-export const DropdownContactli = styled.li``;
+export const DropdownContactli = styled.li`
+  display: flex;
+  flex-direction: colum;
+`;
+
+export const MenuItemLinkC = styled.a`
+  text-decoration: none;
+  position: relative;
+  border-radius: 7px;
+  display: inline-block;
+`;
