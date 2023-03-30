@@ -27,7 +27,7 @@ const Navbar = () => {
             <MenuItemLink>About Me</MenuItemLink>
           </MenuItem>
           <MenuItem>
-            <MenuItemLink>Portfolio</MenuItemLink>
+            <MenuItemLink>Portfolios</MenuItemLink>
           </MenuItem>
           <MenuItem>
             <MenuItemLink onClick={() => setOpenContact(!openContact)}>
