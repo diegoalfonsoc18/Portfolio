@@ -1,8 +1,12 @@
 import React from "react";
-import { Main } from "./body-elements";
-
+import { Sect, Memoji } from "./body-elements";
+import memoji from "../memojic-mac.png";
 const Body = () => {
-  <Main></Main>;
+  return (
+    <Sect>
+      <Memoji src={memoji} />
+    </Sect>
+  );
 };
 
 export default Body;

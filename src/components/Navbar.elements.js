@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   width: 100%;
   height: 70px;
-  border: 1px solid yellow;
+  color: #000
   border-radius: 7px;
   justify-content: center;
 `;
@@ -28,7 +28,7 @@ export const LogoContainer = styled.div`
   align-items: center;
   font-size: 1.2rem;
   font-family: sans-serif;
-  color: #ffff;
+  color: #000;
   width: 150px;
 `;
 export const ContainerMenu = styled.div`
@@ -36,7 +36,7 @@ export const ContainerMenu = styled.div`
   align-items: center;
   font-size: 1.2rem;
   font-family: sans-serif;
-  color: #ffff;
+  color: #000;
   width: 250px;
 `;
 export const Menu = styled.ul`
@@ -47,7 +47,7 @@ export const Menu = styled.ul`
   align-items: center;
   justify-content: space-around;
   font-size: 1rem;
-  color: #fff;
+  color: #000;
   font-family: sans-serif;
 `;
 
