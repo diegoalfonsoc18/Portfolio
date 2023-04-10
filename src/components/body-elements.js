@@ -24,27 +24,13 @@ export const H2memoji = styled.h2`
 
 export const ContainerImg = styled.article`
   position: relative;
-  width: 250px;
+  width: 300px;
+  height: 300px;
   transition: all 0.3s ease;
-
-  &.article MemojiMain {
-    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
-    border-radius: 4px;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  &.article img:last-child {
-    position: absolute;
-    width: 200px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transform: translateY(25%);
-    transition: 0.3s ease;
-    opacity: 0;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   &:hover {
     transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
   }
@@ -62,14 +48,14 @@ export const ContainerImg = styled.article`
   }
 `;
 export const MemojiMain = styled.img`
-  box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
   border-radius: 4px;
   object-fit: cover;
-  width: 100%;
+  width: 70%;
+  height: 85%;
 `;
 export const Memoji = styled.img`
   position: absolute;
-  width: 200px;
+  width: 320px;
   bottom: 0;
   left: 0;
   right: 0;
