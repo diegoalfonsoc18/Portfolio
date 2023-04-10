@@ -72,7 +72,7 @@ export const MenuItemLink = styled.a`
   }
 
   &.icon-link {
-    color: #02e12e;
+    color: #03c03c;
     font-size: 20px;
   }
 `;
