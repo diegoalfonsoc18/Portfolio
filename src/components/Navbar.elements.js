@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+
   display: flex;
   width: 100%;
   height: 70px;
@@ -27,7 +28,7 @@ export const LogoContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   font-size: 1.2rem;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   width: 150px;
 `;
@@ -35,7 +36,7 @@ export const ContainerMenu = styled.div`
   justify-content: space-around;
   align-items: center;
   font-size: 1.2rem;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   width: 250px;
 `;
@@ -71,7 +72,7 @@ export const MenuItemLink = styled.a`
   }
 
   &.icon-link {
-    color: #cc0;
+    color: #02e12e;
     font-size: 20px;
   }
 `;

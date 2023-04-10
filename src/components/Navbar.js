@@ -21,7 +21,6 @@ const Navbar = () => {
       <Wrapper>
         <LogoContainer>
           <FaDocker />
-          <p>Diego Alfonso</p>
         </LogoContainer>
         <ContainerMenu>
           <Menu>
@@ -29,7 +28,7 @@ const Navbar = () => {
               <MenuItemLink>About Me</MenuItemLink>
             </MenuItem>
             <MenuItem>
-              <MenuItemLink>Portfolios</MenuItemLink>
+              <MenuItemLink>Portfolio</MenuItemLink>
             </MenuItem>
             <MenuItem>
               <MenuItemLink
