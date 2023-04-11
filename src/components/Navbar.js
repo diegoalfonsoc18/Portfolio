@@ -57,6 +57,7 @@ const Navbar = () => {
                         href="https://www.linkedin.com/in/diego-alfonso-castillo/"
                         target="_blank"
                         className="icon-link"
+                        style={{ color: "#2d72c6" }}
                       >
                         <GrLinkedin />
                       </MenuItemLink>
@@ -66,6 +67,7 @@ const Navbar = () => {
                         href="https://twitter.com/diegoalfonso54"
                         target="_blank"
                         className="icon-link"
+                        style={{ color: "#48c4ec" }}
                       >
                         <GrTwitter />
                       </MenuItemLink>
@@ -75,6 +77,7 @@ const Navbar = () => {
                         href="https://www.instagram.com/dlalfonso54/"
                         target="_blank"
                         className="icon-link"
+                        style={{ color: "#e41134" }}
                       >
                         <GrInstagram />
                       </MenuItemLink>

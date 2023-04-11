@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100px;
-  color: #000
+
   border-radius: 7px;
   justify-content: center;
 `;
@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   height: 100%;
-  width: 95%;
+  width: 100%;
   max-width: 1300px
   flex-wrap: wrap;
   justify-content: space-between;
@@ -80,8 +80,12 @@ export const MenuItemLink = styled.a`
 
 export const DropdownContact = styled.div`
   display: flex;
+  position: fixed;
+  justify-content: end;
+  width: auto;
   margin-top: 50px;
-  justify-content: center;
+
+  z-index: 1;
 `;
 export const DropdownContactUl = styled.ul`
   list-style-type: none;
@@ -93,12 +97,14 @@ export const DropdownContactUl = styled.ul`
 `;
 export const DropdownContactli = styled.li`
   display: flex;
+
   flex-direction: colum;
 `;
 
 export const MenuItemLinkC = styled.a`
   text-decoration: none;
-  position: relative;
+  position: fixed;
+
   border-radius: 7px;
   display: inline-block;
 `;
