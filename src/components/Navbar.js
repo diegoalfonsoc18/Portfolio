@@ -23,7 +23,7 @@ const Navbar = () => {
           <FaHtml5 style={{ fontSize: "40px", color: "#f74d0d" }} />
           <FaCss3Alt style={{ fontSize: "40px", color: "#0097ff" }} />
           <DiJavascript style={{ fontSize: "44px", color: "#f5cf0d" }} />
-          <FaReact style={{ fontSize: "43px", color: "#0ddcf5" }} />
+          <FaReact style={{ fontSize: "40px", color: "#0ddcf5" }} />
         </LogoContainer>
         <ContainerMenu>
           <Menu>
