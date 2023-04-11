@@ -13,11 +13,19 @@ export const SectionProyects = styled.section`
   margin-top: 80px;
 `;
 export const WrapperProyects = styled.div`
+  transition: all 0.3 ease;
   height: 100%;
   width: 100%;
+  border-radius: 10px;
+  &:hover {
+    box-shadow: 0 0 20px 10px rgba(76, 76, 76, 1);
+  }
 `;
 export const ProyectImg = styled.img`
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+`;
+
+export const LinkProyects = styled.a`
+  cursor: pointer;
 `;
