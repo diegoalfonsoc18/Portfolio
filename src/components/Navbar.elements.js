@@ -4,7 +4,7 @@ export const Container = styled.div`
 
   display: flex;
   width: 100%;
-  height: 70px;
+  height: 100px;
   color: #000
   border-radius: 7px;
   justify-content: center;
@@ -50,6 +50,7 @@ export const Menu = styled.ul`
   font-size: 1rem;
   color: #000;
   font-family: sans-serif;
+  font-weight: bold;
 `;
 
 export const MenuItem = styled.li`
@@ -72,7 +73,7 @@ export const MenuItemLink = styled.a`
   }
 
   &.icon-link {
-    color: #03c03c;
+    color: #222016;
     font-size: 20px;
   }
 `;

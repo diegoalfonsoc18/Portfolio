@@ -20,12 +20,12 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <LogoContainer>
-          <FaDocker />
+          <FaDocker style={{ fontSize: "40px" }} />
         </LogoContainer>
         <ContainerMenu>
           <Menu>
             <MenuItem>
-              <MenuItemLink>About Me</MenuItemLink>
+              <MenuItemLink>About me</MenuItemLink>
             </MenuItem>
             <MenuItem>
               <MenuItemLink>Portfolio</MenuItemLink>

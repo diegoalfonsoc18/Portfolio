@@ -8,6 +8,7 @@ import {
   ContainerImg,
   MemojiMain,
 } from "./body-elements";
+
 import memoji from "../memojic-mac.png";
 import memoji3 from "../memoji3.png";
 const Body = () => {
