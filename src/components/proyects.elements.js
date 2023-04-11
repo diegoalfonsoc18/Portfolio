@@ -10,7 +10,7 @@ export const SectionProyects = styled.section`
   grid-template-rows: 300px 300px;
   column-gap: 20px;
   row-gap: 20px;
-  margin-top: 80px;
+  margin-top: 100px;
 `;
 export const WrapperProyects = styled.div`
   transition: all 0.3 ease;
@@ -24,6 +24,8 @@ export const WrapperProyects = styled.div`
 export const ProyectImg = styled.img`
   width: 100%;
   height: 100%;
+  border-radius: 10px;
+  border: solid 0.1px #5b5b5b;
 `;
 
 export const LinkProyects = styled.a`

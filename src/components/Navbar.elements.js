@@ -30,7 +30,7 @@ export const LogoContainer = styled.div`
   font-size: 1.2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
-  width: 150px;
+  width: 180px;
 `;
 export const ContainerMenu = styled.div`
   justify-content: space-around;

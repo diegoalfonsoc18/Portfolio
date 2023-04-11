@@ -11,16 +11,19 @@ import {
   DropdownContactli,
   ContainerMenu,
 } from "./Navbar.elements";
-import { FaDocker } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { GrLinkedin, GrGithub, GrTwitter, GrInstagram } from "react-icons/gr";
-
+import { DiJavascript } from "react-icons/di";
 const Navbar = () => {
   const [openContact, setOpenContact] = useState(false);
   return (
     <Container>
       <Wrapper>
         <LogoContainer>
-          <FaDocker style={{ fontSize: "40px" }} />
+          <FaHtml5 style={{ fontSize: "40px", color: "#f74d0d" }} />
+          <FaCss3Alt style={{ fontSize: "40px", color: "#0097ff" }} />
+          <DiJavascript style={{ fontSize: "44px", color: "#f5cf0d" }} />
+          <FaReact style={{ fontSize: "43px", color: "#0ddcf5" }} />
         </LogoContainer>
         <ContainerMenu>
           <Menu>
