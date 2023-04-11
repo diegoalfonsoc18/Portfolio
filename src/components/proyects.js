@@ -6,6 +6,8 @@ import {
 } from "./proyects.elements";
 import ProyectoOne from "../index.png";
 import ProyectoTwo from "../proyecto2.png";
+import ProyectoThree from "../proyecto3.png";
+import ProyectoFour from "../proyecto4.png";
 
 const Proyects = () => {
   return (
@@ -17,10 +19,10 @@ const Proyects = () => {
         <ProyectImg src={ProyectoTwo}></ProyectImg>
       </WrapperProyects>
       <WrapperProyects>
-        <ProyectImg></ProyectImg>
+        <ProyectImg src={ProyectoThree}></ProyectImg>
       </WrapperProyects>
       <WrapperProyects>
-        <ProyectImg></ProyectImg>
+        <ProyectImg src={ProyectoFour}></ProyectImg>
       </WrapperProyects>
     </SectionProyects>
   );

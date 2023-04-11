@@ -1,15 +1,23 @@
 import styled from "styled-components";
 
 export const SectionProyects = styled.section`
-  height: 100px;
   width: 100%;
-  background-color: #cc0;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 300px 300px;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 80px;
 `;
 export const WrapperProyects = styled.div`
-  display: flex;
-  flex-direction: row;
+  height: 100%;
+  width: 100%;
 `;
 export const ProyectImg = styled.img`
-  height: 300px;
-  width: 300px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 `;
