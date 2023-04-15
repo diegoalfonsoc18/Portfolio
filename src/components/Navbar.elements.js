@@ -80,7 +80,7 @@ export const MenuItemLink = styled.a`
 
 export const DropdownContact = styled.div`
   display: flex;
-  position: fixed;
+  position: absolute;
   justify-content: end;
   width: auto;
   margin-top: 50px;

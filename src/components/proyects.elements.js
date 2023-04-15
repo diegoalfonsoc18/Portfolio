@@ -19,6 +19,7 @@ export const WrapperProyects = styled.div`
   border-radius: 10px;
   &:hover {
     box-shadow: 0 0 20px 10px rgba(76, 76, 76, 1);
+    border: none;
   }
 `;
 export const ProyectImg = styled.img`
