@@ -11,10 +11,12 @@ export const Sect = styled.div`
 
 export const Paragraph = styled.h3`
   margin: 0;
+  color: #fff;
 `;
 export const H1memoji = styled.h1`
   margin: 0;
   font-size: 3em;
+  color: #fff;
 `;
 export const H2memoji = styled.h2`
   margin: 0;

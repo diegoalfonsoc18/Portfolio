@@ -25,13 +25,21 @@ export const Wrapper = styled.div`
 
 export const LogoContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
-  width: 180px;
+  width: 120px;
 `;
+
+export const LogoCode = styled.figure`
+  display: flex;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+`;
+
 export const ContainerMenu = styled.div`
   justify-content: space-around;
   align-items: center;
@@ -48,7 +56,7 @@ export const Menu = styled.ul`
   align-items: center;
   justify-content: space-around;
   font-size: 1rem;
-  color: #000;
+  color: #fff;
   font-family: sans-serif;
   font-weight: bold;
 `;
@@ -75,6 +83,18 @@ export const MenuItemLink = styled.a`
   &.icon-link {
     color: #222016;
     font-size: 20px;
+  }
+
+  &.icon-linkedin {
+    color: #1ee40e;
+  }
+
+  &.icon-gmail {
+    color: #1ee40e;
+  }
+
+  &.icon-gitHub {
+    color: #1ee40e;
   }
 `;
 
@@ -107,4 +127,7 @@ export const MenuItemLinkC = styled.a`
 
   border-radius: 7px;
   display: inline-block;
+
+  &.icon-linkedin {
+    color: #fff;
 `;
