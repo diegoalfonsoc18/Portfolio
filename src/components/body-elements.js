@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Sect = styled.div`
   width: 100%;
-  height: 400px;
+  margin-top: 10px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,18 +58,19 @@ export const ContainerImg = styled.article`
   }
 `;
 export const MemojiMain = styled.img`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   object-fit: cover;
-  width: 70%;
-  height: 85%;
+  height: 82%;
+  padding: 10px;
 `;
 export const Memoji = styled.img`
   position: absolute;
-  width: 320px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 345px;
   transform: translateY(25%);
   transition: 0.3s ease;
   opacity: 0;
