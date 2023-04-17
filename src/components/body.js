@@ -26,8 +26,7 @@ const Body = () => {
             <GrGithub
               style={{
                 color: "rgba(0,157,35,1)",
-                height: "30px",
-                width: "30px",
+                fontSize: "25px",
                 marginBottom: "5px",
               }}
             />
@@ -39,8 +38,7 @@ const Body = () => {
             <GrLinkedin
               style={{
                 color: "rgba(0, 157, 35, 1)",
-                height: "30px",
-                width: "30px",
+                fontSize: "25px",
                 marginBottom: "5px",
               }}
             />
@@ -52,8 +50,7 @@ const Body = () => {
             <BsDiscord
               style={{
                 color: "rgba(0,157,35,1)",
-                height: "30px",
-                width: "30px",
+                fontSize: "25px",
                 marginBottom: "5px",
               }}
             />
@@ -71,7 +68,7 @@ const Body = () => {
         </SectionBody>
         <SectionBody className="container-two">
           <LinkIcon>
-            <MailText style={{ marginBottom: "5px" }}>
+            <MailText style={{ marginBottom: "5px", fontSize: "15px" }}>
               dlalfonso57@gmail.com
             </MailText>
           </LinkIcon>

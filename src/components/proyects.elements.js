@@ -1,30 +1,44 @@
 import styled from "styled-components";
 
-export const SectionProyects = styled.section`
+export const SectionProyects = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
 `;
 
 export const TitleProjects = styled.h2`
   display: flex;
-  color: #fff;
   justify-content: center;
+  color: #fff;
 `;
 export const WrapperProyects = styled.div`
-  display: grid;
-  height: 1000px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  grid-template-columns: 350px 350px;
-  grid-template-rows: 350px 350px;
-  column-gap: 30px;
-  row-gap: 30px;
-`;
-export const ProyectImg = styled.img`
   width: 100%;
-  height: 100%;
+  gap: 20px;
+  row-gap: 20px;
+
+  @media (min-width: 640px) {
+    display: grid;
+    height: 1000px;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 350px 350px;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+`;
+
+export const ProjectsWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const ProyectImg = styled.img`
+  width: 250px;
+  height: 250px;
   border-radius: 10px;
   border: solid 0.1px #5b5b5b;
   &:hover {
@@ -35,4 +49,6 @@ export const ProyectImg = styled.img`
 
 export const LinkProyects = styled.a`
   cursor: pointer;
+  width: 250px;
+  height: 250px;
 `;

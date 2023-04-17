@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Sect = styled.div`
   width: 100%;
-  height: 730px;
+  height: 770px;
   display: flex;
 
   margin: 0;
@@ -18,7 +18,6 @@ export const BodySection = styled.div`
 
 export const SectionBody = styled.div`
   display: flex;
-
   width: 100%;
   height: 600px;
   flex-direction: column;
@@ -29,18 +28,16 @@ export const SectionBody = styled.div`
     align-items: center;
     justify-content: center;
     position: fixed;
-    right: 75%;
+    right: 90%;
     top: 500px;
-    width: 33%;
+    width: auto;
   }
 
   &.container-emoji {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-
-    width: 33%;
+    align-items: center;
+    width: 60%;
     height: 100%;
   }
   &.container-two {
@@ -49,16 +46,16 @@ export const SectionBody = styled.div`
     align-items: center;
     justify-content: center;
     position: fixed;
-    right: 20%;
+    right: 2%;
     top: 500px;
-    width: 33%;
+    width: auto;
   }
 `;
 
 export const LineaVertical = styled.hr`
   border: none;
   border-left: 2px solid rgba(0, 157, 35, 1);
-  height: 100vh;
+  height: 1000vh;
   margin: 0;
 `;
 
@@ -82,12 +79,12 @@ export const Paragraph = styled.h3`
 `;
 export const H1memoji = styled.h1`
   margin: 0;
-  font-size: 3em;
+  font-size: 2em;
   color: #fff;
 `;
 export const H2memoji = styled.h2`
   margin: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   background: linear-gradient(
     90deg,
     rgba(75, 168, 16, 1) 0%,
@@ -129,7 +126,7 @@ export const MemojiMain = styled.img`
   align-items: center;
   border-radius: 4px;
   object-fit: cover;
-  height: 82%;
+  height: 60%;
   padding: 10px;
 
   @media (max-width: 640px) {
@@ -139,7 +136,7 @@ export const Memoji = styled.img`
   position: absolute;
   display: flex;
   justify-content: center;
-  width: 345px;
+  width: 250px;
   transform: translateY(25%);
   transition: 0.3s ease;
   opacity: 0;
