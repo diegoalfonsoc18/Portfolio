@@ -8,6 +8,7 @@ export const Sect = styled.div`
   margin: 0;
 `;
 
+export const LinkIcon = styled.a``;
 export const SectionBody = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,14 +17,35 @@ export const SectionBody = styled.div`
 
   &.container-one {
     position: fixed;
-    right: 930px;
+    right: 90%;
     top: 600px;
   }
   &.container-two {
     position: fixed;
-    left: 930px;
+    left: 90%;
     top: 600px;
   }
+`;
+
+export const LineaVertical = styled.hr`
+  border: none;
+  border-left: 2px solid rgba(0, 157, 35, 1);
+  height: 100vh;
+  margin: 0;
+`;
+
+export const MailText = styled.p`
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  background: linear-gradient(
+    90deg,
+    rgba(75, 168, 16, 1) 0%,
+    rgba(26, 235, 19, 1) 45%,
+    rgba(39, 191, 22, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 export const Paragraph = styled.h3`
