@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {
   Container,
   LogoContainer,
@@ -11,11 +12,13 @@ import {
   DropdownContactli,
   ContainerMenu,
   LogoCode,
+  ResponsiveIcon,
 } from "./Navbar.elements";
 // import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { GrLinkedin, GrGithub, GrMail } from "react-icons/gr";
 // import { DiJavascript } from "react-icons/di";
 import code from "../code(1).png";
+import { BiMenu } from "react-icons/bi";
 
 const Navbar = () => {
   const [openContact, setOpenContact] = useState(false);
@@ -31,6 +34,15 @@ const Navbar = () => {
           <DiJavascript style={{ fontSize: "44px", color: "#f5cf0d" }} />
           <FaReact style={{ fontSize: "40px", color: "#0ddcf5" }} /> */}
         </LogoContainer>
+        <ResponsiveIcon>
+          <BiMenu
+            style={{
+              color: "rgba(0, 157, 35, 1)",
+              height: "30px",
+              width: "30px",
+            }}
+          />
+        </ResponsiveIcon>
         <ContainerMenu>
           <Menu>
             <MenuItem>

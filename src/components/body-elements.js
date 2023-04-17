@@ -1,29 +1,57 @@
 import styled from "styled-components";
 
 export const Sect = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 730px;
   display: flex;
-  justify-content: space-around;
+
   margin: 0;
 `;
 
 export const LinkIcon = styled.a``;
+export const BodySection = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
 export const SectionBody = styled.div`
   display: flex;
+
+  width: 100%;
+  height: 600px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   &.container-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    right: 90%;
-    top: 600px;
+    right: 75%;
+    top: 500px;
+    width: 33%;
+  }
+
+  &.container-emoji {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 33%;
+    height: 100%;
   }
   &.container-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    left: 90%;
-    top: 600px;
+    right: 20%;
+    top: 500px;
+    width: 33%;
   }
 `;
 
@@ -103,6 +131,9 @@ export const MemojiMain = styled.img`
   object-fit: cover;
   height: 82%;
   padding: 10px;
+
+  @media (max-width: 640px) {
+  }
 `;
 export const Memoji = styled.img`
   position: absolute;

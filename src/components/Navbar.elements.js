@@ -1,26 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  height: 100px;
-
-  border-radius: 7px;
-  justify-content: center;
+  height: 60px;
 `;
 
 export const Wrapper = styled.div`
   display: flex;
-  height: 100%;
-  width: 100%;
-  max-width: 1300px
-  flex-wrap: wrap;
   justify-content: space-between;
-  
-  
-  
-
+  height: 100%;
 `;
 
 export const LogoContainer = styled.div`
@@ -30,14 +18,19 @@ export const LogoContainer = styled.div`
   font-size: 1.2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
-  width: 120px;
+  width: 100px;
 `;
 
 export const LogoCode = styled.figure`
   display: flex;
   margin: 0;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: 640px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 export const ContainerMenu = styled.div`
@@ -47,7 +40,19 @@ export const ContainerMenu = styled.div`
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   width: 250px;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
 `;
+export const ResponsiveIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100%;
+`;
+
 export const Menu = styled.ul`
   height: 100%;
   width: 100%;
