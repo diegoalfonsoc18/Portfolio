@@ -1,13 +1,29 @@
 import styled from "styled-components";
 
 export const Sect = styled.div`
-  width: 100%;
-  margin-top: 10px;
-  height: 700px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+`;
+
+export const SectionBody = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  &.container-one {
+    position: fixed;
+    right: 930px;
+    top: 600px;
+  }
+  &.container-two {
+    position: fixed;
+    left: 930px;
+    top: 600px;
+  }
 `;
 
 export const Paragraph = styled.h3`

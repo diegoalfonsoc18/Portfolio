@@ -37,7 +37,7 @@ const Navbar = () => {
               <MenuItemLink>About me</MenuItemLink>
             </MenuItem>
             <MenuItem>
-              <MenuItemLink>Portfolio</MenuItemLink>
+              <MenuItemLink href="#porfolio">Portfolio</MenuItemLink>
             </MenuItem>
             <MenuItem>
               <MenuItemLink

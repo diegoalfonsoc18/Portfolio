@@ -76,15 +76,6 @@ export const MenuItemLink = styled.a`
   border-radius: 7px;
   display: inline-block;
 
-  &.li-contact {
-    position: absolute;
-  }
-
-  &.icon-link {
-    color: #222016;
-    font-size: 20px;
-  }
-
   &.icon-linkedin {
     color: #1ee40e;
   }
@@ -112,19 +103,16 @@ export const DropdownContactUl = styled.ul`
   display: flex;
   width: 100px;
   justify-content: space-around;
-
   position: relative;
 `;
 export const DropdownContactli = styled.li`
   display: flex;
-
   flex-direction: colum;
 `;
 
 export const MenuItemLinkC = styled.a`
   text-decoration: none;
   position: fixed;
-
   border-radius: 7px;
   display: inline-block;
 
