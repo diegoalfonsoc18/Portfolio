@@ -46,7 +46,7 @@ export const SectionBody = styled.div`
     align-items: center;
     justify-content: center;
     position: fixed;
-    right: 2%;
+    right: 1%;
     top: 500px;
     width: auto;
   }

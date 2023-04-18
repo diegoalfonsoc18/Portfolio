@@ -14,9 +14,7 @@ import {
   LogoCode,
   ResponsiveIcon,
 } from "./Navbar.elements";
-// import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { GrLinkedin, GrGithub, GrMail } from "react-icons/gr";
-// import { DiJavascript } from "react-icons/di";
 import code from "../code(1).png";
 import { BiMenu } from "react-icons/bi";
 
@@ -29,10 +27,6 @@ const Navbar = () => {
           <LogoCode>
             <img src={code} alt="code" className="logo" />
           </LogoCode>
-          {/* <FaHtml5 style={{ fontSize: "40px", color: "#f74d0d" }} />
-          <FaCss3Alt style={{ fontSize: "40px", color: "#0097ff" }} />
-          <DiJavascript style={{ fontSize: "44px", color: "#f5cf0d" }} />
-          <FaReact style={{ fontSize: "40px", color: "#0ddcf5" }} /> */}
         </LogoContainer>
         <ResponsiveIcon>
           <BiMenu
