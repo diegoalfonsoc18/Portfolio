@@ -13,6 +13,7 @@ import {
   ContainerMenu,
   LogoCode,
   ResponsiveIcon,
+  ContainerResponsive,
 } from "./Navbar.elements";
 import { GrLinkedin, GrGithub, GrMail } from "react-icons/gr";
 import code from "../code(1).png";
@@ -20,6 +21,7 @@ import { BiMenu } from "react-icons/bi";
 
 const Navbar = () => {
   const [openContact, setOpenContact] = useState(false);
+  const [openNavbar, setOpenNavbar] = useState(false);
   return (
     <Container>
       <Wrapper>
@@ -28,7 +30,11 @@ const Navbar = () => {
             <img src={code} alt="code" className="logo" />
           </LogoCode>
         </LogoContainer>
-        <ResponsiveIcon>
+        <ResponsiveIcon
+          onClick={() => {
+            setOpenNavbar(!openNavbar);
+          }}
+        >
           <BiMenu
             style={{
               color: "rgba(0, 157, 35, 1)",
@@ -37,6 +43,7 @@ const Navbar = () => {
             }}
           />
         </ResponsiveIcon>
+
         <ContainerMenu>
           <Menu>
             <MenuItem>
@@ -89,6 +96,15 @@ const Navbar = () => {
           </Menu>
         </ContainerMenu>
       </Wrapper>
+      {openNavbar && (
+        <ContainerResponsive>
+          <Menu className="menu-mobile">
+            <MenuItem>About me</MenuItem>
+            <MenuItem>Portfolio</MenuItem>
+            <MenuItem>Contact</MenuItem>
+          </Menu>
+        </ContainerResponsive>
+      )}
     </Container>
   );
 };

@@ -64,6 +64,21 @@ export const Menu = styled.ul`
   color: #fff;
   font-family: sans-serif;
   font-weight: bold;
+
+  &.menu-mobile {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: 0;
+  }
+`;
+
+export const ContainerResponsive = styled.div`
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  height: 40px;
 `;
 
 export const MenuItem = styled.li`
