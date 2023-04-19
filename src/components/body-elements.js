@@ -8,7 +8,11 @@ export const Sect = styled.div`
   margin: 0;
 `;
 
-export const LinkIcon = styled.a``;
+export const LinkIcon = styled.a`
+  &.discord {
+    background-color: #cc0;
+  }
+`;
 export const BodySection = styled.div`
   width: 100%;
   height: 100%;

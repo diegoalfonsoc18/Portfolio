@@ -1,8 +1,14 @@
 import React from "react";
+import styled from "styled-components";
 
+const Svg = styled.svg`
+  :hover {
+    transform: translateY(-3px) scale(1.05);
+  }
+`;
 const LinkedinIcon = () => {
   return (
-    <svg
+    <Svg
       xmlns="http://www.w3.org/2000/svg"
       // xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0,0,256,256"
@@ -95,7 +101,7 @@ const LinkedinIcon = () => {
           ></path>
         </g>
       </g>
-    </svg>
+    </Svg>
   );
 };
 

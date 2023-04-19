@@ -13,8 +13,6 @@ import {
   LinkIcon,
   BodySection,
 } from "./body-elements";
-import { GrLinkedin } from "react-icons/gr";
-
 import memoji from "../memojic-mac.png";
 import memoji3 from "../memoji3.png";
 import GithubIcon from "../icon/GithubIcon";
@@ -38,7 +36,7 @@ const Body = () => {
             href="https://discordapp.com/users/984941402783895642"
             target="_blank"
           >
-            <DiscordIcon />
+            <DiscordIcon className="discord" />
           </LinkIcon>
           <LineaVertical />
         </SectionBody>

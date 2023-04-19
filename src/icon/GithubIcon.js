@@ -1,8 +1,15 @@
 import React from "react";
+import styled from "styled-components";
+
+const Svg = styled.svg`
+  :hover {
+    transform: translateY(-3px) scale(1.05);
+  }
+`;
 
 const GithubIcon = () => {
   return (
-    <svg
+    <Svg
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
@@ -61,7 +68,7 @@ const GithubIcon = () => {
           ></path>
         </g>
       </g>
-    </svg>
+    </Svg>
   );
 };
 

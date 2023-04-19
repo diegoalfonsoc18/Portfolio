@@ -1,8 +1,15 @@
 import React from "react";
+import styled from "styled-components";
+
+const SvgD = styled.svg`
+  :hover {
+    transform: translateY(-3px) scale(1.05);
+  }
+`;
 
 const DiscordIcon = () => {
   return (
-    <svg
+    <SvgD
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
@@ -77,7 +84,7 @@ const DiscordIcon = () => {
           ></path>
         </g>
       </g>
-    </svg>
+    </SvgD>
   );
 };
 
