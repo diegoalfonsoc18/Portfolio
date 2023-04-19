@@ -51,6 +51,10 @@ export const ResponsiveIcon = styled.div`
   justify-content: center;
   width: 100px;
   height: 100%;
+
+  @media (min-width: 640px) {
+    display: none;
+  }
 `;
 
 export const Menu = styled.ul`

@@ -13,47 +13,32 @@ import {
   LinkIcon,
   BodySection,
 } from "./body-elements";
-import { GrLinkedin, GrGithub } from "react-icons/gr";
-import { BsDiscord } from "react-icons/bs";
+import { GrLinkedin } from "react-icons/gr";
+
 import memoji from "../memojic-mac.png";
 import memoji3 from "../memoji3.png";
+import GithubIcon from "../icon/GithubIcon";
+import LinkedinIcon from "../icon/LinkedinIcon";
+import DiscordIcon from "../icon/DiscordIcon";
 const Body = () => {
   return (
     <Sect>
       <BodySection>
         <SectionBody className="container-one">
           <LinkIcon href="https://github.com/diegoalfonsoc18" target="_blank">
-            <GrGithub
-              style={{
-                color: "rgba(0,157,35,1)",
-                fontSize: "25px",
-                marginBottom: "5px",
-              }}
-            />
+            <GithubIcon />
           </LinkIcon>
           <LinkIcon
             href="https://www.linkedin.com/in/diego-alfonso-castillo/"
             target="_blank"
           >
-            <GrLinkedin
-              style={{
-                color: "rgba(0, 157, 35, 1)",
-                fontSize: "25px",
-                marginBottom: "5px",
-              }}
-            />
+            <LinkedinIcon />
           </LinkIcon>
           <LinkIcon
             href="https://discordapp.com/users/984941402783895642"
             target="_blank"
           >
-            <BsDiscord
-              style={{
-                color: "rgba(0,157,35,1)",
-                fontSize: "25px",
-                marginBottom: "5px",
-              }}
-            />
+            <DiscordIcon />
           </LinkIcon>
           <LineaVertical />
         </SectionBody>

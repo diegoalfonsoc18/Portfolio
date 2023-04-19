@@ -15,9 +15,10 @@ import {
   ResponsiveIcon,
   ContainerResponsive,
 } from "./Navbar.elements";
+import IconHamburger from "../icon/HamburgerIcon";
+
 import { GrLinkedin, GrGithub, GrMail } from "react-icons/gr";
 import code from "../code(1).png";
-import { BiMenu } from "react-icons/bi";
 
 const Navbar = () => {
   const [openContact, setOpenContact] = useState(false);
@@ -35,12 +36,12 @@ const Navbar = () => {
             setOpenNavbar(!openNavbar);
           }}
         >
-          <BiMenu
-            style={{
-              color: "rgba(0, 157, 35, 1)",
-              height: "30px",
-              width: "30px",
-            }}
+          <IconHamburger
+          // style={{
+          //   color: "rgba(0, 157, 35, 1)",
+          //   height: "30px",
+          //   width: "30px",
+          // }}
           />
         </ResponsiveIcon>
 
