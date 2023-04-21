@@ -36,13 +36,7 @@ const Navbar = () => {
             setOpenNavbar(!openNavbar);
           }}
         >
-          <IconHamburger
-          // style={{
-          //   color: "rgba(0, 157, 35, 1)",
-          //   height: "30px",
-          //   width: "30px",
-          // }}
-          />
+          <IconHamburger />
         </ResponsiveIcon>
 
         <ContainerMenu>

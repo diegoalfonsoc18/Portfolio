@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   height: 100%;
+  padding-top: 5px;
 `;
 
 export const LogoContainer = styled.div`
@@ -16,7 +17,6 @@ export const LogoContainer = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   width: 100px;
 `;
@@ -37,7 +37,6 @@ export const ContainerMenu = styled.div`
   justify-content: space-around;
   align-items: center;
   font-size: 1.2rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   width: 250px;
 
@@ -64,9 +63,9 @@ export const Menu = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #fff;
-  font-family: sans-serif;
+
   font-weight: bold;
 
   &.menu-mobile {
@@ -99,7 +98,8 @@ export const MenuItemLink = styled.a`
   position: relative;
   border-radius: 7px;
   display: inline-block;
-
+  text-decoration: none;
+  color: inherit;
   &.icon-linkedin {
     color: #1ee40e;
   }

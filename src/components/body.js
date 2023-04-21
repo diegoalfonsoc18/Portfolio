@@ -40,6 +40,14 @@ const Body = () => {
           </LinkIcon>
           <LineaVertical />
         </SectionBody>
+        <SectionBody className="container-two">
+          <LinkIcon>
+            <MailText style={{ marginBottom: "5px", fontSize: "15px" }}>
+              dlalfonso57@gmail.com
+            </MailText>
+          </LinkIcon>
+          <LineaVertical />
+        </SectionBody>
         <SectionBody className="container-emoji">
           <Paragraph>Hello 👋🏽 I'm</Paragraph>
           <H1memoji>Diego Alfonso</H1memoji>
@@ -48,14 +56,6 @@ const Body = () => {
             <MemojiMain src={memoji3}></MemojiMain>
             <Memoji src={memoji} />
           </ContainerImg>
-        </SectionBody>
-        <SectionBody className="container-two">
-          <LinkIcon>
-            <MailText style={{ marginBottom: "5px", fontSize: "15px" }}>
-              dlalfonso57@gmail.com
-            </MailText>
-          </LinkIcon>
-          <LineaVertical />
         </SectionBody>
       </BodySection>
     </Sect>

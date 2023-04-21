@@ -32,7 +32,7 @@ export const SectionBody = styled.div`
     align-items: center;
     justify-content: center;
     position: fixed;
-    right: 90%;
+    left: 5%;
     top: 500px;
     width: auto;
   }
@@ -50,7 +50,7 @@ export const SectionBody = styled.div`
     align-items: center;
     justify-content: center;
     position: fixed;
-    right: 5%;
+    left: 85%;
     top: 500px;
     width: auto;
   }
