@@ -50,9 +50,13 @@ export const SectionBody = styled.div`
     align-items: center;
     justify-content: center;
     position: fixed;
-    left: 85%;
+    left: 90%;
     top: 500px;
     width: auto;
+
+    @media (min-width: 1440px) {
+      left: 92%;
+    }
   }
 `;
 
