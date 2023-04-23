@@ -37,7 +37,9 @@ export const WrapperProyects = styled.div`
     display: grid;
     justify-items: center;
     height: auto;
-    max-width: 500px;
+    width: 70%;
+    height: 70%;
+    max-width: 700px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repaet(2, 1fr);
     grid-column-gap: 25px;
@@ -52,7 +54,7 @@ export const WrapperProyects = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repaet(2, 1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-row-gap: 30 px;
   }
 `;
 
@@ -60,7 +62,7 @@ export const ProjectItems = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 70%;
 
   @media (min-width: 600px) {
     width: 100%;
