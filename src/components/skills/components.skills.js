@@ -20,6 +20,10 @@ export const WrapperMain = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  @media (min-width: 1024px) {
+    width: 70%;
+  }
 `;
 export const TittleSkills = styled.h2`
   display: flex;
@@ -29,12 +33,18 @@ export const TittleSkills = styled.h2`
 `;
 export const ContainerItems = styled.div`
   display: flex;
-  width: 80%;
-  justify-content: space-around;
   gap: 5px;
-@media (min-width: 600px) {
-  width: 60%;
-}
-  @media (min-width: 1300px) {
-    width: 40%;
+
+  &.skills-container {
+    justify-content: space-around;
+
+    @media (min-width: 740px) {
+      width: 40%;
+    }
+  }
+
+  &.others-container {
+    justify-content: space-evenly;
+    width: 30%;
+  }
 `;

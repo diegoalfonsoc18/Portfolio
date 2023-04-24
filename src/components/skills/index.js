@@ -19,7 +19,7 @@ const Skills = () => {
       <ContainerSkills>
         <WrapperMain>
           <TittleSkills>My Skills</TittleSkills>
-          <ContainerItems>
+          <ContainerItems className="skills-container">
             <FaHtml5 style={{ fontSize: "30px", color: "#f74d0d" }} />
             <FaCss3Alt style={{ fontSize: "30px", color: "#0097ff" }} />
             <DiJavascript style={{ fontSize: "30px", color: "#f5cf0d" }} />
@@ -28,7 +28,7 @@ const Skills = () => {
         </WrapperMain>
         <WrapperMain>
           <TittleSkills>Others</TittleSkills>
-          <ContainerItems>
+          <ContainerItems className="others-container">
             <FaWordpress style={{ color: "#0097ff", fontSize: "30px" }} />
             <FaGithubSquare style={{ color: "#fff", fontSize: "30px" }} />
           </ContainerItems>
