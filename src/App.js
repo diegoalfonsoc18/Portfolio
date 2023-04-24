@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Body from "./components/body";
 import Proyects from "./components/proyects";
 import Skills from "./components/skills";
-
+import FormSection from "./components/Form";
 function App() {
   return (
     <div>
@@ -13,6 +13,7 @@ function App() {
       <Proyects />
       <Skills />
       <Contact />
+      <FormSection />
     </div>
   );
 }
