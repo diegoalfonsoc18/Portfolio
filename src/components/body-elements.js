@@ -32,9 +32,13 @@ export const SectionBody = styled.div`
     align-items: center;
     justify-content: center;
     position: fixed;
-    left: 5%;
-    top: 500px;
-    width: auto;
+    top: 50%;
+    right: 0;
+    width: 185%;
+    height: 100%;
+    
+
+
   }
 
   &.container-emoji {
@@ -50,12 +54,12 @@ export const SectionBody = styled.div`
     align-items: center;
     justify-content: center;
     position: fixed;
-    left: 90%;
-    top: 500px;
-    width: auto;
-
-    @media (min-width: 1440px) {
-      left: 92%;
+    top: 50%;
+    right: 0;
+    width: 15%;
+    height: 100%;
+ 
+    
     }
   }
 `;
