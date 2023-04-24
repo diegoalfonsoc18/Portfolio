@@ -4,15 +4,11 @@ export const Sect = styled.div`
   width: 100%;
   height: 770px;
   display: flex;
-
   margin: 0;
 `;
 
-export const LinkIcon = styled.a`
-  &.discord {
-    background-color: #cc0;
-  }
-`;
+export const LinkIcon = styled.a``;
+
 export const BodySection = styled.div`
   width: 100%;
   height: 100%;
@@ -28,7 +24,6 @@ export const SectionBody = styled.div`
 
   &.container-one {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -36,9 +31,6 @@ export const SectionBody = styled.div`
     right: 0;
     width: 185%;
     height: 100%;
-    
-
-
   }
 
   &.container-emoji {
@@ -58,9 +50,6 @@ export const SectionBody = styled.div`
     right: 0;
     width: 15%;
     height: 100%;
- 
-    
-    }
   }
 `;
 
