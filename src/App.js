@@ -1,19 +1,19 @@
 import "./App.css";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Body from "./components/body";
-import Proyects from "./components/proyects";
-import Skills from "./components/skills";
-import FormSection from "./components/Form";
+// import Proyects from "./components/proyects";
+// import Skills from "./components/skills";
+// import FormSection from "./components/Form";
 function App() {
   return (
     <div>
       <Navbar />
       <Body />
-      <Proyects />
+      {/* <Proyects />
       <Skills />
       <Contact />
-      <FormSection />
+      <FormSection /> */}
     </div>
   );
 }

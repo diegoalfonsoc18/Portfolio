@@ -1,5 +1,16 @@
 import styled from "styled-components";
 
+export const WrapperMain = styled.div`
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+`;
+
+export const WrapperColumnIcon = styled.div``;
+export const WrapperColumnEmail = styled.div``;
 export const Sect = styled.div`
   width: 100%;
   height: 770px;
