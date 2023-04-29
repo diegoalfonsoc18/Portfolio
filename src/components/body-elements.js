@@ -52,15 +52,6 @@ export const SectionBody = styled.div`
     height: 100%;
   }
   &.container-two {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 50%;
-    right: 0;
-    width: 15%;
-    height: 100%;
   }
 `;
 

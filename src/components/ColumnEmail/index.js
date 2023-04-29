@@ -1,15 +1,21 @@
-import { WrapperColumnEmail } from "./emailElements";
+import {
+  ContainerEmail,
+  LineaVertical,
+  LinkEmailIcon,
+  MailText,
+  WrapperColumnEmail,
+} from "./emailElements";
 const ColumnEmail = () => {
   return (
     <WrapperColumnEmail>
-      {/* <ContainerEmail className="container-two">
+      <ContainerEmail className="container-two">
         <LinkEmailIcon>
           <MailText style={{ marginBottom: "5px", fontSize: "15px" }}>
             dlalfonso57@gmail.com
           </MailText>
         </LinkEmailIcon>
         <LineaVertical />
-      </ContainerEmail> */}
+      </ContainerEmail>
     </WrapperColumnEmail>
   );
 };

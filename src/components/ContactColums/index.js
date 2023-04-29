@@ -1,24 +1,26 @@
 import {} from "./contactElements";
 import {
   ContainerColumn,
-  //   ContainerOne,
-  //   LinkIcon,
-  //   LineaVertical,
+  ContainerOne,
+  LinkIcon,
+  LineaVertical,
 } from "./contactElements";
-// import { GithubIcon, LinkedinIcon, DiscordIcon } from "/icons/github";
 
+import InkedinIcon from "./LinkedinIcon";
+import { DiscordIcon } from "./discord";
+import GithubIcon from "../icon/GithubIcon";
 const ContactItems = () => {
   return (
     <ContainerColumn>
-      {/* <ContainerOne className="container-one">
+      <ContainerOne className="container-one">
         <LinkIcon href="https://github.com/diegoalfonsoc18" target="_blank">
-          <GithubIcon />
+          <GithubIcon />s
         </LinkIcon>
         <LinkIcon
           href="https://www.linkedin.com/in/diego-alfonso-castillo/"
           target="_blank"
         >
-          <LinkedinIcon />
+          <InkedinIcon />
         </LinkIcon>
         <LinkIcon
           href="https://discordapp.com/users/984941402783895642"
@@ -27,7 +29,7 @@ const ContactItems = () => {
           <DiscordIcon className="discord" />
         </LinkIcon>
         <LineaVertical />
-      </ContainerOne> */}
+      </ContainerOne>
     </ContainerColumn>
   );
 };

@@ -8,9 +8,13 @@ export const ContainerColumn = styled.div`
 
 export const ContainerOne = styled.div`
   display: flex;
-  width: 100%;
-  height: 600px;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  width: 185%;
+  height: 100%;
 `;
 
 export const LinkIcon = styled.a``;
