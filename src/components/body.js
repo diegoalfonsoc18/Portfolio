@@ -15,6 +15,7 @@ import memoji from "../memojic-mac.png";
 import memoji3 from "../memoji3.png";
 import ContactItems from "./ContactColums";
 import ColumnEmail from "./ColumnEmail/index";
+import Proyects from "./proyects";
 const Body = () => {
   return (
     <WrapperMain>
@@ -31,6 +32,7 @@ const Body = () => {
             </ContainerImg>
           </SectionBody>
         </BodySection>
+        <Proyects></Proyects>
       </Sect>
       <ColumnEmail></ColumnEmail>
     </WrapperMain>

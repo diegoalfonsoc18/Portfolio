@@ -7,15 +7,21 @@ export const WrapperMain = styled.div`
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const WrapperColumnIcon = styled.div``;
 export const WrapperColumnEmail = styled.div``;
 export const Sect = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 770px;
+  height: 100vh;
   display: flex;
   margin: 0;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const LinkIcon = styled.a``;

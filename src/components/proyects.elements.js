@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SectionProjects = styled.div`
   display: flex;
   overflow-x: auto;
+  height: auto;
 `;
 
 export const LinkImg = styled.a``;

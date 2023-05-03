@@ -1,3 +1,5 @@
+import React from "react";
+
 import {} from "./contactElements";
 import {
   ContainerColumn,
@@ -6,27 +8,28 @@ import {
   LineaVertical,
 } from "./contactElements";
 
-import InkedinIcon from "./LinkedinIcon";
-import { DiscordIcon } from "./discord";
-import GithubIcon from "../icon/GithubIcon";
+import GithubIcon from "../../icon/GithubIcon";
+import LinkedinIcon from "../../icon/LinkedinIcon";
+import DiscordIcon from "../../icon/DiscordIcon";
+
 const ContactItems = () => {
   return (
     <ContainerColumn>
       <ContainerOne className="container-one">
         <LinkIcon href="https://github.com/diegoalfonsoc18" target="_blank">
-          <GithubIcon />s
+          <GithubIcon />
         </LinkIcon>
         <LinkIcon
           href="https://www.linkedin.com/in/diego-alfonso-castillo/"
           target="_blank"
         >
-          <InkedinIcon />
+          <LinkedinIcon />
         </LinkIcon>
         <LinkIcon
           href="https://discordapp.com/users/984941402783895642"
           target="_blank"
         >
-          <DiscordIcon className="discord" />
+          <DiscordIcon></DiscordIcon>
         </LinkIcon>
         <LineaVertical />
       </ContainerOne>

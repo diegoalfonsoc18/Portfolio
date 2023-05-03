@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const WrapperColumnEmail = styled.div`
   width: 100%;
   height: 100vh;
-  background: #cc0;
 `;
 
 export const ContainerEmail = styled.div`
@@ -12,7 +11,7 @@ export const ContainerEmail = styled.div`
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 50%;
+  top: 30%;
   right: 0;
   width: 15%;
   height: 100%;
@@ -37,6 +36,6 @@ export const MailText = styled.p`
 export const LineaVertical = styled.hr`
   border: none;
   border-left: 2px solid rgba(0, 157, 35, 1);
-  height: 1000vh;
+  height: 50%;
   margin: 0;
 `;
