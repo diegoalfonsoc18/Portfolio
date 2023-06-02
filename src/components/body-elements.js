@@ -17,7 +17,6 @@ export const Sect = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
   display: flex;
   margin: 0;
   justify-content: center;
@@ -28,7 +27,7 @@ export const LinkIcon = styled.a``;
 
 export const BodySection = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
 `;
@@ -78,7 +77,7 @@ export const MailText = styled.p`
     rgba(26, 235, 19, 1) 45%,
     rgba(39, 191, 22, 1) 100%
   );
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
 
@@ -100,7 +99,7 @@ export const H2memoji = styled.h2`
     rgba(26, 235, 19, 1) 45%,
     rgba(39, 191, 22, 1) 100%
   );
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
 
