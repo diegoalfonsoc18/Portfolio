@@ -1,7 +1,7 @@
 import "./App.css";
 // import Contact from "./components/Contact";
 import Navbar from "./components/Navbar/Navbar";
-import Body from "./components/body";
+import Body from "./components/body/body";
 // import Proyects from "./components/proyects";
 
 // import Skills from "./components/skills";
@@ -11,11 +11,6 @@ function App() {
     <div>
       <Navbar />
       <Body />
-
-      {/* <Proyects />
-      <Skills />
-      <Contact />
-      <FormSection /> */}
     </div>
   );
 }
