@@ -15,7 +15,7 @@ export const LinkImg = styled.a`
   position: sticky;
   object-fit: cover;
   border-radius: 5px;
-  scroll-snap-alignx: center;
+  scroll-snap-align: center;
 `;
 
 export const ImgProjects = styled.img`
