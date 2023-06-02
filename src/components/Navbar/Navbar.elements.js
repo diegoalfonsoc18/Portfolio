@@ -142,4 +142,5 @@ export const MenuItemLinkC = styled.a`
 
   &.icon-linkedin {
     color: #fff;
+  }
 `;

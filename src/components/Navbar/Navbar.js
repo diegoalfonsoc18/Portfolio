@@ -15,10 +15,10 @@ import {
   ResponsiveIcon,
   ContainerResponsive,
 } from "./Navbar.elements";
-import IconHamburger from "../icon/HamburgerIcon";
+import IconHamburger from "../../icon/HamburgerIcon";
 
 import { GrLinkedin, GrGithub, GrMail } from "react-icons/gr";
-import code from "../code(1).png";
+import code from "../../icon/code(1).png";
 
 const Navbar = () => {
   const [openContact, setOpenContact] = useState(false);
