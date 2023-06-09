@@ -11,14 +11,14 @@ import {
   DropdownContactUl,
   DropdownContactli,
   ContainerMenu,
-  LogoCode,
   ResponsiveIcon,
   ContainerResponsive,
+  LogoDev,
 } from "./Navbar.elements";
 import IconHamburger from "../../icon/HamburgerIcon";
 
 import { GrLinkedin, GrGithub, GrMail } from "react-icons/gr";
-import code from "../../icon/code(1).png";
+import code from "../../icon/code.png";
 
 const Navbar = () => {
   const [openContact, setOpenContact] = useState(false);
@@ -27,9 +27,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <LogoContainer>
-          <LogoCode>
-            <img src={code} alt="code" />
-          </LogoCode>
+          <LogoDev src={code} alt="logoDev" />
         </LogoContainer>
         <ResponsiveIcon
           onClick={() => {

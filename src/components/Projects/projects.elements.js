@@ -1,31 +1,40 @@
 import styled from "styled-components";
 
-export const SectionProjects = styled.div`
+export const Wrapper = styled.div`
   width: 100%;
-  height: 500px;
+  height: auto;
+  background-color: #cc0;
+`;
+
+export const WrapperSlider = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 780px;
 `;
 
-export const LinkImg = styled.a`
-  flex: 0 0 auto;
-  width: 300px;
-  margin-right: 20px;
-  scroll-snap-align: start;
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+export const WrapperImage = styled.div`
+  width: 200px;
+  height: 200px;
 `;
 
-export const ImgProjects = styled.img`
-  width: 100px;
-  height: 100px;
+export const Image = styled.img`
+  width: 100%;
+  height: 100%;
 `;
-export const Arrows = styled.figure`
-  display: flex;
-  width: 40px;
-  height: 40px;
+
+export const ItemImage = styled.div``;
+
+export const WrapperArrow = styled.div`
+  width: 30px;
+  height: 30px;
+`;
+export const ArrowRight = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+export const ArrowLeft = styled.img`
+  width: 100%;
+  height: 100%;
 `;

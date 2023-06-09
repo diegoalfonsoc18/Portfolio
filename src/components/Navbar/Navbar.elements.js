@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 60px;
 `;
@@ -8,8 +10,9 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  width: 90%;
   height: 100%;
-  padding-top: 5px;
+  padding: 10px 0;
 `;
 
 export const LogoContainer = styled.div`
@@ -18,19 +21,12 @@ export const LogoContainer = styled.div`
   align-items: center;
   font-size: 1.2rem;
   color: #000;
-  width: 100px;
+  width: 3rem;
 `;
 
-export const LogoCode = styled.figure`
-  display: flex;
-  margin: 0;
-  width: 40px;
-  height: 40px;
-
-  @media (min-width: 640px) {
-    width: 50px;
-    height: 50px;
-  }
+export const LogoDev = styled.img`
+  width: 100%;
+  height: 100%;
 `;
 
 export const ContainerMenu = styled.div`
@@ -48,7 +44,7 @@ export const ResponsiveIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: 2rem;
   height: 100%;
 
   @media (min-width: 640px) {

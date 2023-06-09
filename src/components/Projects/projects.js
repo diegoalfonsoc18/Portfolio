@@ -1,32 +1,40 @@
 import React from "react";
 import {
-  ImgProjects,
-  LinkImg,
-  SectionProjects,
-  Arrows,
+  Wrapper,
+  WrapperImage,
+  WrapperSlider,
+  Image,
+  ArrowLeft,
+  ArrowRight,
+  WrapperArrow,
 } from "./projects.elements";
-import ProyectoOne from "../../Img/index.png";
-import ProyectoTwo from "../../Img/proyecto2.png";
-import ProyectoThree from "../../Img/proyecto3.png";
-import ProyectoFour from "../../Img/proyecto4.png";
-import arrowL from "../../icon/flecha.png";
-import arrowR from "../../icon/flechaR.png";
+import ProjectOne from "../../Img/index.png";
+import ProjectTwo from "../../Img/proyecto2.png";
+import ProjectThree from "../../Img/proyecto3.png";
+import ProjectFour from "../../Img/proyecto4.png";
+import ProjectFive from "../../Img/proyecto5.png";
+import ArrowL from "../../icon/flecha.png";
+import ArrowR from "../../icon/flechaR.png";
 
 const Projects = () => {
   return (
-    <SectionProjects>
-      <Arrows>
-        <img src={arrowL} alt="arrowL" />
-      </Arrows>
-      {[ProyectoOne, ProyectoTwo, ProyectoThree, ProyectoFour].map((srcUrl) => (
-        <LinkImg>
-          <ImgProjects src={srcUrl} alt="img"></ImgProjects>
-        </LinkImg>
-      ))}
-      <Arrows>
-        <img src={arrowR} alt="arrowR" />
-      </Arrows>
-    </SectionProjects>
+    <Wrapper>
+      <WrapperSlider>
+        <WrapperArrow>
+          <ArrowLeft src={ArrowL} onClick={() => {}} />
+        </WrapperArrow>
+        {[ProjectOne, ProjectTwo, ProjectThree, ProjectFour, ProjectFive].map(
+          (srcUrl) => (
+            <WrapperImage>
+              <Image src={srcUrl}></Image>
+            </WrapperImage>
+          )
+        )}
+        <WrapperArrow>
+          <ArrowRight src={ArrowR} />
+        </WrapperArrow>
+      </WrapperSlider>
+    </Wrapper>
   );
 };
 export default Projects;
