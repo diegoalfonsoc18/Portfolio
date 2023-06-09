@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const SectionProjects = styled.div`
-  background-color: #cc0;
   width: 100%;
   height: 500px;
   display: flex;
@@ -11,8 +10,14 @@ export const SectionProjects = styled.div`
 `;
 
 export const LinkImg = styled.a`
-  width: 200px;
-  height: 200px;
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 `;
 
 export const ImgProjects = styled.img`
