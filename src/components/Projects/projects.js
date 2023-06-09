@@ -4,6 +4,7 @@ import {
   LinkImg,
   SectionProjects,
   Arrows,
+  WrapperCarrousel,
 } from "./projects.elements";
 import ProyectoOne from "../../Img/index.png";
 import ProyectoTwo from "../../Img/proyecto2.png";
@@ -15,17 +16,21 @@ import arrowR from "../../icon/flechaR.png";
 const Projects = () => {
   return (
     <SectionProjects>
-      <Arrows>
-        <img src={arrowL} alt="arrowL" />
-      </Arrows>
-      {[ProyectoOne, ProyectoTwo, ProyectoThree, ProyectoFour].map((srcUrl) => (
-        <LinkImg>
-          <ImgProjects src={srcUrl} alt="img"></ImgProjects>
-        </LinkImg>
-      ))}
-      <Arrows>
-        <img src={arrowR} alt="arrowR" />
-      </Arrows>
+      <WrapperCarrousel>
+        <Arrows>
+          <img src={arrowL} alt="arrowL" />
+        </Arrows>
+        {[ProyectoOne, ProyectoTwo, ProyectoThree, ProyectoFour].map(
+          (srcUrl) => (
+            <LinkImg>
+              <ImgProjects src={srcUrl} alt="img"></ImgProjects>
+            </LinkImg>
+          )
+        )}
+        <Arrows>
+          <img src={arrowR} alt="arrowR" />
+        </Arrows>
+      </WrapperCarrousel>
     </SectionProjects>
   );
 };
