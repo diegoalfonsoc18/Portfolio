@@ -28,7 +28,7 @@ const Navbar = () => {
       <Wrapper>
         <LogoContainer>
           <LogoCode>
-            <img src={code} alt="code" className="logo" />
+            <img src={code} alt="code" />
           </LogoCode>
         </LogoContainer>
         <ResponsiveIcon
