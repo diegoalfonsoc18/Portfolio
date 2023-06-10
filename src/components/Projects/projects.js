@@ -17,19 +17,27 @@ import ArrowL from "../../icon/flecha.png";
 import ArrowR from "../../icon/flechaR.png";
 
 const Projects = () => {
+  const imgs = [ProjectOne, ProjectTwo, ProjectThree, ProjectFour, ProjectFive];
+
   return (
     <Wrapper>
       <WrapperSlider>
         <WrapperArrow>
-          <ArrowLeft src={ArrowL} onClick={() => {}} />
+          <ArrowLeft
+            src={ArrowL}
+            onClick={() => {
+              console.log("hola");
+              const counter = imgs[0];
+              if (counter < 0) {
+              }
+            }}
+          />
         </WrapperArrow>
-        {[ProjectOne, ProjectTwo, ProjectThree, ProjectFour, ProjectFive].map(
-          (srcUrl) => (
-            <WrapperImage>
-              <Image src={srcUrl}></Image>
-            </WrapperImage>
-          )
-        )}
+        {imgs.map((srcUrl) => (
+          <WrapperImage>
+            <Image src={srcUrl}></Image>
+          </WrapperImage>
+        ))}
         <WrapperArrow>
           <ArrowRight src={ArrowR} />
         </WrapperArrow>

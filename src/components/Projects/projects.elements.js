@@ -15,8 +15,8 @@ export const WrapperSlider = styled.div`
 `;
 
 export const WrapperImage = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 `;
 
 export const Image = styled.img`
