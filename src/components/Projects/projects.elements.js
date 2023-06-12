@@ -1,34 +1,32 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: auto;
-  background-color: #cc0;
 `;
 
 export const WrapperSlider = styled.div`
   display: flex;
+  width: 80%;
   flex-direction: row;
-  width: 100%;
-  position: relative;
-  height: 780px;
+  /* flex-wrap: nowrap; */
 `;
 
 export const WrapperImage = styled.div`
-  width: 100px;
-  height: 100px;
+  width: 150px;
 `;
 
 export const Image = styled.img`
   width: 100%;
-  height: 100%;
 `;
 
 export const ItemImage = styled.div``;
 
 export const WrapperArrow = styled.div`
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
 `;
 export const ArrowRight = styled.img`
   width: 100%;

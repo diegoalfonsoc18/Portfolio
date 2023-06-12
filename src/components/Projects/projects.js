@@ -23,15 +23,7 @@ const Projects = () => {
     <Wrapper>
       <WrapperSlider>
         <WrapperArrow>
-          <ArrowLeft
-            src={ArrowL}
-            onClick={() => {
-              console.log("hola");
-              const counter = imgs[0];
-              if (counter < 0) {
-              }
-            }}
-          />
+          <ArrowLeft src={ArrowL} />
         </WrapperArrow>
         {imgs.map((srcUrl) => (
           <WrapperImage>
