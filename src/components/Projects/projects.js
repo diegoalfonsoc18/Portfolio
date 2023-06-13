@@ -4,17 +4,14 @@ import {
   WrapperImage,
   WrapperSlider,
   Image,
-  ArrowLeft,
-  ArrowRight,
-  WrapperArrow,
+  PointsUl,
+  PointsLi,
 } from "./projects.elements";
 import ProjectOne from "../../Img/index.png";
 import ProjectTwo from "../../Img/proyecto2.png";
 import ProjectThree from "../../Img/proyecto3.png";
 import ProjectFour from "../../Img/proyecto4.png";
 import ProjectFive from "../../Img/proyecto5.png";
-import ArrowL from "../../icon/flecha.png";
-import ArrowR from "../../icon/flechaR.png";
 
 const Projects = () => {
   const imgs = [ProjectOne, ProjectTwo, ProjectThree, ProjectFour, ProjectFive];
@@ -22,18 +19,16 @@ const Projects = () => {
   return (
     <Wrapper>
       <WrapperSlider>
-        <WrapperArrow>
-          <ArrowLeft src={ArrowL} />
-        </WrapperArrow>
         {imgs.map((srcUrl) => (
           <WrapperImage>
             <Image src={srcUrl}></Image>
           </WrapperImage>
         ))}
-        <WrapperArrow>
-          <ArrowRight src={ArrowR} />
-        </WrapperArrow>
       </WrapperSlider>
+      <PointsUl>
+        <PointsLi></PointsLi>
+        <PointsLi></PointsLi>
+      </PointsUl>
     </Wrapper>
   );
 };
