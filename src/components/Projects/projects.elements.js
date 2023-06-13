@@ -3,23 +3,26 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
 `;
 
 export const WrapperSlider = styled.div`
   display: flex;
-  width: 80%;
   flex-direction: row;
-  /* flex-wrap: nowrap; */
+  width: 300px; /* Ancho del contenedor */
+  height: 200px; /* Altura del contenedor */
+  position: relative;
+  overflow: hidden;
 `;
 
-export const WrapperImage = styled.div`
-  width: 150px;
-`;
+export const WrapperImage = styled.div``;
 
 export const Image = styled.img`
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 `;
 
 export const ItemImage = styled.div``;
