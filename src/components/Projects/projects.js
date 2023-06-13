@@ -15,17 +15,19 @@ import ProjectFive from "../../Img/proyecto5.png";
 
 const Projects = () => {
   const imgs = [ProjectOne, ProjectTwo, ProjectThree, ProjectFour, ProjectFive];
-
   return (
     <Wrapper>
       <WrapperSlider>
-        {imgs.map((srcUrl) => (
+        {imgs.map((img) => (
           <WrapperImage>
-            <Image src={srcUrl}></Image>
+            <Image src={img}></Image>
           </WrapperImage>
         ))}
       </WrapperSlider>
       <PointsUl>
+        <PointsLi></PointsLi>
+        <PointsLi></PointsLi>
+        <PointsLi></PointsLi>
         <PointsLi></PointsLi>
         <PointsLi></PointsLi>
       </PointsUl>

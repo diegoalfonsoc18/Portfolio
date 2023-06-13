@@ -26,8 +26,8 @@ const GithubIcon = () => {
           gradientUnits="userSpaceOnUse"
           id="color-1_52539_gr1"
         >
-          <stop offset="0" stop-color="#4ba810"></stop>
-          <stop offset="1" stop-color="#1aeb13"></stop>
+          <stop offset="0" stopColor="#4ba810"></stop>
+          <stop offset="1" stopColor="#1aeb13"></stop>
         </linearGradient>
         <linearGradient
           x1="32"
@@ -37,24 +37,24 @@ const GithubIcon = () => {
           gradientUnits="userSpaceOnUse"
           id="color-2_52539_gr2"
         >
-          <stop offset="0" stop-color="#27bf16"></stop>
-          <stop offset="1" stop-color="#1aeb13"></stop>
+          <stop offset="0" stopColor="#27bf16"></stop>
+          <stop offset="1" stopColor="#1aeb13"></stop>
         </linearGradient>
       </defs>
       <g
         fill="none"
-        fill-rule="nonzero"
+        fillRule="nonzero"
         stroke="3"
-        stroke-width="1"
-        stroke-linecap="round"
-        stroke-linejoin="miter"
-        stroke-miterlimit="10"
-        stroke-dasharray=""
-        stroke-dashoffset="0"
-        font-family="none"
-        font-weight="none"
-        font-size="none"
-        text-anchor="none"
+        strokeWidth="1"
+        strokeLinecap="round"
+        strokeLinejoin="miter"
+        strokeMiterlimit="10"
+        strokeDasharray=""
+        strokeDashoffset="0"
+        fontFamily="none"
+        fontWeight="none"
+        fontSize="none"
+        textAnchor="none"
         style={{ mixBlendMode: "normal" }}
       >
         <g transform="scale(4,4)">
