@@ -20,7 +20,7 @@ export const LogoContainer = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  color: #000;
+  color: var(--black);
   width: 3rem;
 `;
 
@@ -33,7 +33,7 @@ export const IconContainerMobile = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  color: #000;
+  color: var(--black);
   width: 3rem;
 `;
 export const IconMobile = styled.img`
@@ -45,7 +45,7 @@ export const ContainerMenu = styled.div`
   justify-content: space-around;
   align-items: center;
   font-size: 1.2rem;
-  color: #000;
+  color: var(--black);
   width: 250px;
 
   @media (max-width: 640px) {
@@ -72,7 +72,7 @@ export const Menu = styled.ul`
   align-items: center;
   justify-content: space-around;
   font-size: 1.2rem;
-  color: #fff;
+  color: var(--white);
 
   font-weight: bold;
 
@@ -109,15 +109,15 @@ export const MenuItemLink = styled.a`
   text-decoration: none;
   color: inherit;
   &.icon-linkedin {
-    color: #03c988;
+    color: var(--green);
   }
 
   &.icon-gmail {
-    color: #03c988;
+    color: var(--green);
   }
 
   &.icon-gitHub {
-    color: #03c988;
+    color: var(--green);
   }
 `;
 
@@ -149,6 +149,6 @@ export const MenuItemLinkC = styled.a`
   display: inline-block;
 
   &.icon-linkedin {
-    color: #fff;
+    color: var(--white);
   }
 `;

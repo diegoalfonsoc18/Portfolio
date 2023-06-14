@@ -84,12 +84,12 @@ export const MailText = styled.p`
 
 export const Paragraph = styled.h3`
   margin: 0;
-  color: #fff;
+  color: var(--white);
 `;
 export const H1memoji = styled.h1`
   margin: 0;
   font-size: 2em;
-  color: #fff;
+  color: var(--white);
 `;
 export const H2memoji = styled.h2`
   margin: 0;

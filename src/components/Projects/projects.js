@@ -25,9 +25,21 @@ const Projects = () => {
       id: 1,
       link: "https://diegoalfonsoc18.github.io/landing/",
     },
-    { img: ProjectTwo, id: 2 },
-    { img: ProjectThree, id: 3 },
-    { img: ProjectFour, id: 4 },
+    {
+      img: ProjectTwo,
+      id: 2,
+      link: "https://diegoalfonsoc18.github.io/tribute-page/",
+    },
+    {
+      img: ProjectThree,
+      id: 3,
+      link: "https://diegoalfonsoc18.github.io/Project-portfolio/",
+    },
+    {
+      img: ProjectFour,
+      id: 4,
+      link: "https://diegoalfonsoc18.github.io/Hackathon-2023/",
+    },
   ];
 
   return (
