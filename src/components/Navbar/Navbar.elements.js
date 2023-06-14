@@ -28,6 +28,18 @@ export const LogoDev = styled.img`
   width: 100%;
   height: 100%;
 `;
+export const IconContainerMobile = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #000;
+  width: 3rem;
+`;
+export const IconMobile = styled.img`
+  width: 100%;
+  height: 100%;
+`;
 
 export const ContainerMenu = styled.div`
   justify-content: space-around;
@@ -97,15 +109,15 @@ export const MenuItemLink = styled.a`
   text-decoration: none;
   color: inherit;
   &.icon-linkedin {
-    color: #1ee40e;
+    color: #03c988;
   }
 
   &.icon-gmail {
-    color: #1ee40e;
+    color: #03c988;
   }
 
   &.icon-gitHub {
-    color: #1ee40e;
+    color: #03c988;
   }
 `;
 

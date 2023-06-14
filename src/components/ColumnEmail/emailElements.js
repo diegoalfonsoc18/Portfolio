@@ -23,19 +23,12 @@ export const MailText = styled.p`
   writing-mode: vertical-rl;
   text-orientation: mixed;
   white-space: nowrap;
-  background: linear-gradient(
-    90deg,
-    rgba(75, 168, 16, 1) 0%,
-    rgba(26, 235, 19, 1) 45%,
-    rgba(39, 191, 22, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--green);
 `;
 
 export const LineaVertical = styled.hr`
   border: none;
-  border-left: 2px solid rgba(0, 157, 35, 1);
+  border-left: 2px solid var(--green);
   height: 50%;
   margin: 0;
 `;

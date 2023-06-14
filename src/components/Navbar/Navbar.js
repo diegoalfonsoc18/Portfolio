@@ -14,11 +14,13 @@ import {
   ResponsiveIcon,
   ContainerResponsive,
   LogoDev,
+  IconContainerMobile,
+  IconMobile,
 } from "./Navbar.elements";
-import IconHamburger from "../../icon/HamburgerIcon";
 
 import { GrLinkedin, GrGithub, GrMail } from "react-icons/gr";
 import code from "../../icon/code.png";
+import iconMobile from "../../icon/menuMobile.png";
 
 const Navbar = () => {
   const [openContact, setOpenContact] = useState(false);
@@ -34,7 +36,9 @@ const Navbar = () => {
             setOpenNavbar(!openNavbar);
           }}
         >
-          <IconHamburger />
+          <IconContainerMobile>
+            <IconMobile src={iconMobile} />
+          </IconContainerMobile>
         </ResponsiveIcon>
 
         <ContainerMenu>

@@ -35,12 +35,24 @@ export const Image = styled.img`
   border-radius: 10px;
 `;
 
+export const WrapperInfo = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0.7em;
+`;
+
+export const IconCard = styled.img`
+  height: 2em;
+  width: 2em;
+`;
 export const Button = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  width: 35%;
+  height: 3em;
+  width: 6em;
   font-size: 16px;
   background: rgb(2, 36, 0);
   background: linear-gradient(
@@ -50,7 +62,7 @@ export const Button = styled.a`
     rgba(0, 255, 49, 1) 100%
   );
   border-radius: 30px;
-  margin-top: 1em;
+
   box-shadow: 0 13px 26px rgba(0, 0, 0, 0.16), 0 3px 6px;
 
   &.button-hover:hover {

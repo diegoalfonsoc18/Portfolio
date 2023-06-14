@@ -7,17 +7,24 @@ import {
   PointsUl,
   PointsLi,
   Button,
+  WrapperInfo,
+  IconCard,
 } from "./projects.elements";
 import ProjectOne from "../../Img/index.png";
 import ProjectTwo from "../../Img/proyecto3.png";
 import ProjectThree from "../../Img/proyecto4.png";
 import ProjectFour from "../../Img/proyecto5.png";
+import IconGitHub from "../../icon/github-card.png";
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const imgs = [
-    { img: ProjectOne, id: 1 },
+    {
+      img: ProjectOne,
+      id: 1,
+      link: "https://diegoalfonsoc18.github.io/landing/",
+    },
     { img: ProjectTwo, id: 2 },
     { img: ProjectThree, id: 3 },
     { img: ProjectFour, id: 4 },
@@ -28,7 +35,16 @@ const Projects = () => {
       <WrapperSlider>
         <WrapperCard>
           <Image src={imgs[currentIndex].img}></Image>
-          <Button className="button-hover">Go</Button>
+          <WrapperInfo>
+            <IconCard src={IconGitHub} />
+            <Button
+              href={imgs[currentIndex].link}
+              target="_blank"
+              className="button-hover"
+            >
+              Go
+            </Button>
+          </WrapperInfo>
         </WrapperCard>
       </WrapperSlider>
 

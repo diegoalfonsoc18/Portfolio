@@ -1,3 +1,7 @@
+:root {
+  --green: #03c988;
+}
+
 * {
   border: 0;
   padding: 0;

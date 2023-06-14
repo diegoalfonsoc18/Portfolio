@@ -16,12 +16,23 @@ export const ContainerOne = styled.div`
   width: 15%;
   height: 100%;
 `;
-
-export const LinkIcon = styled.a``;
+export const WrapperIcons = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+export const LinkIcon = styled.a`
+  width: 1.5em;
+  height: 1.5em;
+  margin-bottom: 0.4em;
+`;
+export const IconContact = styled.img`
+  width: 100%;
+  height: 100%;
+`;
 
 export const LineaVertical = styled.hr`
   border: none;
-  border-left: 2px solid rgba(0, 157, 35, 1);
+  border-left: 2px solid var(--green);
   height: 50%;
   margin: 0;
 `;
