@@ -12,8 +12,8 @@ export const ContainerOne = styled.div`
   justify-content: center;
   position: fixed;
   top: 30%;
-  right: 0;
-  width: 185%;
+  left: 0;
+  width: 15%;
   height: 100%;
 `;
 

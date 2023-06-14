@@ -6,7 +6,6 @@ export const Wrapper = styled.div`
 `;
 
 export const WrapperSlider = styled.div`
-  width: 500%;
   background-color: orange;
   display: flex;
   flex-direction: row nowrap;
