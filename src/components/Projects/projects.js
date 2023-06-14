@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Wrapper,
   WrapperImage,
@@ -14,22 +14,32 @@ import ProjectFour from "../../Img/proyecto4.png";
 import ProjectFive from "../../Img/proyecto5.png";
 
 const Projects = () => {
-  const imgs = [ProjectOne, ProjectTwo, ProjectThree, ProjectFour, ProjectFive];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const imgs = [
+    { img: ProjectOne, id: 1 },
+    { img: ProjectTwo, id: 2 },
+    { img: ProjectThree, id: 3 },
+    { img: ProjectFour, id: 4 },
+    { img: ProjectFive, id: 5 },
+  ];
+
   return (
     <Wrapper>
       <WrapperSlider>
-        {imgs.map((img) => (
-          <WrapperImage>
-            <Image src={img}></Image>
-          </WrapperImage>
-        ))}
+        <WrapperImage>
+          <Image src={imgs[currentIndex].img}></Image>
+        </WrapperImage>
       </WrapperSlider>
+
       <PointsUl>
-        <PointsLi></PointsLi>
-        <PointsLi></PointsLi>
-        <PointsLi></PointsLi>
-        <PointsLi></PointsLi>
-        <PointsLi></PointsLi>
+        {imgs.map((_, index) => (
+          <PointsLi
+            onClick={() => {
+              setCurrentIndex(index);
+            }}
+          ></PointsLi>
+        ))}
       </PointsUl>
     </Wrapper>
   );

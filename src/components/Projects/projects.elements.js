@@ -28,7 +28,7 @@ export const Image = styled.img`
   width: calc(100% / 5);
 `;
 
-export const PointsUl = styled.div`
+export const PointsUl = styled.ul`
   width: 100%;
   background-color: red;
   padding: 1em;
@@ -38,7 +38,7 @@ export const PointsUl = styled.div`
   align-items: center;
 `;
 
-export const PointsLi = styled.img`
+export const PointsLi = styled.li`
   list-style-type: none;
   width: 2em;
   height: 2em;
