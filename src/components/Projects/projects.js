@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import {
   Wrapper,
-  WrapperImage,
+  WrapperCard,
   WrapperSlider,
   Image,
   PointsUl,
   PointsLi,
+  Button,
 } from "./projects.elements";
 import ProjectOne from "../../Img/index.png";
-import ProjectTwo from "../../Img/proyecto2.png";
-import ProjectThree from "../../Img/proyecto3.png";
-import ProjectFour from "../../Img/proyecto4.png";
-import ProjectFive from "../../Img/proyecto5.png";
+import ProjectTwo from "../../Img/proyecto3.png";
+import ProjectThree from "../../Img/proyecto4.png";
+import ProjectFour from "../../Img/proyecto5.png";
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,15 +21,15 @@ const Projects = () => {
     { img: ProjectTwo, id: 2 },
     { img: ProjectThree, id: 3 },
     { img: ProjectFour, id: 4 },
-    { img: ProjectFive, id: 5 },
   ];
 
   return (
     <Wrapper>
       <WrapperSlider>
-        <WrapperImage>
+        <WrapperCard>
           <Image src={imgs[currentIndex].img}></Image>
-        </WrapperImage>
+          <Button className="button-hover">Go</Button>
+        </WrapperCard>
       </WrapperSlider>
 
       <PointsUl>
@@ -37,6 +37,7 @@ const Projects = () => {
           <PointsLi
             onClick={() => {
               setCurrentIndex(index);
+              console.log("Hola!!");
             }}
           ></PointsLi>
         ))}
