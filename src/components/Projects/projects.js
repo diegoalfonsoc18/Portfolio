@@ -14,7 +14,7 @@ import ProjectOne from "../../Img/index.png";
 import ProjectTwo from "../../Img/proyecto3.png";
 import ProjectThree from "../../Img/proyecto4.png";
 import ProjectFour from "../../Img/proyecto5.png";
-import IconGitHub from "../../icon/github-card.png";
+import IconGitHub from "../../icon/githubProject.png";
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -59,13 +59,11 @@ const Projects = () => {
           </WrapperInfo>
         </WrapperCard>
       </WrapperSlider>
-
       <PointsUl>
         {imgs.map((_, index) => (
           <PointsLi
             onClick={() => {
               setCurrentIndex(index);
-              console.log("Hola!!");
             }}
           ></PointsLi>
         ))}

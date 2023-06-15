@@ -17,12 +17,16 @@ export const ContainerEmail = styled.div`
   height: 100%;
 `;
 
-export const LinkEmailIcon = styled.a``;
+export const LinkEmailIcon = styled.a`
+  margin-bottom: 0.3em;
+  text-decoration: none;
+`;
 
 export const MailText = styled.p`
   writing-mode: vertical-rl;
   text-orientation: mixed;
   white-space: nowrap;
+  margin: 0;
   color: var(--green);
 `;
 

@@ -10,9 +10,10 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+
   width: 90%;
   height: 100%;
-  padding: 10px 0;
+  padding: 15px 0;
 `;
 
 export const LogoContainer = styled.div`
@@ -107,7 +108,7 @@ export const MenuItemLink = styled.a`
   border-radius: 7px;
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: var(--white);
   &.icon-linkedin {
     color: var(--green);
   }

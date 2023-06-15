@@ -8,7 +8,7 @@ import {
   LineaVertical,
 } from "./contactElements";
 
-import GithubIcon from "../../icon/github-card.png";
+import GithubIcon from "../../icon/githubIcon.png";
 import LinkedinIcon from "../../icon/linkedin.png";
 import DiscordIcon from "../../icon/discord.png";
 
