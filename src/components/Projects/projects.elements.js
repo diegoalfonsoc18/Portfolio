@@ -49,9 +49,11 @@ export const Image = styled.img`
   border-radius: 10px;
   box-shadow: 4px 5px 20px rgba(10, 9, 10, 0.8), 0 3px 20px rgba(10, 9, 10, 0.8);
   transition: opacity 0.3s ease-in-out;
+
   &.active {
     width: 200%;
     height: 80%;
+    /* transform: scale(1.2); */
   }
   &.disabled {
     width: 10%;
