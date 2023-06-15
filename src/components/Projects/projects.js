@@ -46,7 +46,14 @@ const Projects = () => {
     <Wrapper>
       <WrapperSlider>
         <WrapperCard>
-          <Image src={imgs[currentIndex].img}></Image>
+          {imgs.map((imgs, index) => (
+            <Image
+              src={imgs.img}
+              className={`class_base ${
+                currentIndex === index ? "select" : ""
+              }  `}
+            ></Image>
+          ))}
           <WrapperInfo>
             <IconCard src={IconGitHub} />
             <Button

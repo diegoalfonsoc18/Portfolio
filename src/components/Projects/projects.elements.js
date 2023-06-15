@@ -26,7 +26,7 @@ export const WrapperSlider = styled.div`
 
 export const WrapperCard = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -42,6 +42,9 @@ export const Image = styled.img`
   height: 80%;
   border-radius: 10px;
   box-shadow: 4px 5px 20px rgba(10, 9, 10, 0.8), 0 3px 20px rgba(10, 9, 10, 0.8);
+
+  &.class_base {
+  }
 `;
 
 export const WrapperInfo = styled.div`
