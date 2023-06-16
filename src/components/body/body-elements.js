@@ -94,7 +94,14 @@ export const H1memoji = styled.h1`
 export const H2memoji = styled.h2`
   margin: 0;
   font-size: 1.5em;
-  color: var(--green);
+  background-image: linear-gradient(
+    90deg,
+    rgba(134, 11, 140, 1) 0%,
+    rgba(190, 7, 7, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text; /* Para navegadores basados en WebKit */
+  color: transparent;
 `;
 
 export const ContainerImg = styled.article`

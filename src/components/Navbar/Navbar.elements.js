@@ -5,6 +5,14 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
   height: 60px;
+  background: radial-gradient(
+    circle at 4% 100%,
+    rgba(56, 8, 47, 1) 2%,
+    rgba(33, 5, 33, 1) 11%,
+    rgba(38, 5, 43, 1) 22%,
+    rgba(33, 3, 32, 1) 37%,
+    rgba(20, 2, 19, 1) 100%
+  );
 `;
 
 export const Wrapper = styled.div`
