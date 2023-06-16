@@ -38,11 +38,11 @@ export const WrapperCard = styled.div`
 `;
 export const WrapperImg = styled.div`
   display: flex;
-  flex-direction: row;
+  padding: 0 2em;
+  justify-items: center;
+  align-items: center;
   width: 90%;
   height: 60%;
-  overflow: hidden;
-  position: relative;
 `;
 
 export const Image = styled.img`
@@ -51,15 +51,15 @@ export const Image = styled.img`
   transition: opacity 0.3s ease-in-out;
 
   &.active {
-    width: 200%;
+    grid-area: imgMain;
+    width: 60%;
     height: 80%;
-    /* transform: scale(1.2); */
   }
   &.disabled {
-    width: 10%;
+    grid-area: img;
+    width: 40%;
     max-width: fit-content;
-    height: 80%;
-    opacity: 0.5;
+    height: 60%;
   }
 `;
 

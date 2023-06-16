@@ -41,11 +41,6 @@ const Projects = () => {
       id: 4,
       link: "https://diegoalfonsoc18.github.io/Hackathon-2023/",
     },
-    {
-      img: ProjectFour,
-      id: 4,
-      link: "https://diegoalfonsoc18.github.io/Hackathon-2023/",
-    },
   ];
 
   return (
