@@ -30,18 +30,37 @@ export const WrapperCard = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: auto;
   padding: 1.2em;
   background-color: var(--dark);
   border-radius: 10px;
   box-shadow: 4px 5px 20px rgba(10, 9, 10, 0.8), 0 3px 20px rgba(10, 9, 10, 0.8);
 `;
+export const WrapperImg = styled.div`
+  display: flex;
+  padding: 0 2em;
+  justify-items: center;
+  align-items: center;
+  width: 90%;
+  height: 60%;
+`;
 
 export const Image = styled.img`
-  width: 100%;
-  height: 80%;
   border-radius: 10px;
   box-shadow: 4px 5px 20px rgba(10, 9, 10, 0.8), 0 3px 20px rgba(10, 9, 10, 0.8);
+  transition: opacity 0.3s ease-in-out;
+
+  &.active {
+    grid-area: imgMain;
+    width: 60%;
+    height: 80%;
+  }
+  &.disabled {
+    grid-area: img;
+    width: 40%;
+    max-width: fit-content;
+    height: 60%;
+  }
 `;
 
 export const WrapperInfo = styled.div`
@@ -55,6 +74,7 @@ export const WrapperInfo = styled.div`
 export const IconCard = styled.img`
   height: 2em;
   width: 2em;
+  color: red;
 `;
 export const Button = styled.a`
   display: flex;

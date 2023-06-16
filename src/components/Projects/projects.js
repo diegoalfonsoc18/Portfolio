@@ -9,6 +9,7 @@ import {
   Button,
   WrapperInfo,
   IconCard,
+  WrapperImg,
 } from "./projects.elements";
 import ProjectOne from "../../Img/index.png";
 import ProjectTwo from "../../Img/proyecto3.png";
@@ -46,7 +47,14 @@ const Projects = () => {
     <Wrapper>
       <WrapperSlider>
         <WrapperCard>
-          <Image src={imgs[currentIndex].img}></Image>
+          <WrapperImg>
+            {imgs.map((imgs, index) => (
+              <Image
+                src={imgs.img}
+                className={` ${currentIndex === index ? "active" : "disabled"}`}
+              ></Image>
+            ))}
+          </WrapperImg>
           <WrapperInfo>
             <IconCard src={IconGitHub} />
             <Button
@@ -57,17 +65,17 @@ const Projects = () => {
               Go
             </Button>
           </WrapperInfo>
+          <PointsUl>
+            {imgs.map((_, index) => (
+              <PointsLi
+                onClick={() => {
+                  setCurrentIndex(index);
+                }}
+              ></PointsLi>
+            ))}
+          </PointsUl>
         </WrapperCard>
       </WrapperSlider>
-      <PointsUl>
-        {imgs.map((_, index) => (
-          <PointsLi
-            onClick={() => {
-              setCurrentIndex(index);
-            }}
-          ></PointsLi>
-        ))}
-      </PointsUl>
     </Wrapper>
   );
 };
