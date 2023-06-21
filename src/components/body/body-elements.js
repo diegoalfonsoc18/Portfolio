@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const WrapperMain = styled.div`
   display: flex;
   width: 100%;
-
+  flex-direction: column;
+  align-items: center;
   background: radial-gradient(
     circle at 11% 14%,
     rgba(66, 6, 18, 1) 0%,
@@ -109,4 +110,12 @@ export const Memoji = styled.img`
     opacity: 1;
     transform: translateY(10%);
   }
+`;
+
+export const Hr = styled.hr`
+  width: 80%;
+  border: none;
+  height: 1px;
+  background-color: var(--white);
+  margin: 10px 0;
 `;
