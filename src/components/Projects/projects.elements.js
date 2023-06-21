@@ -42,7 +42,7 @@ export const WrapperCard = styled.div`
   width: 100%;
   height: auto;
   padding: 1.2em;
-  background-color: var(--dark);
+  background-color: #1e1b33;
   border-radius: 10px;
   box-shadow: 4px 5px 20px rgba(10, 9, 10, 0.8), 0 3px 20px rgba(10, 9, 10, 0.8);
 `;
