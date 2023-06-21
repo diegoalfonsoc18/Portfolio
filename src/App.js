@@ -1,16 +1,14 @@
 import "./App.css";
-// import Contact from "./components/Contact";
 import Navbar from "./components/Navbar/Navbar";
-import Body from "./components/body/body";
-// import Proyects from "./components/proyects";
+import Projects from "./components/Projects/projects";
+import ArticleMain from "./components/body/body";
 
-// import Skills from "./components/skills";
-// import FormSection from "./components/Form";
 function App() {
   return (
     <div>
       <Navbar />
-      <Body />
+      <ArticleMain />
+      <Projects />
     </div>
   );
 }

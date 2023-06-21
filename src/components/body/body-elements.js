@@ -1,99 +1,51 @@
 import styled from "styled-components";
 
 export const WrapperMain = styled.div`
-  display: grid;
+  display: flex;
   width: 100%;
-  grid-template-columns: 1fr 6fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  background: radial-gradient(
+    ellipse at 13% 29%,
+    rgba(66, 6, 18, 1) 1%,
+    rgba(66, 6, 18, 1) 5%,
+    rgba(33, 7, 13, 1) 26%,
+    rgba(26, 6, 8, 1) 43%,
+    rgba(3, 1, 2, 1) 76%,
+    rgba(66, 6, 18, 1) 94%,
+    rgba(66, 6, 18, 1) 98%
+  );
 `;
 
-export const WrapperColumnIcon = styled.div``;
-export const WrapperColumnEmail = styled.div``;
 export const Sect = styled.div`
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  display: flex;
-  margin: 0;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-`;
-
-export const LinkIcon = styled.a``;
-
-export const BodySection = styled.div`
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
 `;
 
-export const SectionBody = styled.div`
+export const TextSection = styled.div`
+  width: 50%;
   display: flex;
-  width: 100%;
-  height: 600px;
   flex-direction: column;
-
-  &.container-one {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 50%;
-    right: 0;
-    width: 185%;
-    height: 100%;
-  }
-
-  &.container-emoji {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    height: 100%;
-  }
-  &.container-two {
-  }
-`;
-
-export const LineaVertical = styled.hr`
-  border: none;
-  /* border-left: 2px solid rgba(0, 157, 35, 1); */
-
-  height: 1000vh;
-  margin: 0;
-`;
-
-export const MailText = styled.p`
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  white-space: nowrap;
-  /* background: linear-gradient(
-    90deg,
-    rgba(75, 168, 16, 1) 0%,
-    rgba(26, 235, 19, 1) 45%,
-    rgba(39, 191, 22, 1) 100%
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Paragraph = styled.h3`
   margin: 0;
   color: var(--white);
+  font-size: 2em;
 `;
 export const H1memoji = styled.h1`
   margin: 0;
-  font-size: 2em;
+  font-size: 4em;
   color: var(--white);
 `;
 export const H2memoji = styled.h2`
   margin: 0;
-  font-size: 1.5em;
+  font-size: 3em;
   background-image: linear-gradient(
     90deg,
     rgba(134, 11, 140, 1) 0%,
@@ -103,10 +55,17 @@ export const H2memoji = styled.h2`
   -webkit-background-clip: text; /* Para navegadores basados en WebKit */
   color: transparent;
 `;
+export const WrapperArticle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+`;
 
 export const ContainerImg = styled.article`
   position: relative;
-  width: 300px;
+  width: 50%;
   height: 300px;
   transition: all 0.3s ease;
   display: flex;
@@ -155,4 +114,11 @@ export const Memoji = styled.img`
     transform: translateY(10%);
   }
 `;
-export const Section = styled.div``;
+
+export const Hr = styled.hr`
+  width: 80%;
+  border: none;
+  height: 1px;
+  background-color: var(--white);
+  margin: 10px 0;
+`;
