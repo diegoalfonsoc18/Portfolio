@@ -6,11 +6,14 @@ export const WrapperMain = styled.div`
   flex-direction: column;
   align-items: center;
   background: radial-gradient(
-    circle at 11% 14%,
-    rgba(66, 6, 18, 1) 0%,
-    rgba(33, 7, 13, 1) 19%,
-    rgba(26, 6, 8, 1) 26%,
-    rgba(3, 1, 2, 1) 79%
+    ellipse at 13% 29%,
+    rgba(66, 6, 18, 1) 1%,
+    rgba(66, 6, 18, 1) 5%,
+    rgba(33, 7, 13, 1) 26%,
+    rgba(26, 6, 8, 1) 43%,
+    rgba(3, 1, 2, 1) 76%,
+    rgba(66, 6, 18, 1) 94%,
+    rgba(66, 6, 18, 1) 98%
   );
 `;
 
