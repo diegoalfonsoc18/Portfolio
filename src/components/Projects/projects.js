@@ -10,6 +10,8 @@ import {
   TextCard,
   ButtonCard,
   Hr,
+  TitleSection,
+  WrapperTitle,
 } from "./projects.elements";
 import ProjectOne from "../../Img/index.png";
 import ProjectTwo from "../../Img/proyecto3.png";
@@ -53,6 +55,9 @@ const Projects = () => {
 
   return (
     <Wrapper>
+      <WrapperTitle>
+        <TitleSection>Projects</TitleSection>
+      </WrapperTitle>
       <WrapperSlider>
         {imgs.map((imgs) => (
           <WrapperCard>

@@ -103,3 +103,23 @@ export const Hr = styled.hr`
   background-color: var(--white);
   margin: 0;
 `;
+
+export const WrapperTitle = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 12px;
+  height: 50px;
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
+`;
+export const TitleSection = styled.p`
+  color: var(--white);
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 48px;
+`;
