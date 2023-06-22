@@ -25,6 +25,7 @@ export const WrapperSlider = styled.div`
   width: 90%;
   max-width: 80%;
   height: auto;
+  margin-top: 20px 0;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -59,18 +60,6 @@ export const WrapperImg = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-
-  &.active {
-    grid-area: imgMain;
-    width: 60%;
-    height: 80%;
-  }
-  &.disabled {
-    grid-area: img;
-    width: 40%;
-    max-width: fit-content;
-    height: 60%;
-  }
 `;
 
 export const WrapperInfo = styled.div`
@@ -85,8 +74,7 @@ export const TextCard = styled.p`
 `;
 
 export const IconCard = styled.img`
-  height: 2em;
-  width: 2em;
+  width: 1.3em;
   color: red;
 `;
 export const ButtonCard = styled.a`
@@ -99,7 +87,7 @@ export const ButtonCard = styled.a`
   text-decoration: none;
   color: var(--white);
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 12px;
   border: solid 1px var(--white);
   &.button-hover:hover {
@@ -113,4 +101,12 @@ export const ButtonCard = styled.a`
     border-radius: 30px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
   }
+`;
+
+export const Hr = styled.hr`
+  width: 80%;
+  border: none;
+  height: 2px;
+  background-color: var(--white);
+  margin: 0;
 `;
