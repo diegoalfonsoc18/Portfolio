@@ -13,6 +13,8 @@ export const Container = styled.div`
     rgba(33, 3, 32, 1) 37%,
     rgba(20, 2, 19, 1) 100%
   );
+
+  box-shadow: 0px 20px 40px 0px rgba(205, 28, 104, 0.08);
 `;
 
 export const Wrapper = styled.div`
@@ -113,6 +115,8 @@ export const MenuItem = styled.li`
 export const MenuItemLink = styled.a`
   text-decoration: none;
   position: relative;
+  font-weight: 500;
+  font-size: 18px;
   border-radius: 7px;
   display: inline-block;
   text-decoration: none;

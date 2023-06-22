@@ -89,18 +89,11 @@ export const ButtonCard = styled.a`
   font-weight: bold;
   border-radius: 5px;
   margin-bottom: 12px;
-  border: solid 1px var(--white);
-  &.button-hover:hover {
-    border: solid 1px #da59b1;
-    height: 40px;
-    font-family: Roboto;
-    color: #da59b1;
-    background: var(--green);
-    width: 35%;
-    border-color: linear-gradient(to top right, #8162ce, #f54ba5);
-    border-radius: 30px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
-  }
+  border: 0.5px solid rgba(231, 231, 231, 0.4);
+  background: var(
+    --linear,
+    linear-gradient(88deg, #0500fa 11.52%, #e01e5a 100%)
+  );
 `;
 
 export const Hr = styled.hr`
