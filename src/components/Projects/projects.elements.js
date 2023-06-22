@@ -23,11 +23,12 @@ export const WrapperSlider = styled.div`
   justify-content: center;
   align-items: center;
   width: 90%;
+  max-width: 80%;
   height: auto;
-  max-height: fit-content;
 
   @media (min-width: 768px) {
-    height: 700px;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   @media (min-width: 1440px) {
@@ -39,18 +40,20 @@ export const WrapperCard = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 435px;
-  width: 312px;
+  height: auto;
+  width: min(15em, 25em);
   border-radius: 12px;
-  box-sizing: border-box;
   background: #1e1b33;
   border-radius: 12px;
-  margin-top: 20px;
+  margin: 20px 1em;
+  /* @media (min-width: 768px) {
+  } */
 `;
 export const WrapperImg = styled.div`
-  width: 264px;
-  height: 232px;
+  width: 90%;
+  height: auto;
   border-radius: 8px;
+  padding: 10px 5px;
 `;
 
 export const Image = styled.img`
@@ -74,8 +77,7 @@ export const WrapperInfo = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
-  padding: 1em;
+  width: 80%;
 `;
 
 export const TextCard = styled.p`
@@ -91,14 +93,14 @@ export const ButtonCard = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2em;
-  width: 90%;
+  height: 1.6em;
+  width: 80%;
+  font-size: smaller;
   text-decoration: none;
   color: var(--white);
   font-weight: bold;
   border-radius: 10px;
-  font-size: 18px;
-  /* box-shadow: 0 13px 26px rgba(0, 0, 0, 0.16), 0 3px 6px; */
+  margin-bottom: 12px;
   border: solid 1px var(--white);
   &.button-hover:hover {
     border: solid 1px #da59b1;

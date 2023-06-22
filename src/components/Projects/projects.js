@@ -27,13 +27,13 @@ const Projects = () => {
       link: "https://diegoalfonsoc18.github.io/landing/",
     },
     {
-      title: "Landing Page",
+      title: "Apple Shop",
       img: ProjectTwo,
       id: 2,
       link: "https://diegoalfonsoc18.github.io/tribute-page/",
     },
     {
-      title: "Landing Page",
+      title: "WordPress",
       img: ProjectThree,
       id: 3,
       link: "https://diegoalfonsoc18.github.io/Project-portfolio/",
@@ -58,7 +58,9 @@ const Projects = () => {
               <TextCard>{`${imgs.title}`}</TextCard>
               <IconCard src={IconGitHub} />
             </WrapperInfo>
-            <ButtonCard>Live Now</ButtonCard>
+            <ButtonCard href={imgs.link} target="_blank">
+              Live Now
+            </ButtonCard>
           </WrapperCard>
         ))}
       </WrapperSlider>
