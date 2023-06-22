@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const WrapperMain = styled.div`
   display: flex;
-  width: 100%;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
   align-items: center;
   background: radial-gradient(
     ellipse at 13% 29%,
@@ -19,33 +20,48 @@ export const WrapperMain = styled.div`
 
 export const Sect = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100%;
   height: 100vh;
+
+  @media (min-width: 740px) {
+    flex-direction: row;
+  }
 `;
 
 export const TextSection = styled.div`
-  width: 50%;
+  width: 80%;
+  height: 15em;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 `;
 
 export const Paragraph = styled.h3`
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin: 0;
   color: var(--white);
-  font-size: 2em;
+  font-size: 1.5em;
 `;
 export const H1memoji = styled.h1`
+  display: flex;
+  justify-content: center;
   margin: 0;
-  font-size: 4em;
+  width: 100%;
+  font-size: 3em;
   color: var(--white);
 `;
 export const H2memoji = styled.h2`
+  display: flex;
+
+  width: 100%;
   margin: 0;
-  font-size: 3em;
+  font-size: 2em;
   background-image: linear-gradient(
     90deg,
     rgba(134, 11, 140, 1) 0%,
@@ -59,14 +75,13 @@ export const WrapperArticle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 100vh;
+  width: 80%;
 `;
 
 export const ContainerImg = styled.article`
   position: relative;
-  width: 50%;
-  height: 300px;
+  width: 80%;
+  height: 15em;
   transition: all 0.3s ease;
   display: flex;
   justify-content: center;
@@ -97,17 +112,23 @@ export const MemojiMain = styled.img`
   height: 60%;
   padding: 10px;
 
-  @media (max-width: 640px) {
+  @media (min-width: 740px) {
+    height: 80%;
   }
 `;
 export const Memoji = styled.img`
   position: absolute;
   display: flex;
   justify-content: center;
-  width: 250px;
+  width: 6;
+  height: 11em;
   transform: translateY(25%);
   transition: 0.3s ease;
   opacity: 0;
+
+  @media (min-width: 740px) {
+    height: 15em;
+  }
 
   &:hover {
     opacity: 1;
@@ -118,7 +139,7 @@ export const Memoji = styled.img`
 export const Hr = styled.hr`
   width: 80%;
   border: none;
-  height: 1px;
+  height: 2px;
   background-color: var(--white);
-  margin: 10px 0;
+  margin: 0;
 `;

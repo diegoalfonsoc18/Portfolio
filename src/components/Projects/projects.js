@@ -4,12 +4,11 @@ import {
   WrapperCard,
   WrapperSlider,
   Image,
-  PointsUl,
-  PointsLi,
-  Button,
+  WrapperImg,
   WrapperInfo,
   IconCard,
-  WrapperImg,
+  TextCard,
+  ButtonCard,
 } from "./projects.elements";
 import ProjectOne from "../../Img/index.png";
 import ProjectTwo from "../../Img/proyecto3.png";
@@ -18,25 +17,29 @@ import ProjectFour from "../../Img/proyecto5.png";
 import IconGitHub from "../../icon/githubProject.png";
 
 const Projects = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
   const imgs = [
     {
+      title: "Landing Page",
       img: ProjectOne,
       id: 1,
       link: "https://diegoalfonsoc18.github.io/landing/",
     },
     {
+      title: "Landing Page",
       img: ProjectTwo,
       id: 2,
       link: "https://diegoalfonsoc18.github.io/tribute-page/",
     },
     {
+      title: "Landing Page",
       img: ProjectThree,
       id: 3,
       link: "https://diegoalfonsoc18.github.io/Project-portfolio/",
     },
     {
+      title: "Landing Page",
       img: ProjectFour,
       id: 4,
       link: "https://diegoalfonsoc18.github.io/Hackathon-2023/",
@@ -46,35 +49,18 @@ const Projects = () => {
   return (
     <Wrapper>
       <WrapperSlider>
-        <WrapperCard>
-          <WrapperImg>
-            {imgs.map((imgs, index) => (
-              <Image
-                src={imgs.img}
-                className={` ${currentIndex === index ? "active" : "disabled"}`}
-              ></Image>
-            ))}
-          </WrapperImg>
-          <WrapperInfo>
-            <IconCard src={IconGitHub} />
-            <Button
-              href={imgs[currentIndex].link}
-              target="_blank"
-              className="button-hover"
-            >
-              Go
-            </Button>
-          </WrapperInfo>
-          <PointsUl>
-            {imgs.map((_, index) => (
-              <PointsLi
-                onClick={() => {
-                  setCurrentIndex(index);
-                }}
-              ></PointsLi>
-            ))}
-          </PointsUl>
-        </WrapperCard>
+        {imgs.map((imgs) => (
+          <WrapperCard>
+            <WrapperImg>
+              <Image src={imgs.img}></Image>;
+            </WrapperImg>
+            <WrapperInfo>
+              <TextCard>{`${imgs.title}`}</TextCard>
+              <IconCard src={IconGitHub} />
+            </WrapperInfo>
+            <ButtonCard>Live Now</ButtonCard>
+          </WrapperCard>
+        ))}
       </WrapperSlider>
     </Wrapper>
   );

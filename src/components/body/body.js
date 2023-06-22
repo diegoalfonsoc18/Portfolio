@@ -18,17 +18,17 @@ const ArticleMain = () => {
   return (
     <WrapperMain>
       <Sect>
-        <TextSection>
-          <Paragraph>Hello 👋🏽 I'm</Paragraph>
-          <H1memoji>Diego Alfonso</H1memoji>
-          <H2memoji>Web developer</H2memoji>
-        </TextSection>
         <WrapperArticle>
           <ContainerImg>
             <MemojiMain src={memoji3}></MemojiMain>
             <Memoji src={memoji} />
           </ContainerImg>
         </WrapperArticle>
+        <TextSection>
+          <Paragraph>`Hello 👋🏽 I'm Diego`</Paragraph>
+          <H1memoji>Diego Alfonso</H1memoji>
+          <H2memoji>Web developer</H2memoji>
+        </TextSection>
       </Sect>
       <Hr />
     </WrapperMain>

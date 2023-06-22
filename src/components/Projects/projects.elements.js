@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
   background: radial-gradient(
@@ -20,10 +19,11 @@ export const Wrapper = styled.div`
 
 export const WrapperSlider = styled.div`
   display: flex;
-  transition: all 0.5s ease;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 90%;
-  max-width: 550px;
-  height: 28em;
+  height: auto;
   max-height: fit-content;
 
   @media (min-width: 768px) {
@@ -37,28 +37,25 @@ export const WrapperSlider = styled.div`
 export const WrapperCard = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 100%;
-  height: auto;
-  padding: 1.2em;
-  background-color: #1e1b33;
-  border-radius: 10px;
-  box-shadow: 4px 5px 20px rgba(10, 9, 10, 0.8), 0 3px 20px rgba(10, 9, 10, 0.8);
+  align-items: center;
+  height: 435px;
+  width: 312px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  background: #1e1b33;
+  border-radius: 12px;
+  margin-top: 20px;
 `;
 export const WrapperImg = styled.div`
-  display: flex;
-  padding: 0 2em;
-  justify-items: center;
-  align-items: center;
-  width: 90%;
-  height: 60%;
+  width: 264px;
+  height: 232px;
+  border-radius: 8px;
 `;
 
 export const Image = styled.img`
-  border-radius: 10px;
-  box-shadow: 4px 5px 20px rgba(10, 9, 10, 0.8), 0 3px 20px rgba(10, 9, 10, 0.8);
-  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
 
   &.active {
     grid-area: imgMain;
@@ -75,10 +72,14 @@ export const Image = styled.img`
 
 export const WrapperInfo = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 90%;
   padding: 1em;
+`;
+
+export const TextCard = styled.p`
+  color: var(--white);
 `;
 
 export const IconCard = styled.img`
@@ -86,20 +87,19 @@ export const IconCard = styled.img`
   width: 2em;
   color: red;
 `;
-export const Button = styled.a`
+export const ButtonCard = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 2em;
-  width: 7em;
+  width: 90%;
   text-decoration: none;
-  color: var(--dark);
+  color: var(--white);
   font-weight: bold;
-  border-radius: 30px;
+  border-radius: 10px;
   font-size: 18px;
-  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.16), 0 3px 6px;
-  background: var(--white);
-
+  /* box-shadow: 0 13px 26px rgba(0, 0, 0, 0.16), 0 3px 6px; */
+  border: solid 1px var(--white);
   &.button-hover:hover {
     border: solid 1px #da59b1;
     height: 40px;
@@ -111,24 +111,4 @@ export const Button = styled.a`
     border-radius: 30px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
   }
-`;
-
-export const PointsUl = styled.ul`
-  width: 80%;
-
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  height: 3em;
-  margin: 0;
-`;
-
-export const PointsLi = styled.li`
-  list-style-type: none;
-  width: 0.6em;
-  height: 0.6em;
-  background-color: var(--white);
-  border-radius: 50%;
-  margin: 0 0.3em;
 `;
