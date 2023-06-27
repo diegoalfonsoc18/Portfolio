@@ -90,10 +90,10 @@ export const ButtonCard = styled.a`
   border-radius: 5px;
   margin-bottom: 12px;
   border: 0.5px solid rgba(231, 231, 231, 0.4);
-  background: var(
+  /* background: var(
     --linear,
     linear-gradient(88deg, #0500fa 11.52%, #e01e5a 100%)
-  );
+  ); */
 `;
 
 export const Hr = styled.hr`
