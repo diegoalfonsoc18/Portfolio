@@ -46,30 +46,46 @@ export const Paragraph = styled.h3`
   width: 100%;
   margin: 0;
   color: var(--white);
-  font-size: 1.5em;
+  font-size: 1.3em;
+
+  @media (min-width: 740px) {
+    font-size: 2em;
+  }
 `;
 export const H1memoji = styled.h1`
   display: flex;
   justify-content: center;
   margin: 0;
   width: 100%;
-  font-size: 3em;
+  font-size: 2em;
   color: var(--white);
+
+  @media (min-width: 740px) {
+    font-size: 3em;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 4em;
+  }
 `;
 export const H2memoji = styled.h2`
   display: flex;
-
+  justify-content: center;
   width: 100%;
   margin: 0;
   font-size: 2em;
-  background-image: linear-gradient(
-    90deg,
-    rgba(134, 11, 140, 1) 0%,
-    rgba(190, 7, 7, 1) 100%
-  );
+  background-image: linear-gradient(rgba(6, 4, 91, 1), rgba(224, 30, 90, 1));
   background-clip: text;
   -webkit-background-clip: text; /* Para navegadores basados en WebKit */
   color: transparent;
+
+  @media (min-width: 740px) {
+    font-size: 3em;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 3.5em;
+  }
 `;
 export const WrapperArticle = styled.div`
   display: flex;
