@@ -3,48 +3,54 @@ export const ContainerMain = styled.article`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  background: radial-gradient(
+    ellipse at 13% 29%,
+    rgba(66, 6, 18, 1) 1%,
+    rgba(66, 6, 18, 1) 5%,
+    rgba(33, 7, 13, 1) 26%,
+    rgba(26, 6, 8, 1) 43%,
+    rgba(3, 1, 2, 1) 76%,
+    rgba(66, 6, 18, 1) 94%,
+    rgba(66, 6, 18, 1) 98%
+  );
 `;
-export const ContainerSkills = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  width: 70%;
+
+export const WrapperSkills = styled.div`
+  display: flex;
+  width: 90%;
   height: auto;
-  align-items: center;
-  justify-items: center;
 `;
-export const WrapperMain = styled.div`
+
+export const WrapperItems = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 424px;
+  height: 101px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(231, 231, 231, 0.4);
+  background: #1e1b33;
+  box-shadow: 20px 20px 50px 0px rgba(49, 49, 49, 0.05);
+  background-color: #1e1b33;
+`;
+
+export const ImgItem = styled.div`
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-
-  @media (min-width: 1024px) {
-    width: 70%;
-  }
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 52px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 `;
-export const TittleSkills = styled.h2`
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  margin: 5px auto;
+
+export const Iconitem = styled.img`
+  width: 60%;
+  height: 60%;
 `;
-export const ContainerItems = styled.div`
-  display: flex;
-  gap: 5px;
-
-  &.skills-container {
-    justify-content: space-around;
-
-    @media (min-width: 740px) {
-      width: 40%;
-    }
-  }
-
-  &.others-container {
-    justify-content: space-evenly;
-    width: 30%;
-  }
+export const ItemText = styled.p`
+  font-size: larger;
+  color: var(--white);
 `;
