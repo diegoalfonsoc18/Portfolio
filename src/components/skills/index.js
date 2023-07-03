@@ -3,11 +3,15 @@ import {
   Iconitem,
   ImgItem,
   ItemText,
+  TitleSkill,
   WrapperItems,
   WrapperSkills,
+  WrapperTitleSkills,
 } from "./components.skills";
 import html from "../../icon/html.png";
 import css from "../../icon/css.png";
+import javascript from "../../icon/js.png";
+import react from "../../icon/react.svg";
 
 const Skills = () => {
   const skills = [
@@ -19,10 +23,22 @@ const Skills = () => {
       name: "CSS",
       icon: css,
     },
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
+      name: "React",
+      icon: react,
+    },
   ];
 
   return (
     <ContainerMain>
+      <WrapperTitleSkills>
+        <TitleSkill>Skills</TitleSkill>
+      </WrapperTitleSkills>
+
       <WrapperSkills>
         {skills.map((skill) => (
           <WrapperItems>

@@ -2,7 +2,9 @@ import styled from "styled-components";
 export const ContainerMain = styled.article`
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background: radial-gradient(
     ellipse at 13% 29%,
     rgba(66, 6, 18, 1) 1%,
@@ -17,16 +19,24 @@ export const ContainerMain = styled.article`
 
 export const WrapperSkills = styled.div`
   display: flex;
-  width: 90%;
+  justify-content: space-around;
+  width: 80%;
   height: auto;
+`;
+export const WrapperTitleSkills = styled.div`
+  width: 80%;
+`;
+export const TitleSkill = styled.h2`
+  font-size: large;
+  color: var(--white);
 `;
 
 export const WrapperItems = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 424px;
-  height: 101px;
+  width: 14em;
+  height: 5em;
   flex-shrink: 0;
   border-radius: 16px;
   border: 1px solid rgba(231, 231, 231, 0.4);
