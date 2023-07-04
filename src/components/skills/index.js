@@ -12,6 +12,9 @@ import html from "../../icon/html.png";
 import css from "../../icon/css.png";
 import javascript from "../../icon/js.png";
 import react from "../../icon/react.svg";
+import github from "../../icon/github-svgrepo-com.svg";
+import docker from "../../icon/docker2-svgrepo-com.svg";
+import photoshop from "../../icon/photoshop-svgrepo-com.svg";
 
 const Skills = () => {
   const skills = [
@@ -33,6 +36,21 @@ const Skills = () => {
     },
   ];
 
+  const others = [
+    {
+      name: "Github",
+      icon: github,
+    },
+    {
+      name: "Docker",
+      icon: docker,
+    },
+    {
+      name: "Photoshop",
+      icon: photoshop,
+    },
+  ];
+
   return (
     <ContainerMain>
       <WrapperTitleSkills>
@@ -46,6 +64,19 @@ const Skills = () => {
               <Iconitem src={skill.icon} />
             </ImgItem>
             <ItemText>{`${skill.name}`}</ItemText>
+          </WrapperItems>
+        ))}
+      </WrapperSkills>
+      <WrapperTitleSkills>
+        <TitleSkill>Others</TitleSkill>
+      </WrapperTitleSkills>
+      <WrapperSkills>
+        {others.map((other) => (
+          <WrapperItems>
+            <ImgItem>
+              <Iconitem src={other.icon} />
+            </ImgItem>
+            <ItemText>{`${other.name}`}</ItemText>
           </WrapperItems>
         ))}
       </WrapperSkills>

@@ -20,6 +20,8 @@ export const ContainerMain = styled.article`
 export const WrapperSkills = styled.div`
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 80%;
   height: auto;
 `;
@@ -27,14 +29,16 @@ export const WrapperTitleSkills = styled.div`
   width: 80%;
 `;
 export const TitleSkill = styled.h2`
-  font-size: large;
+  font-size: 2em;
   color: var(--white);
 `;
 
 export const WrapperItems = styled.div`
   display: flex;
   justify-content: space-around;
+  margin-top: 1em;
   align-items: center;
+  flex-wrap: wrap;
   width: 14em;
   height: 5em;
   flex-shrink: 0;
@@ -64,3 +68,7 @@ export const ItemText = styled.p`
   font-size: larger;
   color: var(--white);
 `;
+
+// export const TitleOther = styled.h2`
+//   font-size: 2em;
+// `;
