@@ -11,10 +11,16 @@ import {
   TextSection,
   WrapperArticle,
   Hr,
+  Icons,
+  WrapperIcons,
 } from "./body-elements";
 import memoji from "../../Img/memojic-mac.png";
 import memoji3 from "../../Img/memoji3.png";
+import html from "../../icon/html.png";
+import javascript from "../../icon/js.png";
 const ArticleMain = () => {
+  const icons = [html, javascript];
+
   return (
     <WrapperMain>
       <Sect>
@@ -23,6 +29,11 @@ const ArticleMain = () => {
             <MemojiMain src={memoji3}></MemojiMain>
             <Memoji src={memoji} />
           </ContainerImg>
+          {icons.map((icon) => (
+            <WrapperIcons>
+              <Icons src={icon} />
+            </WrapperIcons>
+          ))}
         </WrapperArticle>
         <TextSection>
           <Paragraph>`Hello 👋🏽 I'm Diego`</Paragraph>

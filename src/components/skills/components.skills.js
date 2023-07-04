@@ -68,7 +68,3 @@ export const ItemText = styled.p`
   font-size: larger;
   color: var(--white);
 `;
-
-// export const TitleOther = styled.h2`
-//   font-size: 2em;
-// `;

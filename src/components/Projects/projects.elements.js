@@ -25,7 +25,7 @@ export const WrapperSlider = styled.div`
   width: 90%;
   max-width: 80%;
   height: auto;
-  margin-top: 20px 0;
+  margin: 20px 0;
 
   @media (min-width: 768px) {
     flex-direction: row;

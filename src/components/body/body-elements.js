@@ -92,9 +92,10 @@ export const WrapperArticle = styled.div`
   justify-content: center;
   align-items: center;
   width: 80%;
+  position: relative;
 `;
 
-export const ContainerImg = styled.article`
+export const ContainerImg = styled.div`
   position: relative;
   width: 80%;
   height: 15em;
@@ -158,4 +159,19 @@ export const Hr = styled.hr`
   height: 2px;
   background-color: var(--white);
   margin: 0;
+`;
+
+export const WrapperIcons = styled.div`
+  border-radius: 52px;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+`;
+export const Icons = styled.img`
+  width: 100%;
+  height: 100%;
 `;
