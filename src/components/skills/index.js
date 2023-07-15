@@ -36,20 +36,20 @@ const Skills = () => {
     },
   ];
 
-  const others = [
-    {
-      name: "Github",
-      icon: github,
-    },
-    {
-      name: "Docker",
-      icon: docker,
-    },
-    {
-      name: "Photoshop",
-      icon: photoshop,
-    },
-  ];
+  // const others = [
+  //   {
+  //     name: "Github",
+  //     icon: github,
+  //   },
+  //   {
+  //     name: "Docker",
+  //     icon: docker,
+  //   },
+  //   {
+  //     name: "Photoshop",
+  //     icon: photoshop,
+  //   },
+  // ];
 
   return (
     <ContainerMain>
@@ -70,18 +70,8 @@ const Skills = () => {
       <WrapperTitleSkills>
         <TitleSkill>Others</TitleSkill>
       </WrapperTitleSkills>
-      <WrapperSkills>
-        {others.map((other) => (
-          <WrapperItems>
-            <ImgItem>
-              <Iconitem src={other.icon} />
-            </ImgItem>
-            <ItemText>{`${other.name}`}</ItemText>
-          </WrapperItems>
-        ))}
-      </WrapperSkills>
+      <WrapperSkills></WrapperSkills>
     </ContainerMain>
   );
 };
-
 export default Skills;
