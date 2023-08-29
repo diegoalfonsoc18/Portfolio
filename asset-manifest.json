@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cf22c349.css",
+    "main.js": "/static/js/main.dad9ebbc.js",
+    "static/js/787.b2e1b36e.chunk.js": "/static/js/787.b2e1b36e.chunk.js",
+    "static/media/index.png": "/static/media/index.56170a782212de3cee7a.png",
+    "static/media/proyecto5.png": "/static/media/proyecto5.5d7a09373fabfd914ed7.png",
+    "static/media/proyecto4.png": "/static/media/proyecto4.5bf5aa4595e299f4b183.png",
+    "static/media/proyecto3.png": "/static/media/proyecto3.8d7c55ad0b8abf79de86.png",
+    "static/media/memojic-mac.png": "/static/media/memojic-mac.dcb2eb30249f16ad2069.png",
+    "static/media/memoji3.png": "/static/media/memoji3.7c68af13797a05981019.png",
+    "static/media/html.png": "/static/media/html.516342d871143f816941.png",
+    "static/media/css.png": "/static/media/css.51cf26c831fc6e8b80ec.png",
+    "static/media/js.png": "/static/media/js.c6bfe8c6b8e1da9f4d9a.png",
+    "static/media/react.svg": "/static/media/react.f57b349b4d9df56c9b48c916a8d5adfb.svg",
+    "static/media/docker2-svgrepo-com.svg": "/static/media/docker2-svgrepo-com.187f92a6f2b6a0d260fc1b02f4028aa2.svg",
+    "static/media/github-svgrepo-com.svg": "/static/media/github-svgrepo-com.374e3084ff21dc3bf5335cdd22e7edc8.svg",
+    "static/media/photoshop-svgrepo-com.svg": "/static/media/photoshop-svgrepo-com.c6a9f6c2ffcd26e6fc856953038fc76e.svg",
+    "index.html": "/index.html",
+    "main.cf22c349.css.map": "/static/css/main.cf22c349.css.map",
+    "main.dad9ebbc.js.map": "/static/js/main.dad9ebbc.js.map",
+    "787.b2e1b36e.chunk.js.map": "/static/js/787.b2e1b36e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf22c349.css",
+    "static/js/main.dad9ebbc.js"
+  ]
+}
