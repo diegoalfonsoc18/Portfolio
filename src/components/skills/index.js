@@ -59,7 +59,7 @@ const Skills = () => {
 
       <WrapperSkills>
         {skills.map((skill) => (
-          <WrapperItems>
+          <WrapperItems key={skill.name}>
             <ImgItem>
               <Iconitem src={skill.icon} />
             </ImgItem>
