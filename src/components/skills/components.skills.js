@@ -57,7 +57,21 @@ export const ImgItem = styled.div`
   height: 52px;
   flex-shrink: 0;
   border-radius: 52px;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    background: lightgray;
+    opacity: 0.3;
+    border-radius: 52px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
 `;
 
 export const Iconitem = styled.img`
