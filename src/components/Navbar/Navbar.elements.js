@@ -5,22 +5,11 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
   height: 60px;
-  background: radial-gradient(
-    circle at 4% 100%,
-    rgba(56, 8, 47, 1) 2%,
-    rgba(33, 5, 33, 1) 11%,
-    rgba(38, 5, 43, 1) 22%,
-    rgba(33, 3, 32, 1) 37%,
-    rgba(20, 2, 19, 1) 100%
-  );
-
-  box-shadow: 0px 20px 40px 0px rgba(205, 28, 104, 0.08);
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-
   width: 90%;
   height: 100%;
   padding: 15px 0;
@@ -120,7 +109,7 @@ export const MenuItemLink = styled.a`
   border-radius: 7px;
   display: inline-block;
   text-decoration: none;
-  color: var(--white);
+  color: #272829;
   &.icon-linkedin {
     color: var(--green);
   }

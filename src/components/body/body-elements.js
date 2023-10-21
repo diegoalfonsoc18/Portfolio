@@ -6,16 +6,10 @@ export const WrapperMain = styled.div`
   align-items: center;
   width: 100%;
   align-items: center;
-  background: radial-gradient(
-    ellipse at 13% 29%,
-    rgba(66, 6, 18, 1) 1%,
-    rgba(66, 6, 18, 1) 5%,
-    rgba(33, 7, 13, 1) 26%,
-    rgba(26, 6, 8, 1) 43%,
-    rgba(3, 1, 2, 1) 76%,
-    rgba(66, 6, 18, 1) 94%,
-    rgba(66, 6, 18, 1) 98%
-  );
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
 `;
 
 export const Sect = styled.div`
@@ -45,7 +39,7 @@ export const Paragraph = styled.h3`
   justify-content: center;
   width: 100%;
   margin: 0;
-  color: var(--white);
+  color: var(--black);
   font-size: 1.3em;
 
   @media (min-width: 740px) {
@@ -58,7 +52,7 @@ export const H1memoji = styled.h1`
   margin: 0;
   width: 100%;
   font-size: 2em;
-  color: var(--white);
+  color: var(--black);
 
   @media (min-width: 740px) {
     font-size: 3em;
@@ -74,7 +68,7 @@ export const H2memoji = styled.h2`
   width: 100%;
   margin: 0;
   font-size: 2em;
-  background-image: linear-gradient(rgba(6, 4, 91, 1), rgba(224, 30, 90, 1));
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(224, 30, 90, 1));
   background-clip: text;
   -webkit-background-clip: text; /* Para navegadores basados en WebKit */
   color: transparent;

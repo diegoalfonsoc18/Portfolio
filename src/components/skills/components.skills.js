@@ -5,16 +5,6 @@ export const ContainerMain = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(
-    ellipse at 13% 29%,
-    rgba(66, 6, 18, 1) 1%,
-    rgba(66, 6, 18, 1) 5%,
-    rgba(33, 7, 13, 1) 26%,
-    rgba(26, 6, 8, 1) 43%,
-    rgba(3, 1, 2, 1) 76%,
-    rgba(66, 6, 18, 1) 94%,
-    rgba(66, 6, 18, 1) 98%
-  );
 `;
 
 export const WrapperSkills = styled.div`
@@ -30,7 +20,7 @@ export const WrapperTitleSkills = styled.div`
 `;
 export const TitleSkill = styled.h2`
   font-size: 2em;
-  color: var(--white);
+  color: var(--black);
 `;
 
 export const WrapperItems = styled.div`
