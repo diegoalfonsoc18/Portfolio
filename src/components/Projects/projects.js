@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import {
   Wrapper,
   WrapperCard,
@@ -20,8 +19,6 @@ import ProjectFour from "../../Img/proyecto5.png";
 import IconGitHub from "../../icon/githubProject.png";
 import IconInternet from "../../icon/global.png";
 const Projects = () => {
-  // const [currentIndex, setCurrentIndex] = useState(0);
-
   const imgs = [
     {
       title: "Landing Page",
@@ -61,13 +58,11 @@ const Projects = () => {
       <WrapperSlider>
         {imgs.map((imgs) => (
           <WrapperCard>
+            <TextCard>{`${imgs.title}`}</TextCard>
             <WrapperImg>
               <Image src={imgs.img}></Image>;
             </WrapperImg>
-            <WrapperInfo>
-              <TextCard>{`${imgs.title}`}</TextCard>
-              <IconCard src={imgs.icon} />
-            </WrapperInfo>
+            <WrapperInfo></WrapperInfo>
             <ButtonCard href={imgs.link} target="_blank">
               Live Now
             </ButtonCard>
