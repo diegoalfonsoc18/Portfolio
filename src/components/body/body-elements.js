@@ -2,27 +2,15 @@ import styled from "styled-components";
 
 export const WrapperMain = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   width: 100%;
-  align-items: center;
-
-  @media (min-width: 768px) {
-    width: 80%;
-  }
 `;
 
 export const Sect = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  flex-direction: row;
+  width: 70%;
   height: 100vh;
-
-  @media (min-width: 740px) {
-    flex-direction: row;
-  }
 `;
 
 export const TextSection = styled.div`

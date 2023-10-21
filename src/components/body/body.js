@@ -10,7 +10,6 @@ import {
   MemojiMain,
   TextSection,
   WrapperArticle,
-  Hr,
 } from "./body-elements";
 import memoji from "../../Img/memojic-mac.png";
 import memoji3 from "../../Img/memoji3.png";
@@ -25,13 +24,14 @@ const ArticleMain = () => {
             <Memoji src={memoji} />
           </ContainerImg>
         </WrapperArticle>
-        <TextSection>
-          <Paragraph>`Hello 👋🏽 I'm Diego`</Paragraph>
-          <H1memoji>Diego Alfonso</H1memoji>
-          <H2memoji>Web developer</H2memoji>
-        </TextSection>
+        <WrapperArticle>
+          <TextSection>
+            <Paragraph>`Hello 👋🏽 I'm Diego`</Paragraph>
+            <H1memoji>Diego Alfonso</H1memoji>
+            <H2memoji>Web developer</H2memoji>
+          </TextSection>
+        </WrapperArticle>
       </Sect>
-      <Hr />
     </WrapperMain>
   );
 };
