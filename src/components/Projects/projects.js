@@ -58,7 +58,7 @@ const Projects = () => {
       <WrapperSlider>
         {imgs.map((imgs, index) => (
           <WrapperCard key={index} isOdd={index % 2 !== 0}>
-            <TextCard>{`${imgs.title}`}</TextCard>
+            <TextCard isOdd={index % 2 !== 0}>{`${imgs.title}`}</TextCard>
             <ButtonCard href={imgs.link} target="_blank">
               Live Now
             </ButtonCard>

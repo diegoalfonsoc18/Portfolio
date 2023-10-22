@@ -18,13 +18,12 @@ export const WrapperSlider = styled.div`
 export const WrapperCard = styled.div`
   flex: 0 0 220px;
   height: 340px;
+  position: relative;
   overflow: hidden;
   border-radius: 18px;
   margin-left: 1.5rem;
   background-color: ${(props) => (props.isOdd ? "#fff" : "#000")};
   box-shadow: 2px 4px 12px rgb(0, 0, 0, 0.08);
-  /* @media (min-width: 768px) {
-  } */
 `;
 export const WrapperImg = styled.div``;
 
@@ -40,7 +39,7 @@ export const WrapperInfo = styled.div`
 `;
 
 export const TextCard = styled.p`
-  color: var(--white);
+  color: ${(props) => (props.isOdd ? "#000" : "#fff")};
   top: 0;
   padding: 5px;
   margin-bottom: 1rem;
