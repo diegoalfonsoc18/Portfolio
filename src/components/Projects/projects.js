@@ -56,16 +56,16 @@ const Projects = () => {
         <TitleSection>Projects</TitleSection>
       </WrapperTitle>
       <WrapperSlider>
-        {imgs.map((imgs) => (
-          <WrapperCard>
+        {imgs.map((imgs, index) => (
+          <WrapperCard key={index} isOdd={index % 2 !== 0}>
             <TextCard>{`${imgs.title}`}</TextCard>
+            <ButtonCard href={imgs.link} target="_blank">
+              Live Now
+            </ButtonCard>
             <WrapperImg>
               <Image src={imgs.img}></Image>;
             </WrapperImg>
             <WrapperInfo></WrapperInfo>
-            <ButtonCard href={imgs.link} target="_blank">
-              Live Now
-            </ButtonCard>
           </WrapperCard>
         ))}
       </WrapperSlider>
