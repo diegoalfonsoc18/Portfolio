@@ -4,7 +4,10 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  display: flex;
+  overflow-x: auto; /* Creamos un div scrollable de forma horizontal */
+  scrollbar-width: none; /* Escondemos la scrollbar en Firefox */
+  padding: 1.5rem 0;
   width: 100%;
 `;
 
@@ -29,6 +32,7 @@ export const WrapperImg = styled.div``;
 
 export const Image = styled.img`
   width: 100%;
+  height: 16rem;
 `;
 
 export const WrapperInfo = styled.div`
@@ -43,6 +47,8 @@ export const TextCard = styled.p`
   top: 0;
   padding: 5px;
   margin-bottom: 1rem;
+  font-size: 12px;
+  margin-bottom: 1rem;
 `;
 
 export const IconCard = styled.img`
@@ -52,20 +58,16 @@ export const IconCard = styled.img`
 export const ButtonCard = styled.a`
   display: flex;
   justify-content: center;
+  font-size: 21px;
   align-items: center;
   height: 1.6em;
   width: 80%;
-  font-size: smaller;
   text-decoration: none;
   color: var(--black);
   font-weight: bold;
   border-radius: 5px;
   margin-bottom: 12px;
   border: 0.5px solid rgba(231, 231, 231, 0.4);
-  /* background: var(
-    --linear,
-    linear-gradient(88deg, #0500fa 11.52%, #e01e5a 100%)
-  ); */
 `;
 
 export const Hr = styled.hr`
