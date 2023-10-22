@@ -5,8 +5,8 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   display: flex;
-  overflow-x: auto; /* Creamos un div scrollable de forma horizontal */
-  scrollbar-width: none; /* Escondemos la scrollbar en Firefox */
+  overflow-x: auto;
+  scrollbar-width: none;
   padding: 1.5rem 0;
   width: 100%;
 `;
@@ -32,7 +32,7 @@ export const WrapperImg = styled.div``;
 
 export const Image = styled.img`
   width: 100%;
-  height: 16rem;
+  height: 18rem;
 `;
 
 export const WrapperInfo = styled.div`
@@ -43,12 +43,16 @@ export const WrapperInfo = styled.div`
 `;
 
 export const TextCard = styled.p`
+  display: flex;
+  justify-content: start;
+  width: 100%;
   color: ${(props) => (props.isOdd ? "#000" : "#fff")};
   top: 0;
-  padding: 5px;
+  padding-left: 10px;
   margin-bottom: 1rem;
   font-size: 12px;
   margin-bottom: 1rem;
+  margin: 10px 0 0 0;
 `;
 
 export const IconCard = styled.img`
@@ -57,17 +61,16 @@ export const IconCard = styled.img`
 `;
 export const ButtonCard = styled.a`
   display: flex;
-  justify-content: center;
+  justify-content: start;
   font-size: 21px;
-  align-items: center;
   height: 1.6em;
-  width: 80%;
+  width: 100%;
   text-decoration: none;
-  color: var(--black);
+  color: ${(props) => (props.isOdd ? "#000" : "#fff")};
   font-weight: bold;
   border-radius: 5px;
   margin-bottom: 12px;
-  border: 0.5px solid rgba(231, 231, 231, 0.4);
+  padding-left: 10px;
 `;
 
 export const Hr = styled.hr`

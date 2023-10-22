@@ -59,8 +59,12 @@ const Projects = () => {
         {imgs.map((imgs, index) => (
           <WrapperCard key={index} isOdd={index % 2 !== 0}>
             <TextCard isOdd={index % 2 !== 0}>{`${imgs.title}`}</TextCard>
-            <ButtonCard href={imgs.link} target="_blank">
-              Live Now
+            <ButtonCard
+              href={imgs.link}
+              target="_blank"
+              isOdd={index % 2 !== 0}
+            >
+              Live Now 🔗
             </ButtonCard>
             <WrapperImg>
               <Image src={imgs.img}></Image>;
