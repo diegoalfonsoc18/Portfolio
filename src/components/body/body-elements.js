@@ -8,11 +8,57 @@ export const WrapperMain = styled.div`
 
 export const Sect = styled.div`
   display: flex;
-  flex-direction: row;
+
   width: 70%;
   height: 100vh;
 `;
 
+export const WrapperArticle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+`;
+
+export const ContainerImg = styled.div`
+  position: relative;
+  width: 80%;
+  height: 15em;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0) 95%); */
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  &:hover::before {
+    opacity: 1;
+  }
+`;
+export const MemojiMain = styled.img`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  object-fit: cover;
+  height: 60%;
+  padding: 10px;
+
+  @media (min-width: 740px) {
+    height: 80%;
+  }
+`;
 export const TextSection = styled.div`
   width: 80%;
   height: 15em;
@@ -69,52 +115,7 @@ export const H2memoji = styled.h2`
     font-size: 3.5em;
   }
 `;
-export const WrapperArticle = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  position: relative;
-`;
 
-export const ContainerImg = styled.div`
-  position: relative;
-  width: 80%;
-  height: 15em;
-  transition: all 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &:hover {
-    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    /* linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0) 95%); */
-    opacity: 0;
-    transition: all 0.3s ease;
-  }
-  &:hover::before {
-    opacity: 1;
-  }
-`;
-export const MemojiMain = styled.img`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  object-fit: cover;
-  height: 60%;
-  padding: 10px;
-
-  @media (min-width: 740px) {
-    height: 80%;
-  }
-`;
 export const Memoji = styled.img`
   position: absolute;
   display: flex;
@@ -133,12 +134,4 @@ export const Memoji = styled.img`
     opacity: 1;
     transform: translateY(10%);
   }
-`;
-
-export const Hr = styled.hr`
-  width: 80%;
-  border: none;
-  height: 2px;
-  background-color: var(--white);
-  margin: 0;
 `;
