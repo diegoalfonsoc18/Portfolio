@@ -142,3 +142,7 @@ export const Hr = styled.hr`
   background-color: var(--white);
   margin: 0;
 `;
+export const Icons = styled.img`
+  width: 40px;
+  height: 40px;
+`;
