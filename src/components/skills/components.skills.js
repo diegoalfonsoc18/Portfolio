@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const ContainerMain = styled.article`
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +22,7 @@ export const WrapperTitleSkills = styled.div`
 export const TitleSkill = styled.h2`
   font-size: 2em;
   color: var(--black);
+  margin: 0;
 `;
 
 export const WrapperItems = styled.div`

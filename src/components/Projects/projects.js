@@ -1,16 +1,15 @@
 import {
   Wrapper,
   WrapperCard,
-  WrapperSlider,
+  
   Image,
   WrapperImg,
   WrapperInfo,
-  IconCard,
   TextCard,
   ButtonCard,
-  Hr,
   TitleSection,
   WrapperTitle,
+  ContainerCard
 } from "./projects.elements";
 import ProjectOne from "../../Img/index.png";
 import ProjectTwo from "../../Img/proyecto3.png";
@@ -55,7 +54,7 @@ const Projects = () => {
       <WrapperTitle>
         <TitleSection>Projects</TitleSection>
       </WrapperTitle>
-      <WrapperSlider>
+        <ContainerCard>
         {imgs.map((imgs, index) => (
           <WrapperCard key={index} isOdd={index % 2 !== 0}>
             <TextCard isOdd={index % 2 !== 0}>{`${imgs.title}`}</TextCard>
@@ -72,8 +71,8 @@ const Projects = () => {
             <WrapperInfo></WrapperInfo>
           </WrapperCard>
         ))}
-      </WrapperSlider>
-      <Hr />
+      </ContainerCard>
+      
     </Wrapper>
   );
 };
