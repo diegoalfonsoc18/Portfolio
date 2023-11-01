@@ -7,11 +7,13 @@ import {
   MemojiMain,
   WrapperArticle,
   Icons,
+  WrapperArticleIcons
 } from "./body-elements";
 import memoji from "../../Img/memojic-mac.png";
 import memoji3 from "../../Img/memoji3.png";
 import jsIcon from "../../icon/jsIcon.png";
 import htmlIcon from "../../icon/htmlIcon.png";
+import cssIcon from "../../icon/cssIcon.png";
 const ArticleMain = () => {
   const iconBanner = [
     {
@@ -20,6 +22,9 @@ const ArticleMain = () => {
     {
       img: htmlIcon,
     },
+    {
+      img: cssIcon,
+    }
   ];
 
   return (
@@ -31,9 +36,9 @@ const ArticleMain = () => {
             <Memoji src={memoji} />
           </ContainerImg>
           {iconBanner.map((icon) => (
-            <WrapperArticle>
+            <WrapperArticleIcons>
               <Icons src={icon.img} />
-            </WrapperArticle>
+            </WrapperArticleIcons>
           ))}
         </WrapperArticle>
       </Sect>

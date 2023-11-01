@@ -8,6 +8,7 @@ export const WrapperMain = styled.div`
 
 export const Sect = styled.div`
   display: flex;
+  justify-content: center;
   flex-direction: row;
   width: 70%;
   height: 100vh;
@@ -79,7 +80,7 @@ export const WrapperArticle = styled.div`
 
 export const ContainerImg = styled.div`
   position: relative;
-  width: 80%;
+
   height: 15em;
   transition: all 0.3s ease;
   display: flex;
@@ -142,21 +143,39 @@ export const Hr = styled.hr`
   background-color: var(--white);
   margin: 0;
 `;
+
+export const WrapperArticleIcons = styled.div`
+  
+`;
+
+
 export const Icons = styled.img`
   width: 40px;
   height: 40px;
- transform: translateX(0px);
- animation: float 6s ease-out infinite;
-
- @keyframes float {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+ 
+@-webkit-keyframes scale-up-center {
   0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   100% {
-    transform: translateY(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
- }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+  
 `;
