@@ -4,6 +4,7 @@ export const WrapperMain = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  background-color: var(--black);
 `;
 
 export const Sect = styled.div`
