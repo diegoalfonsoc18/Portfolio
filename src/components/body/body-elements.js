@@ -145,4 +145,18 @@ export const Hr = styled.hr`
 export const Icons = styled.img`
   width: 40px;
   height: 40px;
+ transform: translateX(0px);
+ animation: float 6s ease-out infinite;
+
+ @keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+ }
 `;
