@@ -20,14 +20,15 @@ import reacIcon from "../../icon/reactIcon.png";
 import dataIcon from "../../icon/databaseIcon.png";
 const ArticleMain = () => {
   const iconBanner = [
-    {
-      img: jsIcon,
-    },
+    
     {
       img: htmlIcon,
     },
     {
       img: cssIcon,
+    },
+    {
+      img: jsIcon,
     },
     {
       img: pythonIcon,
@@ -51,7 +52,7 @@ const ArticleMain = () => {
           <WrapperIcons>
           {iconBanner.map((icon, index) => (
             <WrapperArticleIcons key={index} >
-              <Icons src={icon.img} />
+              <Icons src={icon.img} key={icon.key} />
             </WrapperArticleIcons>
           ))}
           </WrapperIcons>

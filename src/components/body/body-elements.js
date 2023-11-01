@@ -73,9 +73,15 @@ export const H2memoji = styled.h2`
 export const WrapperArticle = styled.div`
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 80%;
   position: relative;
+
+  @media (min-width: 740px){
+    flex-direction: row;
+  }
+
 `;
 
 export const ContainerImg = styled.div`
@@ -145,11 +151,12 @@ export const Hr = styled.hr`
 `;
 export const WrapperIcons = styled.div`
   display: grid;
-  grid-template: 60px 60px / 60px 60px;
+  grid-template: 70px 70px  /   70px 70px 70px;
+  padding: 8px;
   
 `;
 export const WrapperArticleIcons = styled.div`
-
+  padding: 5px;
   
 `;
 
