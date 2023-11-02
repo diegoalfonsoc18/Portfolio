@@ -6,18 +6,13 @@ export const Wrapper = styled.div`
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: #fbfbfd;
+  background-color: #fdd;
 `;
 
-export const WrapperSlider = styled.div`
-  display: flex;
-  padding: 1.5rem;
-  justify-content: center;
-  width: 80%;
-`;
 export const ContainerCard = styled.div`
-  width: 100%;
+  width: 70%;
   height: auto;
+  background-color: antiquewhite;
   
 @media (min-width: 735px) {
     display: grid;
@@ -35,7 +30,7 @@ export const ContainerCard = styled.div`
 export const WrapperCard = styled.div`
   display: flex;
   flex-direction: column;
-  height: 480px;
+  height: 380px;
   width: 100%;
   background-color: ${(props) => (props.isOdd ? "rgb(0, 0, 0)" : "#fff")};
   //box-shadow: 2px 4px 12px rgb(0, 0, 0, 0.08);
@@ -44,12 +39,13 @@ export const WrapperCard = styled.div`
 `;
 export const WrapperImg = styled.div`
   width: 100%;
-  height: 100%;
+  
 `;
 
 export const Image = styled.img`
   width: 100%;
   height: 100%;
+  
   
 `;
 

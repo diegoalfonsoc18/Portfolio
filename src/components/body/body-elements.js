@@ -158,7 +158,7 @@ export const WrapperIcons = styled.div`
 `;
 export const WrapperArticleIcons = styled.div`
   padding: 5px;
-  
+  position: absolute;
 `;
 
 
@@ -168,7 +168,7 @@ export const Icons = styled.img`
   padding: 0.4rem;
   -webkit-animation: heartbeat 5s ease-in-out infinite both;
 	        animation: heartbeat 5s ease-in-out infinite both;
- 
+
 
 @-webkit-keyframes heartbeat {
   from {
@@ -238,8 +238,6 @@ export const Icons = styled.img`
             animation-timing-function: ease-out;
   }
 }
-
-
 
   
 `;
