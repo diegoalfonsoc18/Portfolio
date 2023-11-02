@@ -29,7 +29,8 @@ export const WrapperCard = styled.div`
     margin-left: 1.5rem;
     border-radius: 18px;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
-  background-color: ${(props) => (props.isOdd ? "rgb(0, 0, 0)" : "#fff")};
+  background-color: ${(props) => (props.isOdd ? "rgb(0, 0, 0)" : "#f5f5f7")};
+
  
   
 `;
@@ -39,13 +40,13 @@ export const WrapperCard = styled.div`
 
 export const WrapperImg = styled.div`
   width: 100%;
-  
+  background-color: aquamarine;
+  height: 100%;
 `;
 
 export const Image = styled.img`
   width: 100%;
-  
-  
+  height: 100%;
   
 `;
 
