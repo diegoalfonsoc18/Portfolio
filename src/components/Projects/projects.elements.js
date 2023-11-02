@@ -6,37 +6,37 @@ export const Wrapper = styled.div`
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: #fdd;
+  background-color: #fff;
+  margin-bottom: 20px;
 `;
 
 export const ContainerCard = styled.div`
-  width: 70%;
-  height: auto;
-  background-color: antiquewhite;
-  
-@media (min-width: 735px) {
-    display: grid;
-    grid-template: 50% 50% / 50% 50%;
-    padding: 10px;
-  grid-gap: 12px;
+   display: flex;
+    overflow-x: auto; /* Creamos un div scrollable de forma horizontal */
+    scrollbar-width: none; /* Escondemos la scrollbar en Firefox */
+    padding: 1.5rem 0; 
+    ::-webkit-scrollbar {
+    display: none;
   }
-  @media (min-width: 735px) {
-    display: grid;
     
-    grid-template: 50% 50% / 50% 50%;
-    
-  }
 `;
-export const WrapperCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 380px;
-  width: 100%;
-  background-color: ${(props) => (props.isOdd ? "rgb(0, 0, 0)" : "#fff")};
-  //box-shadow: 2px 4px 12px rgb(0, 0, 0, 0.08);
 
+export const WrapperCard = styled.div`
+  position: relative; /* Esta posición para poder posicionar el texto de la clase "body" */
+    flex: 0 0 309px; /* flex grow 0 para que todas ocupen el mismo espacio, flex-shrink 0 para que no se encojan y flex-basis 309px de ancho. */
+    height: 450px;
+    overflow: hidden; /* Para poder ver el borde redondeado */
+    margin-left: 1.5rem;
+    border-radius: 18px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: ${(props) => (props.isOdd ? "rgb(0, 0, 0)" : "#fff")};
+ 
   
 `;
+
+
+
+
 export const WrapperImg = styled.div`
   width: 100%;
   
@@ -44,7 +44,7 @@ export const WrapperImg = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  height: 100%;
+  
   
   
 `;
