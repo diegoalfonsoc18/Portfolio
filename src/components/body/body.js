@@ -51,11 +51,8 @@ const ArticleMain = () => {
       color: "0 0 0 10px #6499E9, 0 0 50px #83ADED,0 0 100px #B8D0F5",
       time: 'calc(125s / 20)',
     },
-    {
-      img: htmlIcon,
-      color: "0 0 0 10px #FF6C22, 0 0 50px #FF894E,0 0 100px #FFBB99",
-      time: 'calc(125s / 13)',
-    }
+    
+   
   ];
   
   return (

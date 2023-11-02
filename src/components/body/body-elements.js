@@ -23,15 +23,13 @@ export const WrapperArticle = styled.div`
   width: 80%;
   position: relative;
 
-  @media (min-width: 740px){
-    flex-direction: row;
-  }
+
 
 `;
 
 export const ContainerImg = styled.div`
   position: relative;
-
+  z-index: 1;
   height: 15em;
   transition: all 0.3s ease;
   display: flex;
@@ -60,15 +58,16 @@ export const WrapperIcons = styled.div`
   position: relative;
   
   width: 700px;
-  height: 400px;
+  height: 50px;
   
 `;
 
 export const WrapperArticleIcons = styled.span`
   position: relative;
-  width: 70px;
+  z-index: 2;
+  width: 60px;
   margin: 0 10px;
-  height: 70px;
+  height: 60px;
   
   
   
@@ -81,8 +80,7 @@ export const Icons = styled.img`
   margin: 0;
   padding: 0;
   border-radius: 50%;
-  -webkit-animation: heartbeat 5s ease-in-out infinite both;
-	        animation: heartbeat 5s ease-in-out infinite both;
+  
   
   animation: animate 15s linear infinite;
   animation-duration: calc(125s / 20);
