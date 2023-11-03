@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {
   WrapperMain,
   Sect,
@@ -19,6 +19,10 @@ import pythonIcon from "../../icon/pythonIcon.png";
 import reacIcon from "../../icon/reactIcon.png";
 import dataIcon from "../../icon/databaseIcon.png";
 const ArticleMain = () => {
+
+  
+    
+
   const iconBanner = [
     
     {
@@ -51,10 +55,32 @@ const ArticleMain = () => {
       color: "0 0 0 10px #6499E9, 0 0 50px #83ADED,0 0 100px #B8D0F5",
       time: 'calc(125s / 20)',
     },
-    
    
   ];
-  
+  const [elements, setElements] = useState(iconBanner);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Clonar el array original
+      const shuffledElements = [...iconBanner];
+
+      // Barajar el array utilizando el algoritmo Fisher-Yates
+      for (let i = shuffledElements.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledElements[i], shuffledElements[j]] = [
+          shuffledElements[j],
+          shuffledElements[i],
+        ];
+      }
+
+      setElements(shuffledElements);
+    }, 11000); // Cambia los elementos cada 5 segundos (5000 ms)
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <WrapperMain>
       <Sect>
@@ -64,7 +90,7 @@ const ArticleMain = () => {
             <Memoji src={memoji} />
           </ContainerImg>
           <WrapperIcons>
-          {iconBanner.map((icon, index) => (
+          {elements.map((icon, index) => (
             <WrapperArticleIcons key={index} >
               <Icons src={icon.img} key={icon.key} style={{boxShadow: icon.color, animationDuration: icon.time }}  />
             </WrapperArticleIcons>
