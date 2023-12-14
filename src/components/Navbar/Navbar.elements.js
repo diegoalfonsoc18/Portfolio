@@ -57,7 +57,7 @@ export const ResponsiveIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2rem;
+  width: 2.2rem;
   height: 100%;
 
   @media (min-width: 640px) {
@@ -105,12 +105,11 @@ export const MenuItem = styled.li`
 export const MenuItemLink = styled.a`
   text-decoration: none;
   position: relative;
-  font-weight: 500;
   font-size: 18px;
   border-radius: 7px;
   display: inline-block;
   text-decoration: none;
-  color: #272829;
+  color: var(--white);
   &.icon-linkedin {
     color: var(--green);
   }
