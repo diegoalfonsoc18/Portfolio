@@ -21,7 +21,7 @@ export const WrapperTitleSkills = styled.div`
 `;
 export const TitleSkill = styled.h2`
   font-size: 2em;
-  color: var(--black);
+  color: var(--white);
   margin: 0;
 `;
 

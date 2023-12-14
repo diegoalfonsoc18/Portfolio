@@ -8,7 +8,11 @@ import {
   WrapperArticle,
   Icons,
   WrapperArticleIcons,
-  WrapperIcons
+  WrapperIcons,
+  WrapperText,
+  TitleText,
+  Text,
+  Text2
 } from "./body-elements";
 import memoji from "../../Img/memojic-mac.png";
 import memoji3 from "../../Img/memoji3.png";
@@ -20,7 +24,6 @@ import reacIcon from "../../icon/reactIcon.png";
 import dataIcon from "../../icon/databaseIcon.png";
 const ArticleMain = () => {
 
-  
     
 
   const iconBanner = [
@@ -85,6 +88,11 @@ const ArticleMain = () => {
     <WrapperMain>
       <Sect>
         <WrapperArticle>
+        <WrapperText>
+          <Text>Hi, I am</Text>
+          <TitleText>Diego Alfonso</TitleText>
+          <Text2>Web Developer</Text2>
+        </WrapperText>
           <ContainerImg>
             <MemojiMain src={memoji3}></MemojiMain>
             <Memoji src={memoji} />
@@ -96,8 +104,8 @@ const ArticleMain = () => {
             </WrapperArticleIcons>
           ))}
           </WrapperIcons>
-        </WrapperArticle>
-      </Sect>
+        </WrapperArticle> 
+      </Sect> 
     </WrapperMain>
   );
 };

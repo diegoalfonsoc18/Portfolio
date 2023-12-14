@@ -6,7 +6,6 @@ export const Wrapper = styled.div`
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: #fff;
   margin-bottom: 20px;
 `;
 
@@ -102,7 +101,7 @@ export const WrapperTitle = styled.div`
   }
 `;
 export const TitleSection = styled.p`
-  color: var(--dark);
+  color: var(--white);
   font-size: 2em;
   font-weight: 500;
   line-height: 48px;

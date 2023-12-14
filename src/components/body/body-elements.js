@@ -4,7 +4,7 @@ export const WrapperMain = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: var(--black);
+  
 `;
 
 export const Sect = styled.div`
@@ -20,12 +20,36 @@ export const WrapperArticle = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  
   position: relative;
-
-
-
 `;
+
+export const WrapperText = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 15em;
+  
+`;
+
+export const Text = styled.p`
+  color: var(--white);
+  font-size: large;
+  margin: 0;
+`;
+export const TitleText = styled.h2`
+  color: var(--white);
+  font-size: xx-large;
+  margin: 0;
+`;
+export const Text2 = styled.p`
+  color: var(--white);
+  font-size: large;
+  margin: 0;
+`;
+
 
 export const ContainerImg = styled.div`
   position: relative;
