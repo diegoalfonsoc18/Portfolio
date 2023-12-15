@@ -11,8 +11,8 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 90%;
-  height: 100%;
+  width: 80%;
+  height: 4rem;
   padding: 15px 0;
 `;
 
@@ -74,6 +74,7 @@ export const Menu = styled.ul`
   justify-content: space-around;
   font-size: 1.2rem;
   color: var(--white);
+  
 
   font-weight: bold;
 
@@ -88,9 +89,10 @@ export const Menu = styled.ul`
 
 export const ContainerResponsive = styled.div`
   display: flex;
-  justify-content: end;
-  width: 100%;
+  position: absolute;
   height: 40px;
+  right: 8px;
+  top:63px;
 `;
 
 export const MenuItem = styled.li`
@@ -100,6 +102,7 @@ export const MenuItem = styled.li`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  padding: 2px;
 `;
 
 export const MenuItemLink = styled.a`
