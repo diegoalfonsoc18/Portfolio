@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  
   align-items: center;
   width: 100%;
   height: auto;
@@ -10,7 +11,7 @@ export const Wrapper = styled.div`
 `;
 
 export const ContainerCard = styled.div`
-   display: flex;
+    display: flex;
     overflow-x: auto; /* Creamos un div scrollable de forma horizontal */
     scrollbar-width: none; /* Escondemos la scrollbar en Firefox */
     padding: 1.5rem 0; 
@@ -25,11 +26,11 @@ export const WrapperCard = styled.div`
     flex: 0 0 280px; /* flex grow 0 para que todas ocupen el mismo espacio, flex-shrink 0 para que no se encojan y flex-basis 309px de ancho. */
     height: 420px;
     overflow: hidden; /* Para poder ver el borde redondeado */
-    margin-left: 1.5rem;
+    margin-left: 3.2em;
     border-radius: 18px;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
-  background-color: ${(props) => (props.isOdd ? "rgb(0, 0, 0)" : "#f5f5f7")};
-
+    background-color: ${(props) => (props.isOdd ? "rgb(0, 0, 0)" : "#f5f5f7")};
+  left: 30px;
  @media (min-width: 768px){
   flex: 0 0 350px;
   height: 450px;
