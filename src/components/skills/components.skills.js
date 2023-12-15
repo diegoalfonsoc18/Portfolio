@@ -18,11 +18,15 @@ export const WrapperSkills = styled.div`
 `;
 export const WrapperTitleSkills = styled.div`
   width: 80%;
+  
 `;
 export const TitleSkill = styled.h2`
+display: flex;
   font-size: 2em;
   color: var(--white);
   margin: 0;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const WrapperItems = styled.div`
@@ -38,7 +42,7 @@ export const WrapperItems = styled.div`
   border: 1px solid rgba(231, 231, 231, 0.4);
   background: #1e1b33;
   box-shadow: 20px 20px 50px 0px rgba(49, 49, 49, 0.05);
-  background-color: #1e1b33;
+  background-color: var(--white);
 `;
 
 export const ImgItem = styled.div`
@@ -54,7 +58,7 @@ export const ImgItem = styled.div`
 
   &::before {
     content: "";
-    background: lightgray;
+    background: var(--black);
     opacity: 0.3;
     border-radius: 52px;
     position: absolute;
@@ -72,5 +76,5 @@ export const Iconitem = styled.img`
 `;
 export const ItemText = styled.p`
   font-size: larger;
-  color: var(--white);
+  color: var(--black);
 `;
