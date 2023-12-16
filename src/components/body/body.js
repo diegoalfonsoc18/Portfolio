@@ -88,7 +88,13 @@ const ArticleMain = () => {
     <WrapperMain>
       <Sect>
         <WrapperArticle>
-        
+        <WrapperIcons>
+          {elements.map((icon, index) => (
+            <WrapperArticleIcons key={index} >
+              <Icons src={icon.img} key={icon.key} style={{boxShadow: icon.color, animationDuration: icon.time }}  />
+            </WrapperArticleIcons>
+          ))}
+          </WrapperIcons>
           <ContainerImg>
             <MemojiMain src={memoji3}></MemojiMain>
             <Memoji src={memoji} />

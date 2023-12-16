@@ -106,7 +106,7 @@ export const Icons = styled.img`
   border-radius: 50%;
   
   
-  animation: animate 15s linear infinite;
+  animation: animate 40s linear infinite;
   animation-duration: calc(125s / 20);
   :nth-child(even){
     background: #ff2d75;
@@ -121,7 +121,7 @@ export const Icons = styled.img`
       transform: translateY(100vh) scale(0);
     }
     100%{
-      transform: translateY(-10vh) scale(1);
+      transform: translateY(-100vh) scale(1);
     }
   }
  
