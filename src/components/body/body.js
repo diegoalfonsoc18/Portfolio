@@ -88,7 +88,6 @@ const ArticleMain = () => {
     <WrapperMain>
       <Sect>
         <WrapperArticle>
-        
           <ContainerImg>
             <MemojiMain src={memoji3}></MemojiMain>
             <Memoji src={memoji} />

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const WrapperMain = styled.div`
   display: flex;
   justify-content: center;
-  
   width: 100%;
   
 `;
@@ -19,20 +18,16 @@ export const Sect = styled.div`
 
 export const WrapperArticle = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
   position: relative;
 
   @media (min-width: 768px) {
     flex-direction: row;
   }
 `;
-
-
-
-
 
 export const Icons = styled.img`
   width: 100%;
@@ -41,7 +36,6 @@ export const Icons = styled.img`
   margin: 0;
   padding: 0;
   border-radius: 50%;
-  
   
   animation: animate 20s linear infinite;
   animation-duration: calc(125s / 10);
@@ -138,6 +132,7 @@ export const WrapperText = styled.div`
 
   @media (min-width: 768px) {
     order: 0;
+    width: 50%;
   }
   
 `;
@@ -146,16 +141,29 @@ export const Text = styled.p`
   color: var(--white);
   font-size: large;
   margin: 0;
+  
+  @media (min-width: 768px) {
+    font-size: x-large;
+  }  
 `;
 export const TitleText = styled.h2`
   color: var(--white);
   font-size: xx-large;
   margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+  }
+
 `;
 export const Text2 = styled.p`
   color: var(--white);
   font-size: large;
   margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: x-large;
+  }
 `;
 
 export const TextSection = styled.div`
@@ -175,6 +183,7 @@ export const WrapperIcons = styled.div`
   
   @media (min-width: 768px) {
     order: 2;
+    justify-content: center;
   }
 `;
 
@@ -184,8 +193,12 @@ export const WrapperArticleIcons = styled.span`
   width: 40px;
   margin: 0 10px;
   height: 40px;
-  
+ @media (min-width: 768px) {
+   width: 60px;
+   height: 60px;
+ }
  
+
 `;
 
 

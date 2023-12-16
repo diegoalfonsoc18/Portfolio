@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  
-  align-items: center;
   width: 100%;
   height: auto;
   margin-bottom: 20px;
@@ -92,22 +90,15 @@ export const ButtonCard = styled.a`
 
 export const WrapperTitle = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
   padding: 12px;
   margin: 10px 0 10px 0;
   height: 50px;
-  
-
-  @media (min-width: 768px) {
-    justify-content: flex-start;
-  }
+  justify-content: center;
+  align-items: center;
 `;
 export const TitleSection = styled.p`
   color: var(--white);
   font-size: 2em;
-  font-weight: 500;
-  line-height: 48px;
+  font-weight: 400;
   margin: 0;
 `;
