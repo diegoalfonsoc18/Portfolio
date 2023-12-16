@@ -3,8 +3,19 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 60px;
+  
+  
+`;
+
+export const WrapperMain = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 100%;
   
   
 `;
@@ -14,7 +25,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   width: 80%;
   height: 4rem;
-  padding: 15px 0;
+  padding: 12px 0;
 `;
 
 export const LogoContainer = styled.div`

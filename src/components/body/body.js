@@ -12,7 +12,8 @@ import {
   WrapperText,
   TitleText,
   Text,
-  Text2
+  Text2,
+  Paragrahp
 } from "./body-elements";
 import memoji from "../../Img/memojic-mac.png";
 import memoji3 from "../../Img/memoji3.png";
@@ -96,6 +97,7 @@ const ArticleMain = () => {
           <Text>Hi, I am</Text>
           <TitleText>Diego Alfonso</TitleText>
           <Text2>Web Developer</Text2>
+          <Paragrahp>Web developer with experience in personal projects using HTML, CSS, JavaScript, React, and MySQL. Passionate about continuous learning and committed to delivering creative and quality solutions.</Paragrahp>
         </WrapperText>
           <WrapperIcons>
           {elements.map((icon, index) => (

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const WrapperMain = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   
 `;
@@ -14,6 +15,9 @@ export const Sect = styled.div`
   flex-direction: row;
   width: 100%;
   height: 100vh;
+  @media (min-width: 1200px){
+    width: 70%;
+  }
 `;
 
 export const WrapperArticle = styled.div`
@@ -127,7 +131,7 @@ export const WrapperText = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   height: 15em;
 
   @media (min-width: 768px) {
@@ -165,7 +169,14 @@ export const Text2 = styled.p`
     font-size: x-large;
   }
 `;
+export const Paragrahp = styled.p`
+  font-size: small;
+  color: var(--white);
+  @media (min-width: 768px) {
+    font-size: large;
+  }
 
+`;
 export const TextSection = styled.div`
   width: 80%;
   height: 15em;

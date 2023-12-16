@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import {
   Container,
+  WrapperMain,
   LogoContainer,
   Menu,
   MenuItem,
@@ -27,6 +28,7 @@ const Navbar = () => {
   const [openNavbar, setOpenNavbar] = useState(false);
   return (
     <Container>
+      <WrapperMain>
       <Wrapper>
         <LogoContainer>
           <LogoDev src={code} alt="logoDev" />
@@ -102,6 +104,7 @@ const Navbar = () => {
           </Menu>
         </ContainerResponsive>
       )}
+      </WrapperMain>
     </Container>
   );
 };
