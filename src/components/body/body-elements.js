@@ -81,7 +81,7 @@ export const ContainerImg = styled.div`
 export const WrapperIcons = styled.div`
   display: flex;
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100px;
   
 `;
@@ -106,8 +106,8 @@ export const Icons = styled.img`
   border-radius: 50%;
   
   
-  animation: animate 40s linear infinite;
-  animation-duration: calc(125s / 20);
+  animation: animate 20s linear infinite;
+  animation-duration: calc(125s / 10);
   :nth-child(even){
     background: #ff2d75;
     box-shadow: 0 0 0 10px #ff2d7544,
@@ -118,7 +118,7 @@ export const Icons = styled.img`
 
   @keyframes animate{
     0% {
-      transform: translateY(100vh) scale(0);
+      transform: translateY(20vh) scale(0);
     }
     100%{
       transform: translateY(-100vh) scale(1);
