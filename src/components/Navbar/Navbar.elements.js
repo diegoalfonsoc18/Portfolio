@@ -110,6 +110,7 @@ export const MenuItemLink = styled.a`
   text-decoration: none;
   position: relative;
   font-size: 18px;
+  font-weight: 100;
   border-radius: 7px;
   display: inline-block;
   text-decoration: none;

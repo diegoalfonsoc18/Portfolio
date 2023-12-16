@@ -24,78 +24,15 @@ export const WrapperArticle = styled.div`
   align-items: center;
   
   position: relative;
-`;
 
-export const WrapperText = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 15em;
-  
-`;
-
-export const Text = styled.p`
-  color: var(--white);
-  font-size: large;
-  margin: 0;
-`;
-export const TitleText = styled.h2`
-  color: var(--white);
-  font-size: xx-large;
-  margin: 0;
-`;
-export const Text2 = styled.p`
-  color: var(--white);
-  font-size: large;
-  margin: 0;
-`;
-
-
-export const ContainerImg = styled.div`
-  position: relative;
-  z-index: 1;
-  height: 15em;
-  transition: all 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &:hover {
-    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    /* linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0) 95%); */
-    opacity: 0;
-    transition: all 0.3s ease;
-  }
-  &:hover::before {
-    opacity: 1;
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 `;
-export const WrapperIcons = styled.div`
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100px;
-  
-`;
 
-export const WrapperArticleIcons = styled.span`
-  position: relative;
-  z-index: 2;
-  width: 40px;
-  margin: 0 10px;
-  height: 40px;
-  
-  
-  
-`;
+
+
+
 
 export const Icons = styled.img`
   width: 100%;
@@ -127,6 +64,35 @@ export const Icons = styled.img`
  
 `;
 
+export const ContainerImg = styled.div`
+  position: relative;
+  z-index: 1;
+  height: 15em;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0) 95%); */
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  &:hover::before {
+    opacity: 1;
+  }
+
+  @media (min-width: 768px){
+    order: 1;
+  }
+`;
 
 export const MemojiMain = styled.img`
   display: flex;
@@ -162,7 +128,35 @@ export const Memoji = styled.img`
 `;
 
 
+export const WrapperText = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 15em;
 
+  @media (min-width: 768px) {
+    order: 0;
+  }
+  
+`;
+
+export const Text = styled.p`
+  color: var(--white);
+  font-size: large;
+  margin: 0;
+`;
+export const TitleText = styled.h2`
+  color: var(--white);
+  font-size: xx-large;
+  margin: 0;
+`;
+export const Text2 = styled.p`
+  color: var(--white);
+  font-size: large;
+  margin: 0;
+`;
 
 export const TextSection = styled.div`
   width: 80%;
@@ -173,8 +167,26 @@ export const TextSection = styled.div`
   justify-content: center;
 `;
 
+export const WrapperIcons = styled.div`
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  
+  @media (min-width: 768px) {
+    order: 2;
+  }
+`;
 
-
+export const WrapperArticleIcons = styled.span`
+  position: relative;
+  z-index: 2;
+  width: 40px;
+  margin: 0 10px;
+  height: 40px;
+  
+ 
+`;
 
 
 
