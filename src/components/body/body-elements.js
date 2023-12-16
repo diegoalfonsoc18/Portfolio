@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const WrapperMain = styled.div`
   display: flex;
   justify-content: center;
+  
   width: 100%;
   
 `;
@@ -10,8 +11,9 @@ export const WrapperMain = styled.div`
 export const Sect = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
-  width: 70%;
+  width: 100%;
   height: 100vh;
 `;
 
@@ -29,7 +31,7 @@ export const WrapperText = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   height: 15em;
   
 `;
@@ -78,20 +80,18 @@ export const ContainerImg = styled.div`
 `;
 export const WrapperIcons = styled.div`
   display: flex;
- 
   position: relative;
-  
-  width: 700px;
-  height: 50px;
+  width: 100vw;
+  height: 100px;
   
 `;
 
 export const WrapperArticleIcons = styled.span`
   position: relative;
   z-index: 2;
-  width: 60px;
+  width: 40px;
   margin: 0 10px;
-  height: 60px;
+  height: 40px;
   
   
   

@@ -88,15 +88,16 @@ const ArticleMain = () => {
     <WrapperMain>
       <Sect>
         <WrapperArticle>
-        <WrapperText>
-          <Text>Hi, I am</Text>
-          <TitleText>Diego Alfonso</TitleText>
-          <Text2>Web Developer</Text2>
-        </WrapperText>
+        
           <ContainerImg>
             <MemojiMain src={memoji3}></MemojiMain>
             <Memoji src={memoji} />
           </ContainerImg>
+          <WrapperText>
+          <Text>Hi, I am</Text>
+          <TitleText>Diego Alfonso</TitleText>
+          <Text2>Web Developer</Text2>
+        </WrapperText>
           <WrapperIcons>
           {elements.map((icon, index) => (
             <WrapperArticleIcons key={index} >
