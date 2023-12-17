@@ -2,21 +2,21 @@ import styled, {keyframes} from "styled-components";
 
 const fadeInLeft = keyframes`
   from {
-    transform: translateX(-100%);
+    transform: translateY(100%);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 `;
 const fadeInRight = keyframes`
   from {
-    transform: translateX(100%);
+    transform: translateZ(1000px) scale(1.5);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    transform: translateZ(0) scale(1);
     opacity: 1;
   }
 `;
