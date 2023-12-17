@@ -1,4 +1,25 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+
+const fadeInLeft = keyframes`
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
+const fadeInRight = keyframes`
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
 
 export const WrapperMain = styled.div`
   display: flex;
@@ -70,7 +91,7 @@ export const ContainerImg = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  animation: ${fadeInRight} 1s ease-in-out;
   &:hover {
     transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
   }
@@ -133,11 +154,19 @@ export const WrapperText = styled.div`
   flex-direction: column;
   width: 80%;
   height: 15em;
+  animation: ${fadeInLeft} 1s ease-in-out;
+  
+ 
+
 
   @media (min-width: 768px) {
     order: 0;
     width: 50%;
   }
+
+
+
+
   
 `;
 
