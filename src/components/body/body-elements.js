@@ -217,6 +217,8 @@ export const TextSection = styled.div`
 
 export const WrapperIcons = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
   height: 100px;

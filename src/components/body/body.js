@@ -85,6 +85,10 @@ const ArticleMain = () => {
     };
   }, []);
 
+
+
+  
+
   return (
     <WrapperMain>
       <Sect>
