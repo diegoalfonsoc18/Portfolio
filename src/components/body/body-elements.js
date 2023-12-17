@@ -1,4 +1,4 @@
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const fadeInLeft = keyframes`
   from {
@@ -26,7 +26,6 @@ export const WrapperMain = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  
 `;
 
 export const Sect = styled.div`
@@ -36,7 +35,7 @@ export const Sect = styled.div`
   flex-direction: row;
   width: 100%;
   height: 100vh;
-  @media (min-width: 1200px){
+  @media (min-width: 1200px) {
     width: 70%;
   }
 `;
@@ -61,26 +60,23 @@ export const Icons = styled.img`
   margin: 0;
   padding: 0;
   border-radius: 50%;
-  
+
   animation: animate 20s linear infinite;
   animation-duration: calc(125s / 10);
-  :nth-child(even){
+  :nth-child(even) {
     background: #ff2d75;
-    box-shadow: 0 0 0 10px #ff2d7544,
-    0 0 50px #ff2d75, 
-    0 0 100px #ff2d75;
-  animation: animate 15s linear infinite;
+    box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+    animation: animate 15s linear infinite;
   }
 
-  @keyframes animate{
+  @keyframes animate {
     0% {
       transform: translateY(20vh) scale(0);
     }
-    100%{
+    100% {
       transform: translateY(-100vh) scale(1);
     }
   }
- 
 `;
 
 export const ContainerImg = styled.div`
@@ -108,7 +104,7 @@ export const ContainerImg = styled.div`
     opacity: 1;
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     order: 1;
   }
 `;
@@ -146,38 +142,50 @@ export const Memoji = styled.img`
   }
 `;
 
-
 export const WrapperText = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 80%;
   height: 15em;
   animation: ${fadeInLeft} 1s ease-in-out;
-  
- 
+  :nth-child(1) {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: aquamarine;
+  }
+  :nth-child(2) {
+    height: auto;
+    padding: 10px;
+    background-color: #cc0000;
+  }
 
+  :nth-child(3) {
+    background-color: #ccc;
+  }
 
   @media (min-width: 768px) {
     order: 0;
     width: 50%;
   }
-
-
-
-
-  
 `;
 
-export const Text = styled.p`
-  color: var(--white);
+export const Text = styled.h1`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--black);
   font-size: large;
   margin: 0;
-  
+  background-color: var(--white);
+  border-radius: 25px;
+  width: 10rem;
+  height: 3rem;
+
   @media (min-width: 768px) {
     font-size: x-large;
-  }  
+  }
 `;
 export const TitleText = styled.h2`
   color: var(--white);
@@ -187,11 +195,11 @@ export const TitleText = styled.h2`
   @media (min-width: 768px) {
     font-size: 40px;
   }
-
 `;
-export const Text2 = styled.p`
+export const Text2 = styled.h2`
   color: var(--white);
   font-size: large;
+  font-weight: 700;
   margin: 0;
 
   @media (min-width: 768px) {
@@ -201,10 +209,10 @@ export const Text2 = styled.p`
 export const Paragrahp = styled.p`
   font-size: small;
   color: var(--white);
+  margin: 0;
   @media (min-width: 768px) {
     font-size: large;
   }
-
 `;
 export const TextSection = styled.div`
   width: 80%;
@@ -222,7 +230,7 @@ export const WrapperIcons = styled.div`
   position: relative;
   width: 100%;
   height: 100px;
-  
+
   @media (min-width: 768px) {
     order: 2;
     justify-content: center;
@@ -235,15 +243,8 @@ export const WrapperArticleIcons = styled.span`
   width: 40px;
   margin: 0 10px;
   height: 40px;
- @media (min-width: 768px) {
-   width: 60px;
-   height: 60px;
- }
- 
-
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
 `;
-
-
-
-
-
