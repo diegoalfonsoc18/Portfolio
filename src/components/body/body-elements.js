@@ -141,27 +141,33 @@ export const Memoji = styled.img`
     transform: translateY(10%);
   }
 `;
-
-export const WrapperText = styled.div`
+export const WrapperTextDiv = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 15em;
+  height: auto;
   animation: ${fadeInLeft} 1s ease-in-out;
+`;
+
+export const WrapperText = styled.div`
   :nth-child(1) {
     height: auto;
     width: 100%;
     padding: 10px;
-    background-color: aquamarine;
+    background-color: aliceblue;
   }
   :nth-child(2) {
-    height: auto;
     padding: 10px;
-    background-color: #cc0000;
+    width: 100%;
+    height: auto;
+    background-color: #cc0;
   }
 
   :nth-child(3) {
-    background-color: #ccc;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    background-color: #000;
   }
 
   @media (min-width: 768px) {

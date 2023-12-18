@@ -14,6 +14,7 @@ import {
   Text,
   Text2,
   Paragrahp,
+  WrapperTextDiv,
 } from "./body-elements";
 import memoji from "../../Img/memojic-mac.png";
 import memoji3 from "../../Img/memoji3.png";
@@ -88,7 +89,8 @@ const ArticleMain = () => {
             <MemojiMain src={memoji3}></MemojiMain>
             <Memoji src={memoji} />
           </ContainerImg>
-          <WrapperText>
+
+          <WrapperTextDiv>
             <WrapperText>
               <Text>Hi, I am Diego</Text>
             </WrapperText>
@@ -103,7 +105,7 @@ const ArticleMain = () => {
                 solutions.
               </Paragrahp>
             </WrapperText>
-          </WrapperText>
+          </WrapperTextDiv>
 
           <WrapperIcons>
             {elements.map((icon, index) => (
