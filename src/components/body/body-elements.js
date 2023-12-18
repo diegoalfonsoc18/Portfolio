@@ -151,23 +151,23 @@ export const WrapperTextDiv = styled.div`
 
 export const WrapperText = styled.div`
   :nth-child(1) {
+    display: flex;
     height: auto;
     width: 100%;
-    padding: 10px;
-    background-color: aliceblue;
+    padding: 5px;
+
+    justify-content: start;
   }
   :nth-child(2) {
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     height: auto;
-    background-color: #cc0;
   }
 
   :nth-child(3) {
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     height: auto;
-    background-color: #000;
   }
 
   @media (min-width: 768px) {
@@ -181,13 +181,13 @@ export const Text = styled.h1`
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  color: var(--black);
+  color: var(--white);
   font-size: large;
   margin: 0;
-  background-color: var(--white);
   border-radius: 25px;
   width: 10rem;
   height: 3rem;
+  border: 2px solid var(--white);
 
   @media (min-width: 768px) {
     font-size: x-large;
@@ -204,7 +204,7 @@ export const TitleText = styled.h2`
 `;
 export const Text2 = styled.h2`
   color: var(--white);
-  font-size: large;
+  font-size: xx-large;
   font-weight: 700;
   margin: 0;
 
@@ -213,7 +213,7 @@ export const Text2 = styled.h2`
   }
 `;
 export const Paragrahp = styled.p`
-  font-size: small;
+  font-size: large;
   color: var(--white);
   margin: 0;
   @media (min-width: 768px) {
