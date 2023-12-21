@@ -118,16 +118,28 @@ export const TitleSection = styled.p`
 
 export const ButtonR = styled.img`
   position: absolute;
-  right: 30px;
+  right: 15px;
   z-index: 2;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
+  @media (min-width: 768px) {
+    right: 35px;
+  }
+  @media (min-width: 1024px) {
+    right: 55px;
+  }
 `;
 
 export const ButtonL = styled.img`
   position: absolute;
-  left: 30px;
-  width: 20px;
-  height: 20px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
   z-index: 2;
+  @media (min-width: 768px) {
+    left: 35px;
+  }
+  @media (min-width: 1024px) {
+    left: 55px;
+  }
 `;
