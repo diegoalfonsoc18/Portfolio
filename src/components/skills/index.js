@@ -88,10 +88,6 @@ const Skills = () => {
           </WrapperItems>
         ))}
       </WrapperSkills>
-      <WrapperTitleSkills>
-        <TitleSkill>Others</TitleSkill>
-      </WrapperTitleSkills>
-      <WrapperSkills></WrapperSkills>
     </ContainerMain>
   );
 };

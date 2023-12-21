@@ -34,7 +34,7 @@ export const WrapperBackground = styled.div`
     background-image: url(${(props) => props.backgroundImage});
     background-size: cover;
     background-position: center;
-    filter: blur(10px);
+    filter: blur(4px);
     z-index: -1;
   }
 `;

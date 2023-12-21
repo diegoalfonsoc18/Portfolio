@@ -11,10 +11,14 @@ export const ContainerMain = styled.article`
 export const WrapperSkills = styled.div`
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
   height: auto;
+  @media (min-width: 768px) {
+    width: 40%;
+  }
 `;
 export const WrapperTitleSkills = styled.div`
   width: 80%;
@@ -31,12 +35,14 @@ export const TitleSkill = styled.h2`
 
 export const WrapperItems = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   margin-top: 1em;
   align-items: center;
   flex-wrap: wrap;
-  width: 7.7em;
-  height: 3em;
+
+  width: 8em;
+  height: 3.3rem;
   flex-shrink: 0;
   border-radius: 35px;
   border: 1px solid rgba(231, 231, 231, 0.4);
@@ -75,5 +81,6 @@ export const Iconitem = styled.img`
 `;
 export const ItemText = styled.p`
   font-size: small;
+  margin: 0;
   color: var(--white);
 `;
