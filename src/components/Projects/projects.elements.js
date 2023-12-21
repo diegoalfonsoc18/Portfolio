@@ -9,46 +9,53 @@ export const Wrapper = styled.div`
 `;
 
 export const ContainerCard = styled.div`
-    display: flex;
-    overflow-x: auto; /* Creamos un div scrollable de forma horizontal */
-    scrollbar-width: none; /* Escondemos la scrollbar en Firefox */
-    padding: 1.5rem 0; 
-    ::-webkit-scrollbar {
-    display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+  height: 400px;
+`;
+export const WrapperBackground = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(${(props) => props.backgroundImage});
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
   }
-    
 `;
-
 export const WrapperCard = styled.div`
-  position: relative; /* Esta posición para poder posicionar el texto de la clase "body" */
-    flex: 0 0 280px; /* flex grow 0 para que todas ocupen el mismo espacio, flex-shrink 0 para que no se encojan y flex-basis 309px de ancho. */
-    height: 420px;
-    overflow: hidden; /* Para poder ver el borde redondeado */
-    margin-left: 3.2em;
-    border-radius: 18px;
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
-    background-color: ${(props) => (props.isOdd ? "rgb(0, 0, 0)" : "#f5f5f7")};
-  left: 30px;
- @media (min-width: 768px){
-  flex: 0 0 350px;
-  height: 450px;
- }
-  
+  height: 100px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: ${(props) => (props.isOdd ? "rgb(0, 0, 0)" : "#f5f5f7")};
+  @media (min-width: 768px) {
+  }
 `;
-
-
-
 
 export const WrapperImg = styled.div`
   width: 100%;
-  background-color: aquamarine;
+
   height: 100%;
 `;
 
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-  
 `;
 
 export const WrapperInfo = styled.div`
@@ -71,7 +78,6 @@ export const TextCard = styled.p`
   margin: 10px 0 0 0;
 `;
 
-
 export const ButtonCard = styled.a`
   display: flex;
   justify-content: start;
@@ -85,8 +91,6 @@ export const ButtonCard = styled.a`
   margin-bottom: 12px;
   padding-left: 10px;
 `;
-
-
 
 export const WrapperTitle = styled.div`
   display: flex;

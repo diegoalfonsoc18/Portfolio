@@ -1,7 +1,6 @@
 import {
   Wrapper,
   WrapperCard,
-  
   Image,
   WrapperImg,
   WrapperInfo,
@@ -9,7 +8,8 @@ import {
   ButtonCard,
   TitleSection,
   WrapperTitle,
-  ContainerCard
+  ContainerCard,
+  WrapperBackground,
 } from "./projects.elements";
 import ProjectOne from "../../Img/index.png";
 import ProjectTwo from "../../Img/proyecto3.png";
@@ -25,6 +25,7 @@ const Projects = () => {
       id: 1,
       link: "https://diegoalfonsoc18.github.io/landing/",
       icon: IconGitHub,
+      backgroundImage: ProjectOne,
     },
     {
       title: "Apple Shop",
@@ -32,6 +33,7 @@ const Projects = () => {
       id: 2,
       link: "https://diegoalfonsoc18.github.io/tribute-page/",
       icon: IconGitHub,
+      backgroundImage: ProjectTwo,
     },
     {
       title: "WordPress",
@@ -39,6 +41,7 @@ const Projects = () => {
       id: 3,
       link: "https://www.appleshop.com.co/?v=8fab2b569f00",
       icon: IconInternet,
+      backgroundImage: ProjectThree,
     },
     {
       title: "Landing Page",
@@ -46,6 +49,7 @@ const Projects = () => {
       id: 4,
       link: "https://diegoalfonsoc18.github.io/Hackathon-2023/",
       icon: IconGitHub,
+      backgroundImage: ProjectFour,
     },
   ];
 
@@ -54,25 +58,26 @@ const Projects = () => {
       <WrapperTitle>
         <TitleSection>Projects</TitleSection>
       </WrapperTitle>
-        <ContainerCard>
+      <ContainerCard>
         {imgs.map((imgs, index) => (
-          <WrapperCard key={index} isOdd={index % 2 !== 0}>
-            <TextCard isOdd={index % 2 !== 0}>{`${imgs.title}`}</TextCard>
-            <ButtonCard
-              href={imgs.link}
-              target="_blank"
-              isOdd={index % 2 !== 0}
-            >
-              Live Now 🔗
-            </ButtonCard>
-            <WrapperImg>
-              <Image src={imgs.img}></Image>;
-            </WrapperImg>
-            <WrapperInfo></WrapperInfo>
-          </WrapperCard>
+          <WrapperBackground key={index} backgroundImage={imgs.backgroundImage}>
+            <WrapperCard key={index} isOdd={index % 2 !== 0}>
+              <TextCard isOdd={index % 2 !== 0}>{`${imgs.title}`}</TextCard>
+              <ButtonCard
+                href={imgs.link}
+                target="_blank"
+                isOdd={index % 2 !== 0}
+              >
+                Live Now 🔗
+              </ButtonCard>
+              <WrapperImg>
+                <Image src={imgs.img}></Image>;
+              </WrapperImg>
+              <WrapperInfo></WrapperInfo>
+            </WrapperCard>
+          </WrapperBackground>
         ))}
       </ContainerCard>
-      
     </Wrapper>
   );
 };
