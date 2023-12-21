@@ -14,15 +14,15 @@ export const ContainerCard = styled.div`
   align-items: center;
   padding: 1.5rem 0;
   height: 400px;
+  overflow: hidden;
+  width: 100%;
 `;
 export const WrapperBackground = styled.div`
-  display: flex;
+  //overflow: hidden;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
 
   ::before {
     content: "";
@@ -39,17 +39,26 @@ export const WrapperBackground = styled.div`
   }
 `;
 export const WrapperCard = styled.div`
-  height: 100px;
+  height: 300px;
+  width: 250px;
   border-radius: 18px;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   background-color: ${(props) => (props.isOdd ? "rgb(0, 0, 0)" : "#f5f5f7")};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   @media (min-width: 768px) {
   }
 `;
 
 export const WrapperImg = styled.div`
   width: 100%;
-
   height: 100%;
 `;
 
@@ -105,4 +114,16 @@ export const TitleSection = styled.p`
   font-size: 2em;
   font-weight: 400;
   margin: 0;
+`;
+
+export const ButtonR = styled.img`
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
+`;
+
+export const ButtonL = styled.img`
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
 `;

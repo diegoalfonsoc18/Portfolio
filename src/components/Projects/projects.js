@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   Wrapper,
   WrapperCard,
@@ -10,6 +11,8 @@ import {
   WrapperTitle,
   ContainerCard,
   WrapperBackground,
+  ButtonR,
+  ButtonL,
 } from "./projects.elements";
 import ProjectOne from "../../Img/index.png";
 import ProjectTwo from "../../Img/proyecto3.png";
@@ -17,6 +20,7 @@ import ProjectThree from "../../Img/proyecto4.png";
 import ProjectFour from "../../Img/proyecto5.png";
 import IconGitHub from "../../icon/githubProject.png";
 import IconInternet from "../../icon/global.png";
+
 const Projects = () => {
   const imgs = [
     {
@@ -53,32 +57,49 @@ const Projects = () => {
     },
   ];
 
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % imgs.length);
+  };
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide - 1 + imgs.length) % imgs.length);
+  };
+
   return (
     <Wrapper>
       <WrapperTitle>
         <TitleSection>Projects</TitleSection>
       </WrapperTitle>
       <ContainerCard>
-        {imgs.map((imgs, index) => (
-          <WrapperBackground key={index} backgroundImage={imgs.backgroundImage}>
-            <WrapperCard key={index} isOdd={index % 2 !== 0}>
-              <TextCard isOdd={index % 2 !== 0}>{`${imgs.title}`}</TextCard>
+        <ButtonL onClick={handlePrevSlide}></ButtonL>
+        {imgs.map((img, index) => (
+          <WrapperBackground
+            key={index}
+            backgroundImage={img.backgroundImage}
+            style={{ display: index === currentSlide ? "block" : "none" }}
+          >
+            <WrapperCard isOdd={index % 2 !== 0}>
+              <TextCard isOdd={index % 2 !== 0}>{`${img.title}`}</TextCard>
               <ButtonCard
-                href={imgs.link}
+                href={img.link}
                 target="_blank"
                 isOdd={index % 2 !== 0}
               >
                 Live Now 🔗
               </ButtonCard>
               <WrapperImg>
-                <Image src={imgs.img}></Image>;
+                <Image src={img.img} alt={img.title} />
               </WrapperImg>
               <WrapperInfo></WrapperInfo>
             </WrapperCard>
           </WrapperBackground>
         ))}
+        <ButtonR onClick={handleNextSlide}></ButtonR>
       </ContainerCard>
     </Wrapper>
   );
 };
+
 export default Projects;
