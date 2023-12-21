@@ -117,11 +117,17 @@ export const TitleSection = styled.p`
 `;
 
 export const ButtonR = styled.img`
+  position: absolute;
+  right: 30px;
+  z-index: 2;
   width: 20px;
   height: 20px;
 `;
 
 export const ButtonL = styled.img`
+  position: absolute;
+  left: 30px;
   width: 20px;
   height: 20px;
+  z-index: 2;
 `;
