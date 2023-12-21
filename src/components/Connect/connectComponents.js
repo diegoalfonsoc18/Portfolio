@@ -52,4 +52,8 @@ export const WrapperMail = styled.div`
   height: 80px;
   width: 100%;
   background-color: #353745;
+
+  @media (min-width: 768px) {
+    border-top: solid 2px var(--white);
+  }
 `;
