@@ -20,6 +20,8 @@ import ProjectThree from "../../Img/proyecto4.png";
 import ProjectFour from "../../Img/proyecto5.png";
 import IconGitHub from "../../icon/githubProject.png";
 import IconInternet from "../../icon/global.png";
+import IconArrowR from "../../icon/right-arrow.png";
+import IconArrowL from "../../icon/left-arrow.png";
 
 const Projects = () => {
   const imgs = [
@@ -73,7 +75,7 @@ const Projects = () => {
         <TitleSection>Projects</TitleSection>
       </WrapperTitle>
       <ContainerCard>
-        <ButtonL onClick={handlePrevSlide}></ButtonL>
+        <ButtonL src={IconArrowL} onClick={handlePrevSlide}></ButtonL>
         {imgs.map((img, index) => (
           <WrapperBackground
             key={index}
@@ -96,7 +98,7 @@ const Projects = () => {
             </WrapperCard>
           </WrapperBackground>
         ))}
-        <ButtonR onClick={handleNextSlide}></ButtonR>
+        <ButtonR src={IconArrowR} onClick={handleNextSlide}></ButtonR>
       </ContainerCard>
     </Wrapper>
   );

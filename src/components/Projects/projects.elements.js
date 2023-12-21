@@ -119,11 +119,9 @@ export const TitleSection = styled.p`
 export const ButtonR = styled.img`
   width: 20px;
   height: 20px;
-  background-color: aqua;
 `;
 
 export const ButtonL = styled.img`
   width: 20px;
   height: 20px;
-  background-color: aqua;
 `;
