@@ -15,7 +15,8 @@ import react from "../../icon/react.svg";
 import github from "../../icon/github-svgrepo-com.svg";
 import docker from "../../icon/docker2-svgrepo-com.svg";
 import photoshop from "../../icon/photoshop-svgrepo-com.svg";
-
+import mySql from "../../icon/databaseIcon.png";
+import git from "../../icon/git.png";
 const Skills = () => {
   const skills = [
     {
@@ -33,6 +34,26 @@ const Skills = () => {
     {
       name: "React",
       icon: react,
+    },
+    {
+      name: "MySQL",
+      icon: mySql,
+    },
+    {
+      name: "Docker",
+      icon: docker,
+    },
+    {
+      name: "Github",
+      icon: github,
+    },
+    {
+      name: "Photoshop",
+      icon: photoshop,
+    },
+    {
+      name: "Git",
+      icon: git,
     },
   ];
 
@@ -54,7 +75,7 @@ const Skills = () => {
   return (
     <ContainerMain>
       <WrapperTitleSkills>
-        <TitleSkill>Skills</TitleSkill>
+        <TitleSkill>Tooling</TitleSkill>
       </WrapperTitleSkills>
 
       <WrapperSkills>

@@ -13,16 +13,16 @@ export const WrapperSkills = styled.div`
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
   height: auto;
 `;
 export const WrapperTitleSkills = styled.div`
   width: 80%;
-  
 `;
 export const TitleSkill = styled.h2`
-display: flex;
+  display: flex;
   font-size: 2em;
+  font-weight: 400;
   color: var(--white);
   margin: 0;
   justify-content: center;
@@ -35,14 +35,13 @@ export const WrapperItems = styled.div`
   margin-top: 1em;
   align-items: center;
   flex-wrap: wrap;
-  width: 14em;
-  height: 5em;
+  width: 7.7em;
+  height: 3em;
   flex-shrink: 0;
-  border-radius: 16px;
+  border-radius: 35px;
   border: 1px solid rgba(231, 231, 231, 0.4);
-  background: #1e1b33;
+
   box-shadow: 20px 20px 50px 0px rgba(49, 49, 49, 0.05);
-  background-color: var(--white);
 `;
 
 export const ImgItem = styled.div`
@@ -56,9 +55,9 @@ export const ImgItem = styled.div`
   position: relative;
   z-index: 0;
 
-  &::before {
+  ::before {
     content: "";
-    background: var(--black);
+    //background: var(--black);
     opacity: 0.3;
     border-radius: 52px;
     position: absolute;
@@ -75,6 +74,6 @@ export const Iconitem = styled.img`
   height: 60%;
 `;
 export const ItemText = styled.p`
-  font-size: larger;
-  color: var(--black);
+  font-size: small;
+  color: var(--white);
 `;
