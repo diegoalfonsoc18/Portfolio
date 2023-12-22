@@ -24,17 +24,22 @@ export const ContainerSocial = styled.div`
     flex-wrap: nowrap;
   }
 `;
-export const LinkSocial = styled.a`
-  cursor: pointer;
-  text-decoration: none;
-  color: "inherit";
-`;
+
 export const ContainerItemSocial = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 80px;
   width: 100%;
+`;
+export const LinkSocial = styled.a`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
 `;
 export const Paragrahp = styled.p`
   font-size: xx-large;

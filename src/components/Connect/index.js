@@ -26,18 +26,22 @@ const Connect = () => {
       name: "Linkedin",
       img: LinkedinSocial,
       backgroundColor: "#0077b5",
+      link: "https://www.linkedin.com/in/diego-alfonso-castillo/",
     },
     {
       name: "Discord",
       img: DiscordSocial,
       backgroundColor: "#7289da",
+      link: "discord.com/channels/984941402783895642",
     },
     {
       name: "Twitter",
       img: XSocial,
       backgroundColor: "#3c3f50",
+      link: "https://twitter.com/diegoalfonsoc18",
     },
   ];
+  const email = "dlalfonso57@gmail.com";
 
   return (
     <WrapperConnect>
@@ -65,8 +69,10 @@ const Connect = () => {
       </ContainerSocial>
 
       <WrapperMail>
-        <Paragrahp>Shoot me a mail</Paragrahp>
-        <ImgSocial src={MailSocial}></ImgSocial>
+        <LinkSocial href={`mailto:${email}`}>
+          <Paragrahp>Shoot me a mail</Paragrahp>
+          <ImgSocial src={MailSocial}></ImgSocial>
+        </LinkSocial>
       </WrapperMail>
     </WrapperConnect>
   );
