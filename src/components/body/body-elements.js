@@ -37,6 +37,9 @@ export const Sect = styled.div`
   @media (min-width: 740px) {
     width: 70%;
   }
+  @media (min-width: 1200px) {
+    width: 60%;
+  }
 `;
 
 export const WrapperArticle = styled.div`
@@ -49,6 +52,11 @@ export const WrapperArticle = styled.div`
 
   @media (min-width: 740px) {
     flex-direction: row;
+    width: 70%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 70%;
   }
 `;
 
@@ -196,10 +204,16 @@ export const Text = styled.h1`
   @media (min-width: 740px) {
     font-size: x-large;
   }
+  @media (min-width: 1200px) {
+    font-size: x-large;
+    width: 12rem;
+    border-radius: 50px;
+    height: 4rem;
+  }
 `;
 export const TitleText = styled.h2`
   color: var(--white);
-  font-size: xx-large;
+  font-size: x-large;
   margin: 0;
 
   @media (min-width: 768px) {
@@ -215,6 +229,9 @@ export const Text2 = styled.h2`
   @media (min-width: 740px) {
     font-size: x-large;
   }
+  @media (min-width: 1200px) {
+    font-size: x-large;
+  }
 `;
 export const Paragrahp = styled.p`
   font-size: large;
@@ -222,6 +239,10 @@ export const Paragrahp = styled.p`
   margin: 0;
   @media (min-width: 740px) {
     font-size: large;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: x-large;
   }
 `;
 export const TextSection = styled.div`

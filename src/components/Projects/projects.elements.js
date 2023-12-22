@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
   margin-bottom: 20px;
@@ -10,18 +12,28 @@ export const Wrapper = styled.div`
 
 export const ContainerCard = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 1.5rem 0;
-  height: 400px;
+  height: 500px;
   overflow: hidden;
   width: 100%;
+
+  @media (min-width: 768px) {
+    height: 500px;
+  }
+
+  @media (min-width: 1024px) {
+    height: 500px;
+  }
 `;
 export const WrapperBackground = styled.div`
-  //overflow: hidden;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   position: relative;
+
   transition: transform 0.5s ease-in-out;
 
   ::before {
@@ -39,8 +51,8 @@ export const WrapperBackground = styled.div`
   }
 `;
 export const WrapperCard = styled.div`
-  height: 300px;
-  width: 250px;
+  height: 260px;
+  width: 15em;
   border-radius: 18px;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   background-color: ${(props) => (props.isOdd ? "rgb(0, 0, 0)" : "#f5f5f7")};
@@ -54,6 +66,10 @@ export const WrapperCard = styled.div`
   transform: translate(-50%, -50%);
 
   @media (min-width: 768px) {
+    width: 28em;
+  }
+  @media (min-width: 1024px) {
+    width: 30em;
   }
 `;
 
@@ -117,29 +133,43 @@ export const TitleSection = styled.p`
 `;
 
 export const ButtonR = styled.img`
-  position: absolute;
   right: 15px;
+  position: absolute;
+  top: 220px;
   z-index: 2;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
+  margin: 10px;
   @media (min-width: 768px) {
-    right: 35px;
+    margin: 20px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
   }
   @media (min-width: 1024px) {
-    right: 55px;
+    right: 80px;
+    width: 50px;
+    height: 50px;
   }
 `;
 
 export const ButtonL = styled.img`
-  position: absolute;
   left: 15px;
-  width: 40px;
-  height: 40px;
+  position: absolute;
+  top: 220px;
+  width: 35px;
+  height: 35px;
   z-index: 2;
+  margin: 10px;
   @media (min-width: 768px) {
-    left: 35px;
+    margin: 20px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
   }
   @media (min-width: 1024px) {
-    left: 55px;
+    left: 80px;
+    width: 50px;
+    height: 50px;
   }
 `;

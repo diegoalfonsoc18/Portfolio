@@ -75,13 +75,13 @@ const Projects = () => {
         <TitleSection>Projects</TitleSection>
       </WrapperTitle>
       <ContainerCard>
-        <ButtonL src={IconArrowL} onClick={handlePrevSlide}></ButtonL>
         {imgs.map((img, index) => (
           <WrapperBackground
             key={index}
             backgroundImage={img.backgroundImage}
             style={{ display: index === currentSlide ? "block" : "none" }}
           >
+            <ButtonL src={IconArrowL} onClick={handlePrevSlide}></ButtonL>
             <WrapperCard isOdd={index % 2 !== 0}>
               <TextCard isOdd={index % 2 !== 0}>{`${img.title}`}</TextCard>
               <ButtonCard
@@ -96,9 +96,9 @@ const Projects = () => {
               </WrapperImg>
               <WrapperInfo></WrapperInfo>
             </WrapperCard>
+            <ButtonR src={IconArrowR} onClick={handleNextSlide}></ButtonR>
           </WrapperBackground>
         ))}
-        <ButtonR src={IconArrowR} onClick={handleNextSlide}></ButtonR>
       </ContainerCard>
     </Wrapper>
   );

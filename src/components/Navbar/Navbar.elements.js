@@ -6,8 +6,6 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 60px;
-  
-  
 `;
 
 export const WrapperMain = styled.div`
@@ -16,14 +14,19 @@ export const WrapperMain = styled.div`
   align-items: center;
   width: 95%;
   height: 100%;
-  
-  
+  @media (min-width: 768px) {
+    width: 90%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 70%;
+  }
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   height: 4rem;
   padding: 12px 0;
 `;
@@ -86,7 +89,6 @@ export const Menu = styled.ul`
   justify-content: space-around;
   font-size: 1.2rem;
   color: var(--white);
-  
 
   font-weight: bold;
 
@@ -104,7 +106,7 @@ export const ContainerResponsive = styled.div`
   position: absolute;
   height: 40px;
   right: 8px;
-  top:63px;
+  top: 63px;
 `;
 
 export const MenuItem = styled.li`
