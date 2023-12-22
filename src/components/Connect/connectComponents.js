@@ -29,9 +29,12 @@ export const ContainerItemSocial = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   height: 80px;
   width: 100%;
+  .hover-effect:hover {
+    transform: scale(1.1); /* Puedes ajustar el valor según tu preferencia */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+  }
 `;
 export const Paragrahp = styled.p`
   font-size: xx-large;
