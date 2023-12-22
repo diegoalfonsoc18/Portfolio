@@ -25,6 +25,7 @@ export const ContainerSocial = styled.div`
     flex-wrap: nowrap;
   }
 `;
+export const linkSocial = styled.a``;
 export const ContainerItemSocial = styled.div`
   display: flex;
   justify-content: space-around;
