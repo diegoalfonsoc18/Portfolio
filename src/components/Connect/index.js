@@ -6,7 +6,7 @@ import {
   ContainerItemSocial,
   Paragrahp,
   WrapperMail,
-  linkSocial,
+  LinkSocial,
 } from "./connectComponents";
 
 import GithubSocial from "../../icon/githubSocial.png";
@@ -20,6 +20,7 @@ const Connect = () => {
       name: "Github",
       img: GithubSocial,
       backgroundColor: "#353745",
+      link: "https://github.com/diegoalfonsoc18",
     },
     {
       name: "Linkedin",
@@ -45,22 +46,21 @@ const Connect = () => {
       </WrapperConnect>
       <ContainerSocial>
         {social.map((icon, index) => (
-          <linkSocial>
-            <ContainerItemSocial
-              key={index}
-              style={{
-                backgroundColor: icon.backgroundColor,
-                transition: "transform 0.3s ease", // Agrega transición aquí
-              }}
-              onMouseOver={(e) =>
-                (e.currentTarget.style.transform = "scale(1.1)")
-              } // Escala al pasar el cursor
-              onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")} // Vuelve al tamaño original al salir del hover
+          <ContainerItemSocial
+            key={index}
+            style={{
+              backgroundColor: icon.backgroundColor,
+            }}
+          >
+            <LinkSocial
+              href={icon.link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Paragrahp key={index}>{`${icon.name}`}</Paragrahp>
               <ImgSocial key={index} src={icon.img}></ImgSocial>
-            </ContainerItemSocial>
-          </linkSocial>
+            </LinkSocial>
+          </ContainerItemSocial>
         ))}
       </ContainerSocial>
 

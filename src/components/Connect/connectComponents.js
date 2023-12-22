@@ -17,25 +17,24 @@ export const ContainerSocial = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: antiquewhite;
+
   height: auto;
   width: 100%;
   @media (min-width: 768px) {
     flex-wrap: nowrap;
   }
 `;
-export const linkSocial = styled.a``;
+export const LinkSocial = styled.a`
+  cursor: pointer;
+  text-decoration: none;
+  color: "inherit";
+`;
 export const ContainerItemSocial = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 80px;
   width: 100%;
-  .hover-effect:hover {
-    transform: scale(1.1); /* Puedes ajustar el valor según tu preferencia */
-    transition: transform 0.3s ease; /* Agrega una transición suave */
-  }
 `;
 export const Paragrahp = styled.p`
   font-size: xx-large;
