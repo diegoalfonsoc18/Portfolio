@@ -71,10 +71,10 @@ const Projects = () => {
 
   return (
     <Wrapper>
-      <WrapperTitle>
-        <TitleSection>Projects</TitleSection>
-      </WrapperTitle>
       <ContainerCard>
+        <WrapperTitle>
+          <TitleSection>Projects</TitleSection>
+        </WrapperTitle>
         {imgs.map((img, index) => (
           <WrapperBackground
             key={index}

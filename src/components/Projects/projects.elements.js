@@ -6,27 +6,19 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 90vh;
   margin-bottom: 20px;
 `;
 
 export const ContainerCard = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.5rem 0;
-  height: 500px;
+  height: 100%;
   overflow: hidden;
   width: 100%;
-
-  @media (min-width: 768px) {
-    height: 500px;
-  }
-
-  @media (min-width: 1024px) {
-    height: 500px;
-  }
 `;
 export const WrapperBackground = styled.div`
   overflow: hidden;
@@ -51,7 +43,7 @@ export const WrapperBackground = styled.div`
   }
 `;
 export const WrapperCard = styled.div`
-  height: 260px;
+  height: 25em;
   width: 15em;
   border-radius: 18px;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
@@ -66,10 +58,12 @@ export const WrapperCard = styled.div`
   transform: translate(-50%, -50%);
 
   @media (min-width: 768px) {
-    width: 28em;
+    width: 35em;
+    height: 42em;
   }
   @media (min-width: 1024px) {
-    width: 30em;
+    width: 45em;
+    height: 52em;
   }
 `;
 
@@ -81,6 +75,8 @@ export const WrapperImg = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
+
+  border-radius: 18px;
 `;
 
 export const WrapperInfo = styled.div`
@@ -133,9 +129,9 @@ export const TitleSection = styled.p`
 `;
 
 export const ButtonR = styled.img`
-  right: 15px;
+  right: 12px;
   position: absolute;
-  top: 220px;
+  top: 310px;
   z-index: 2;
   width: 35px;
   height: 35px;
@@ -143,20 +139,22 @@ export const ButtonR = styled.img`
   @media (min-width: 768px) {
     margin: 20px;
     right: 40px;
-    width: 40px;
-    height: 40px;
-  }
-  @media (min-width: 1024px) {
-    right: 80px;
     width: 50px;
     height: 50px;
+    top: 440px;
+  }
+  @media (min-width: 1024px) {
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    top: 540px;
   }
 `;
 
 export const ButtonL = styled.img`
-  left: 15px;
+  left: 12px;
   position: absolute;
-  top: 220px;
+  top: 310px;
   width: 35px;
   height: 35px;
   z-index: 2;
@@ -164,12 +162,14 @@ export const ButtonL = styled.img`
   @media (min-width: 768px) {
     margin: 20px;
     left: 40px;
-    width: 40px;
-    height: 40px;
-  }
-  @media (min-width: 1024px) {
-    left: 80px;
     width: 50px;
     height: 50px;
+    top: 440px;
+  }
+  @media (min-width: 1024px) {
+    left: 40px;
+    width: 60px;
+    height: 60px;
+    top: 540px;
   }
 `;

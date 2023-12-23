@@ -6,20 +6,23 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 60px;
+  @media (min-width: 768px) {
+    height: 70px;
+  }
 `;
 
 export const WrapperMain = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95%;
+  width: 90%;
   height: 100%;
   @media (min-width: 768px) {
-    width: 90%;
+    width: 85%;
   }
 
-  @media (min-width: 1200px) {
-    width: 70%;
+  @media (min-width: 1024px) {
+    width: 80%;
   }
 `;
 
@@ -35,9 +38,18 @@ export const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
   color: var(--black);
-  width: 3rem;
+  height: 40px;
+  width: 40px;
+
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media (min-width: 1024px) {
+    width: 70px;
+    height: 70px;
+  }
 `;
 
 export const LogoDev = styled.img`
@@ -50,7 +62,7 @@ export const IconContainerMobile = styled.div`
   align-items: center;
   font-size: 1.2rem;
   color: var(--black);
-  width: 3rem;
+  width: 2rem;
 `;
 export const IconMobile = styled.img`
   width: 100%;
@@ -62,10 +74,11 @@ export const ContainerMenu = styled.div`
   align-items: center;
   font-size: 1.2rem;
   color: var(--black);
-  width: 250px;
-
   @media (max-width: 640px) {
     display: none;
+  }
+  @media (max-width: 1024px) {
+    width: 400px;
   }
 `;
 export const ResponsiveIcon = styled.div`
@@ -86,12 +99,6 @@ export const Menu = styled.ul`
   margin: 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  font-size: 1.2rem;
-  color: var(--white);
-
-  font-weight: bold;
-
   &.menu-mobile {
     font-size: 14px;
     display: flex;
@@ -122,7 +129,7 @@ export const MenuItem = styled.li`
 export const MenuItemLink = styled.a`
   text-decoration: none;
   position: relative;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 100;
   border-radius: 7px;
   display: inline-block;
@@ -138,6 +145,13 @@ export const MenuItemLink = styled.a`
 
   &.icon-gitHub {
     color: var(--green);
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 24px;
+    width: 150px;
+    height: 100%;
+    font-size: 1.4em;
   }
 `;
 

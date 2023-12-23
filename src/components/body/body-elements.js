@@ -26,19 +26,21 @@ export const WrapperMain = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100vh;
 `;
 
 export const Sect = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 100%;
   height: 100vh;
   @media (min-width: 740px) {
     width: 70%;
   }
   @media (min-width: 1200px) {
-    width: 60%;
+    width: 80%;
   }
 `;
 
@@ -49,17 +51,28 @@ export const WrapperArticle = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
+  height: 800px;
+  width: 90%;
 
   @media (min-width: 740px) {
     flex-direction: row;
-    width: 70%;
+    width: 100%;
   }
 
   @media (min-width: 1200px) {
-    width: 70%;
+    width: 90%;
   }
 `;
-
+export const WrapperBody = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  @media (min-width: 740px) {
+    flex-direction: row;
+  }
+`;
 export const Icons = styled.img`
   width: 100%;
   height: 100%;
@@ -89,6 +102,7 @@ export const ContainerImg = styled.div`
   position: relative;
   z-index: 1;
   height: 15em;
+  width: 100%;
   transition: all 0.3s ease;
   display: flex;
   justify-content: center;
@@ -152,7 +166,7 @@ export const Memoji = styled.img`
 export const WrapperTextDiv = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   height: auto;
   animation: ${fadeInLeft} 1s ease-in-out;
 
@@ -197,18 +211,20 @@ export const Text = styled.h1`
   font-size: large;
   margin: 0;
   border-radius: 25px;
-  width: 10rem;
+  width: 9rem;
   height: 3rem;
   border: 1px solid var(--white);
 
   @media (min-width: 740px) {
     font-size: x-large;
+    width: 12rem;
+    height: 3rem;
   }
   @media (min-width: 1200px) {
-    font-size: x-large;
-    width: 12rem;
-    border-radius: 50px;
-    height: 4rem;
+    font-size: xx-large;
+    width: 15rem;
+    border-radius: 30px;
+    height: 5rem;
   }
 `;
 export const TitleText = styled.h2`
@@ -238,11 +254,11 @@ export const Paragrahp = styled.p`
   color: var(--white);
   margin: 0;
   @media (min-width: 740px) {
-    font-size: large;
+    font-size: x-large;
   }
 
   @media (min-width: 1200px) {
-    font-size: x-large;
+    font-size: xx-large;
   }
 `;
 export const TextSection = styled.div`
