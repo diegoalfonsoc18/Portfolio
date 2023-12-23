@@ -33,7 +33,6 @@ export const Sect = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 100%;
   height: 100vh;
   @media (min-width: 740px) {
@@ -48,7 +47,7 @@ export const WrapperArticle = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   position: relative;
   height: 800px;
