@@ -144,7 +144,7 @@ export const ButtonR = styled.img`
     top: 440px;
   }
   @media (min-width: 1024px) {
-    right: 40px;
+    right: 80px;
     width: 60px;
     height: 60px;
     top: 540px;
@@ -167,7 +167,7 @@ export const ButtonL = styled.img`
     top: 440px;
   }
   @media (min-width: 1024px) {
-    left: 40px;
+    left: 0px;
     width: 60px;
     height: 60px;
     top: 540px;
