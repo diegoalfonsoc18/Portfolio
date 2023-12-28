@@ -27,18 +27,28 @@ const ArticleMain = () => {
   const icons = [
     {
       img: github,
+      top: "-190px",
+      left: "10px",
     },
     {
       img: docker,
+      top: "70px",
+      left: "10px",
     },
     {
       img: js,
+      top: "70px",
+      left: "10px",
     },
     {
       img: html,
+      top: "70px",
+      left: "10px",
     },
     {
       img: css,
+      top: "70px",
+      left: "10px",
     },
   ];
 
@@ -47,7 +57,15 @@ const ArticleMain = () => {
       <Sect>
         <WrapperBoddyIcons>
           {icons.map((icon) => (
-            <WrapperIcons key={icon.img} src={icon.img} />
+            <WrapperIcons
+              key={icon.img}
+              src={icon.img}
+              style={{
+                position: "relative",
+                top: icon.top,
+                left: icon.left,
+              }}
+            />
           ))}
         </WrapperBoddyIcons>
         <WrapperArticle>

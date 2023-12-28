@@ -275,10 +275,11 @@ export const WrapperIcons = styled.img`
 `;
 export const WrapperBoddyIcons = styled.div`
   display: flex;
+
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 70vh;
   width: 25%;
-  background-color: bisque;
+  background-color: antiquewhite;
 `;
