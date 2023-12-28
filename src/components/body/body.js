@@ -6,7 +6,6 @@ import {
   ContainerImg,
   MemojiMain,
   WrapperArticle,
-  WrapperArticleIcons,
   WrapperIcons,
   WrapperText,
   Text,
@@ -14,14 +13,43 @@ import {
   Paragrahp,
   WrapperTextDiv,
   WrapperBody,
+  WrapperBoddyIcons,
 } from "./body-elements";
 import memoji from "../../Img/memojic-mac.png";
 import memoji3 from "../../Img/memoji3.png";
+import github from "../../icon/github.png";
+import docker from "../../icon/docker.png";
+import js from "../../icon/js.png";
+import html from "../../icon/html.png";
+import css from "../../icon/bodyCss.png";
 
 const ArticleMain = () => {
+  const icons = [
+    {
+      img: github,
+    },
+    {
+      img: docker,
+    },
+    {
+      img: js,
+    },
+    {
+      img: html,
+    },
+    {
+      img: css,
+    },
+  ];
+
   return (
     <WrapperMain>
       <Sect>
+        <WrapperBoddyIcons>
+          {icons.map((icon) => (
+            <WrapperIcons src={icon.img} />
+          ))}
+        </WrapperBoddyIcons>
         <WrapperArticle>
           <WrapperBody>
             <ContainerImg>
@@ -45,10 +73,12 @@ const ArticleMain = () => {
               </WrapperText>
             </WrapperTextDiv>
           </WrapperBody>
-          <WrapperIcons>
-            <WrapperArticleIcons></WrapperArticleIcons>
-          </WrapperIcons>
         </WrapperArticle>
+        <WrapperBoddyIcons>
+          {icons.map((icon) => (
+            <WrapperIcons src={icon.img} />
+          ))}
+        </WrapperBoddyIcons>
       </Sect>
     </WrapperMain>
   );

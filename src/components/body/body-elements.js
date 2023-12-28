@@ -269,28 +269,16 @@ export const TextSection = styled.div`
   justify-content: center;
 `;
 
-export const WrapperIcons = styled.div`
+export const WrapperIcons = styled.img`
+  width: 50px;
+  height: 50px;
+`;
+export const WrapperBoddyIcons = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width: 100%;
-  height: 100px;
+  flex-direction: column;
 
-  @media (min-width: 740px) {
-    justify-content: center;
-    order: 3;
-  }
-`;
-
-export const WrapperArticleIcons = styled.span`
-  position: relative;
-  z-index: 2;
-  width: 40px;
-  margin: 0 10px;
-  height: 40px;
-  @media (min-width: 740px) {
-    width: 60px;
-    height: 60px;
-  }
+  height: 100vh;
+  width: 100px;
 `;
