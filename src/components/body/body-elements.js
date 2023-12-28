@@ -269,17 +269,15 @@ export const TextSection = styled.div`
   justify-content: center;
 `;
 
-export const WrapperIcons = styled.img`
-  width: 40px;
-  height: 40px;
-`;
+export const WrapperIcons = styled.img``;
 export const WrapperBoddyIcons = styled.div`
   display: flex;
 
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 70vh;
+  height: 40vh;
   width: 25%;
-  background-color: antiquewhite;
+  background-color: aqua;
 `;
+export const IconsBody = styled.img``;
