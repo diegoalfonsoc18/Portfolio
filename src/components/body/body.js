@@ -27,28 +27,28 @@ const ArticleMain = () => {
   const icons = [
     {
       img: github,
-      top: "-190px",
-      left: "10px",
+      top: "-50px",
+      left: "-10px",
     },
     {
       img: docker,
-      top: "70px",
-      left: "10px",
+      top: "-20px",
+      left: "40px",
     },
     {
       img: js,
-      top: "70px",
+      top: "20px",
       left: "10px",
     },
     {
       img: html,
-      top: "70px",
-      left: "10px",
+      top: "40px",
+      left: "20px",
     },
     {
       img: css,
-      top: "70px",
-      left: "10px",
+      top: "100px",
+      left: "0px",
     },
   ];
 
