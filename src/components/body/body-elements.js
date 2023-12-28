@@ -270,15 +270,15 @@ export const TextSection = styled.div`
 `;
 
 export const WrapperIcons = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 `;
 export const WrapperBoddyIcons = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   height: 100vh;
-  width: 100px;
+  width: 25%;
+  background-color: bisque;
 `;

@@ -47,7 +47,7 @@ const ArticleMain = () => {
       <Sect>
         <WrapperBoddyIcons>
           {icons.map((icon) => (
-            <WrapperIcons src={icon.img} />
+            <WrapperIcons key={icon.img} src={icon.img} />
           ))}
         </WrapperBoddyIcons>
         <WrapperArticle>
@@ -76,7 +76,7 @@ const ArticleMain = () => {
         </WrapperArticle>
         <WrapperBoddyIcons>
           {icons.map((icon) => (
-            <WrapperIcons src={icon.img} />
+            <WrapperIcons key={icon.img} src={icon.img} />
           ))}
         </WrapperBoddyIcons>
       </Sect>
