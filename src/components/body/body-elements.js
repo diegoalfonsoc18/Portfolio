@@ -36,7 +36,7 @@ export const Sect = styled.div`
   width: 100%;
   height: 100vh;
   @media (min-width: 740px) {
-    width: 70%;
+    width: 100%;
   }
   @media (min-width: 1200px) {
     width: 80%;
@@ -51,7 +51,7 @@ export const WrapperArticle = styled.div`
   align-items: center;
   position: relative;
   height: 800px;
-  width: 90%;
+  width: 55%;
 
   @media (min-width: 740px) {
     flex-direction: row;
@@ -178,11 +178,10 @@ export const WrapperTextDiv = styled.div`
 export const WrapperText = styled.div`
   :nth-child(1) {
     display: flex;
+    justify-content: center;
     height: auto;
     width: 100%;
     padding: 5px;
-
-    justify-content: start;
   }
   :nth-child(2) {
     padding: 5px;
@@ -236,6 +235,8 @@ export const TitleText = styled.h2`
   }
 `;
 export const Text2 = styled.h2`
+  display: flex;
+  justify-content: center;
   color: var(--white);
   font-size: x-large;
   font-weight: 400;
@@ -249,6 +250,8 @@ export const Text2 = styled.h2`
   }
 `;
 export const Paragrahp = styled.p`
+  display: flex;
+  justify-content: center;
   font-size: large;
   color: var(--white);
   margin: 0;
@@ -278,6 +281,9 @@ export const WrapperBoddyIcons = styled.div`
   flex-direction: column;
   height: 40vh;
   width: 25%;
-  background-color: aqua;
+
+  @media (min-width: 768px) {
+    width: 40%;
+  }
 `;
 export const IconsBody = styled.img``;

@@ -37,23 +37,23 @@ const ArticleMain = () => {
     {
       img: github,
       top: "90px",
-      left: "-10px",
-      width: "2.0rem",
-      height: "2.0rem",
+      left: "50px",
+      width: "2.5rem",
+      height: "2.5rem",
     },
     {
       img: docker,
       top: "-20px",
       right: "-10px",
-      width: "2.6rem",
-      height: "2.6rem",
+      width: "30%",
+      height: "20%",
     },
     {
       img: js,
-      top: "0px",
-      left: "20px",
-      width: "2.5rem",
-      height: "2.5rem",
+      top: "-20px",
+      left: "-25%",
+      width: "50%",
+      height: "40%",
     },
     {
       img: html,
@@ -65,10 +65,10 @@ const ArticleMain = () => {
     },
     {
       img: css,
-      top: "100px",
+      top: "70px",
       left: "0px",
-      width: "2.4rem",
-      height: "2.4rem",
+      width: "2rem",
+      height: "2rem",
       filter: "blur(2px)",
     },
     {
@@ -80,10 +80,10 @@ const ArticleMain = () => {
     },
     {
       img: sql,
-      top: "-130px",
-      left: "-10px",
-      width: "2.5rem",
-      height: "2.5rem",
+      top: "-100px",
+      left: "50px",
+      width: "40%",
+      height: "30%",
     },
     {
       img: python,
@@ -93,10 +93,10 @@ const ArticleMain = () => {
     },
     {
       img: photoshop,
-      top: "-20px",
-      left: "20px",
-      width: "2.8rem",
-      height: "2.8rem",
+      top: "-70px",
+      left: "-10px",
+      width: "2rem",
+      height: "2rem",
     },
     {
       img: nodejs,
@@ -107,9 +107,9 @@ const ArticleMain = () => {
     {
       img: git,
       top: "40px",
-      left: "-20px",
-      width: "2.8rem",
-      height: "2.8rem",
+      left: "0px",
+      width: "4rem",
+      height: "4rem",
     },
     {
       img: pandas,
@@ -119,9 +119,10 @@ const ArticleMain = () => {
     },
     {
       img: oracle,
-      right: "-10px",
-      width: "2.5rem",
-      height: "2.5rem",
+      top: "-120px",
+      left: "-20px",
+      width: "2.8rem",
+      height: "2.8rem",
     },
     {
       img: machine,
@@ -131,7 +132,8 @@ const ArticleMain = () => {
     },
     {
       img: styledComponent,
-      right: "-10px",
+      top: "-100px",
+      left: "30px",
       width: "2.5rem",
       height: "2.5rem",
     },
@@ -174,10 +176,9 @@ const ArticleMain = () => {
               </WrapperText>
               <WrapperText>
                 <Paragrahp>
-                  Web developer with experience in personal projects using HTML,
-                  CSS, JavaScript, React, and MySQL. Passionate about continuous
-                  learning and committed to delivering creative and quality
-                  solutions.
+                  Web developer experienced in HTML, CSS, JavaScript, React, and
+                  MySQL. Committed to continuous learning and delivering
+                  creative, quality solutions.
                 </Paragrahp>
               </WrapperText>
             </WrapperTextDiv>
