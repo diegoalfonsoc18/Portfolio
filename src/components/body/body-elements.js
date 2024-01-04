@@ -282,9 +282,10 @@ export const WrapperBoddyIcons = styled.div`
   flex-direction: column;
   height: 40vh;
   width: 25%;
-  background-color: antiquewhite;
+
   @media (min-width: 768px) {
     width: 40%;
+    max-width: 200px;
   }
 `;
 export const IconsBody = styled.img``;
