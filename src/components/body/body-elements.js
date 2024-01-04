@@ -271,7 +271,10 @@ export const TextSection = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
-
+export const WrapperIconsDiv = styled.div`
+  background-color: aliceblue;
+  border: solid;
+`;
 export const WrapperIcons = styled.img``;
 export const WrapperBoddyIcons = styled.div`
   display: flex;
@@ -280,7 +283,7 @@ export const WrapperBoddyIcons = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 40vh;
+  height: 40%;
   width: 25%;
 
   @media (min-width: 768px) {
