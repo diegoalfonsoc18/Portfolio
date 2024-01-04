@@ -38,7 +38,7 @@ const Connect = () => {
       name: "Twitter",
       img: XSocial,
       backgroundColor: "#3c3f50",
-      link: "https://twitter.com/diegoalfonsoc18",
+      link: "https://twitter.com/DiegoAlfon85757",
     },
   ];
   const email = "dlalfonso57@gmail.com";
