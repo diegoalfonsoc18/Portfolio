@@ -44,37 +44,37 @@ const ArticleMain = () => {
     {
       img: docker,
       top: "-20px",
-      right: "-10px",
-      width: "30%",
-      height: "20%",
+      right: "10px",
+      width: "30px",
+      height: "30px",
     },
     {
       img: js,
-      top: "-20px",
-      left: "-25%",
-      width: "50%",
-      height: "40%",
+      top: "200px",
+      left: "-10px",
+      width: "50px",
+      height: "5em",
     },
     {
       img: html,
-      top: "40px",
-      right: "-10px",
-      width: "2.5rem",
-      height: "2.5rem",
+      top: "-10px",
+      right: "-30px",
+      width: "50%",
+      height: "25%",
       filter: "blur(2px)",
     },
     {
       img: css,
-      top: "70px",
-      left: "0px",
+      top: "100px",
+      left: "20px",
       width: "2rem",
       height: "2rem",
       filter: "blur(2px)",
     },
     {
       img: react,
-      top: "100px",
-      right: "-10px",
+      top: "10px",
+      right: "20px",
       width: "2.5rem",
       height: "2.5rem",
     },
@@ -87,9 +87,10 @@ const ArticleMain = () => {
     },
     {
       img: python,
-      right: "-10px",
-      width: "2.5rem",
-      height: "2.5rem",
+      top: "-120px",
+      right: "50px",
+      width: "35%",
+      height: "15%",
     },
     {
       img: photoshop,
@@ -100,9 +101,10 @@ const ArticleMain = () => {
     },
     {
       img: nodejs,
+      top: "-80px",
       right: "-10px",
-      width: "2.5rem",
-      height: "2.5rem",
+      width: "20%",
+      height: "10%",
     },
     {
       img: git,
@@ -151,12 +153,13 @@ const ArticleMain = () => {
               key={icon.img}
               src={icon.img}
               style={{
-                position: "relative",
+                position: "absolute",
                 top: icon.top,
                 left: icon.left,
                 width: icon.width,
                 height: icon.height,
                 filter: icon.filter,
+                zIndex: 1,
               }}
             />
           ))}
@@ -190,7 +193,7 @@ const ArticleMain = () => {
               key={icon.img}
               src={icon.img}
               style={{
-                position: "relative",
+                position: "absolute",
                 top: icon.top,
                 right: icon.right,
                 width: icon.width,

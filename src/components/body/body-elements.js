@@ -275,13 +275,14 @@ export const TextSection = styled.div`
 export const WrapperIcons = styled.img``;
 export const WrapperBoddyIcons = styled.div`
   display: flex;
-
+  position: relative;
+  z-index: 0;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 40vh;
   width: 25%;
-
+  background-color: antiquewhite;
   @media (min-width: 768px) {
     width: 40%;
   }
