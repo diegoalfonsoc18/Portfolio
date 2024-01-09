@@ -12,7 +12,6 @@ import {
 import GithubSocial from "../../icon/githubSocial.png";
 import LinkedinSocial from "../../icon/linkedinSocial.png";
 import DiscordSocial from "../../icon/discordSocial.png";
-import XSocial from "../../icon/twitterSocial.png";
 import MailSocial from "../../icon/emailSocial.png";
 const Connect = () => {
   const social = [
@@ -33,12 +32,6 @@ const Connect = () => {
       img: DiscordSocial,
       backgroundColor: "#7289da",
       link: "discord.com/channels/984941402783895642",
-    },
-    {
-      name: "Twitter",
-      img: XSocial,
-      backgroundColor: "#3c3f50",
-      link: "https://twitter.com/DiegoAlfon85757",
     },
   ];
   const email = "dlalfonso57@gmail.com";
